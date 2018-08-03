@@ -1,2 +1,2 @@
 # octo-prime
-Basic libraries for studying algorithms
+Basic libraries for constructing algorithms and its application to real-world problems.

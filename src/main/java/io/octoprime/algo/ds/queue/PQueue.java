@@ -18,7 +18,7 @@ public class PQueue {
         pQueue.add("Python");
 
         // Printing the most priority element
-        System.out.println("Head value using peek function:"
+        System.out.println("Head key using peek function:"
                 + pQueue.peek());
 
         // Printing all elements

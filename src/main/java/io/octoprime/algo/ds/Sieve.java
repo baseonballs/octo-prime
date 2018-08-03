@@ -8,7 +8,7 @@ public class Sieve {
     private static boolean DEBUG = false;
 
     /*
-     ** We build a array of boolean which indicates the state of prime for the indexed value.
+     ** We build a array of boolean which indicates the state of prime for the indexed key.
      */
     public boolean[] sieve(int n) {
         boolean[] isPrimes = new boolean[n + 1];

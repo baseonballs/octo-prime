@@ -12,7 +12,7 @@ public class CountingSort {
 
     void sort(int arr[], int aux[], int sortedA[], int N) {
 
-        // First, find the maximum value in A[]
+        // First, find the maximum key in A[]
         int K = 0;
         for(int i=0; i<N; i++) {
             K = Math.max(K, arr[i]);
@@ -24,7 +24,7 @@ public class CountingSort {
         }
 
         // Store the frequencies of each distinct element of A[],
-        // by mapping its value as the index of Aux[] array
+        // by mapping its key as the index of Aux[] array
         for(int i=0; i<N; i++) {
             aux[arr[i]]++;
         }

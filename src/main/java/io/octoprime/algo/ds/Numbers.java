@@ -102,7 +102,7 @@ public class Numbers {
         int[] arrs = units.randomArrayAsInt(10, 10000);
 
         System.out.println(Arrays.toString(arrs));
-        System.out.println(String.format("Index of min value is: %d", findMin(arrs)));
+        System.out.println(String.format("Index of min key is: %d", findMin(arrs)));
 
         (new BubbleSort()).sort(arrs);
         System.out.println(Arrays.toString(arrs));

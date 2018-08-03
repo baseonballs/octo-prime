@@ -3,13 +3,12 @@ package io.octoprime.algo.graph;
 // A Java program for DijkstraAdjacency's single source shortest path algorithm.
 // The program is for adjacency matrix representation of the graph
 
-import java.lang.*;
 import java.util.Arrays;
 
 public class DijkstraAdjacency {
 
 
-    // A utility function to find the vertex with minimum distance value,
+    // A utility function to find the vertex with minimum distance key,
     // from the set of vertices not yet included in shortest path tree
     static final int NUM_VERTICES = 9;
 
@@ -52,13 +51,13 @@ public class DijkstraAdjacency {
             // Mark the picked vertex as processed
             sptSet[u] = true;
 
-            // Update dist value of the adjacent vertices of the
+            // Update dist key of the adjacent vertices of the
             // picked vertex.
             for (int j = 0; j< NUM_VERTICES; j++)
 
                 // Update dist[v] only if is not in sptSet, there is an
-                // edge from u to v, and total weight of path from src to
-                // v through u is smaller than current value of dist[v]
+                // edge from u to v, and total cost of path from src to
+                // v through u is smaller than current key of dist[v]
                 if (!sptSet[j] && graph[u][j] != 0 &&
                         dist[u] != Integer.MAX_VALUE &&
                         dist[u] + graph[u][j] < dist[j])

@@ -1,7 +1,7 @@
 package io.octoprime.algo;
 
-import io.octoprime.algo.sort.BubbleSort;
 import io.octoprime.algo.ds.UtilsArray;
+import io.octoprime.algo.sort.BubbleSort;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,7 +45,7 @@ public class Driver {
         c = 1;
         if (n < 0)
         {
-            System.out.println("Bad value: " + n);
+            System.out.println("Bad key: " + n);
             return n;
         }
         if (n == 0 ) return 0;

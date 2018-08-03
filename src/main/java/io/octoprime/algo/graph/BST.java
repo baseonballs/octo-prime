@@ -178,14 +178,14 @@ public class BST {
         tree.preOrderPrint();
         System.out.println("\nPostorder traversal of the given tree");
         tree.postOrder();
-        System.out.println(String.format("\n\nThe minimum value is:  %d", tree.min(tree.getRoot())));
-        System.out.println(String.format("The maximum value is:  %d\n", tree.max(tree.getRoot())));
+        System.out.println(String.format("\n\nThe minimum key is:  %d", tree.min(tree.getRoot())));
+        System.out.println(String.format("The maximum key is:  %d\n", tree.max(tree.getRoot())));
 
         tree.deleteItem( 20 );
         System.out.println("Inorder traversal of the given tree");
         tree.inOrderPrint();
-        System.out.println(String.format("\n\nThe minimum value is:  %d", tree.min(tree.getRoot())));
-        System.out.println(String.format("The maximum value is:  %d\n", tree.max(tree.getRoot())));
+        System.out.println(String.format("\n\nThe minimum key is:  %d", tree.min(tree.getRoot())));
+        System.out.println(String.format("The maximum key is:  %d\n", tree.max(tree.getRoot())));
 
 
         if ( false ) {

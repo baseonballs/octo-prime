@@ -1,0 +1,10 @@
+# ignore resources
+target/
+
+# ... but the following
+!/.profile
+!/.bash_rc
+!/.bash_profile
+!/.curlrc
+!/.idea
+!/.eclipse

@@ -1,51 +1,49 @@
 package io.octoprime.algo.sort;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import io.octoprime.TestConfig;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
 import static io.octoprime.algo.ds.DataStructure.getRandomArray;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * Unit test for simple App.
  */
-public class BubbleSortTest
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public BubbleSortTest(String testName )
-    {
-        super( testName );
-    }
+public class BubbleSortTest {
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( BubbleSortTest.class );
+    private static int[] _NUMBERS = new int[]{88, 5, 13, 2, 10, 19, 28, 33, 50, 92};
+    private static BubbleSort _bubbleSort = new BubbleSort();
+
+    @Test
+    public void testAsending() {
+        assertTrue(_NUMBERS.length == TestConfig.ARRAY_SIZE);
+
+        _bubbleSort.sort(_NUMBERS);
+
+        /*
+        Must have at least two values in the array to assert natural order.
+         */
+        if (_NUMBERS.length > 1)
+            for (int i = 0; i < _NUMBERS.length - 1; i++) {
+                assertTrue(_NUMBERS[i] <= _NUMBERS[i + 1]);
+            }
     }
 
     /**
      * Rigourous Test :-)
      */
-    public void testBubble()
-    {
+    @Test
+    public void randomziedArray() {
         System.out.println("testBubble.");
-        assertTrue( true );
+        assertTrue(true);
 
         BubbleSort bubble = new BubbleSort();
 
-        int[] numbers = getRandomArray(10, 100);
+        int[] numbers = getRandomArray(TestConfig.ARRAY_SIZE, TestConfig.RAND_RANGE);
 
-        assertTrue( numbers.length == 10);
-
+        assertTrue(numbers.length == TestConfig.ARRAY_SIZE);
 
         System.out.println("Input array: ");
         System.out.println(Arrays.toString(numbers));
@@ -53,6 +51,5 @@ public class BubbleSortTest
         System.out.println("Sorted array: ");
         bubble.sort(numbers);
         System.out.println(Arrays.toString(numbers));
-
     }
 }

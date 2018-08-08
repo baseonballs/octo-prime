@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85610738-ea92-4300-a197-d3715eeca69d" name="Default Changelist" comment="Minor changes to algorithms; a couple of ones didn't work with failing edge conditions.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/game/TicTacToe.java" afterDir="false" />
+    <list default="true" id="85610738-ea92-4300-a197-d3715eeca69d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/Temper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/Temper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/graph/BFSNeighborList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/graph/BFSNeighborList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/SelectionSort.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +15,7 @@
     <session id="-1549337042">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.35" value="1" />
@@ -147,7 +142,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/game/TicTacToe.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="105" column="36" lean-forward="true" selection-start-line="105" selection-start-column="36" selection-end-line="105" selection-end-column="36" />
+              <caret line="105" column="36" selection-start-line="105" selection-start-column="36" selection-end-line="105" selection-end-column="36" />
               <folding>
                 <element signature="e#1601#1602#0" expanded="true" />
                 <element signature="e#1693#1694#0" expanded="true" />
@@ -250,6 +245,14 @@
           <expand>
             <path>
               <item name="octoprime" type="b2602c69:ProjectViewProjectNode" />
+              <item name="octoprime" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="octoprime" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="octoprime" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
           </expand>
@@ -262,7 +265,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533749065684" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533749079046" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
@@ -448,7 +451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533326093693</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Minor changes to algorithms; a couple of ones didn't work with failing edge conditions.">
+      <created>1533749082949</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1533749082949</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -485,9 +495,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18905473" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18905473" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -504,7 +513,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3294979" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3294979" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.3294979" />
+      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.3294979" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -916,7 +925,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/game/TicTacToe.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="105" column="36" lean-forward="true" selection-start-line="105" selection-start-column="36" selection-end-line="105" selection-end-column="36" />
+          <caret line="105" column="36" selection-start-line="105" selection-start-column="36" selection-end-line="105" selection-end-column="36" />
           <folding>
             <element signature="e#1601#1602#0" expanded="true" />
             <element signature="e#1693#1694#0" expanded="true" />

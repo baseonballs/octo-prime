@@ -18,7 +18,7 @@ public class SelectionSort {
     private static int DEFAULT_SIZE = 10;
     private static int DEFAULT_RANGE = 100;
 
-    public static int[] doSelectionSort(int[] arr){
+    private static int[] selection(int[] arr) {
 
         for (int i = 0; i < arr.length - 1; i++)
         {
@@ -44,7 +44,7 @@ public class SelectionSort {
         System.out.println(Arrays.toString(numbers));
 
         System.out.println("Sorted array: ");
-        int[] arr2 = doSelectionSort(numbers);
+        int[] arr2 = selection(numbers);
 
         System.out.println(Arrays.toString(numbers));
     }

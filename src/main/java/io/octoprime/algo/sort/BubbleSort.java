@@ -1,11 +1,10 @@
 package io.octoprime.algo.sort;
 
 import java.util.Arrays;
+
 import static io.octoprime.algo.ds.DataStructure.getRandomArray;
 
 /**
-Sorting Algorithms are concepts that every competitive programmer must know. Sorting algorithms can be used for
-collections of numbers, strings, characters, or a structure of any of these types.
 
 Bubble sort is based on the idea of repeatedly comparing pairs of adjacent elements and then swapping their
 positions if they exist in the wrong order.

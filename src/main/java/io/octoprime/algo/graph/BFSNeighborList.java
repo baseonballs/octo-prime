@@ -11,7 +11,7 @@ public class BFSNeighborList {
 
 
     private Queue<Node> queue;
-    static ArrayList<Node> nodes=new ArrayList<Node>();
+    static ArrayList<Node> nodes = new ArrayList<>();
     static class Node
     {
         int data;
@@ -24,11 +24,13 @@ public class BFSNeighborList {
             this.neighbours=new ArrayList<>();
 
         }
-        public void addneighbours(Node neighbourNode)
+
+        void addneighbours(Node neighbourNode)
         {
             this.neighbours.add(neighbourNode);
         }
-        public List<Node> getNeighbours() {
+
+        List<Node> getNeighbours() {
             return neighbours;
         }
         public void setNeighbours(List<Node> neighbours) {
@@ -36,12 +38,12 @@ public class BFSNeighborList {
         }
     }
 
-    public BFSNeighborList()
+    private BFSNeighborList()
     {
-        queue = new LinkedList<Node>();
+        queue = new LinkedList<>();
     }
 
-    public void bfs(Node node)
+    private void bfs(Node node)
     {
         queue.add(node);
         node.visited=true;
@@ -51,13 +53,10 @@ public class BFSNeighborList {
             Node element=queue.remove();
             System.out.print(element.data + "\t");
             List<Node> neighbours=element.getNeighbours();
-            for (int i = 0; i < neighbours.size(); i++) {
-                Node n=neighbours.get(i);
-                if(n!=null && !n.visited)
-                {
+            for (Node n : neighbours) {
+                if (n != null && !n.visited) {
                     queue.add(n);
-                    n.visited=true;
-
+                    n.visited = true;
                 }
             }
 

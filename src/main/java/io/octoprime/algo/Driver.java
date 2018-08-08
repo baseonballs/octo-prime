@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 
 public class Driver {
 
-    public static int fib(int n)
+    private static int fib(int n)
     {
         if (n < 0)
             System.out.println("bad arg.");
@@ -36,13 +36,12 @@ public class Driver {
 
     }
 
-    public static long fib3(int n)
+    private static long fib3(int n)
     {
         int a,b, c;
 
         a = 0; b= 1;
 
-        c = 1;
         if (n < 0)
         {
             System.out.println("Bad key: " + n);
@@ -63,7 +62,7 @@ public class Driver {
 
     public  static  void swap(int a, int b  )
     {
-        int t = 0;
+        int t;
         System.out.println(String.format("The unswapped values are:  %d, %d", a, b));
 
         t = a;
@@ -101,13 +100,13 @@ public class Driver {
         System.out.println("random array: " + arrb);
 
         int[] b = arrb.stream().mapToInt(i->i).toArray();
-        (new BubbleSort()).sort( b);
+        (new BubbleSort()).bubble(b);
 
         ArrayList<String>  arrs = utils.stringArray(10, 8);
         System.out.println("random string array: " + arrs);
 
         List<String> resultList
-                = arrs.stream().map(e -> e.toUpperCase()).collect(Collectors.toList());
+                = arrs.stream().map(String::toUpperCase).collect(Collectors.toList());
         System.out.println("random string array: " + resultList);
 
     }

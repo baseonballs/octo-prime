@@ -16,8 +16,19 @@ public class BubbleSort {
     private static int DEFAULT_SIZE = 10;
     private static int DEFAULT_RANGE = 100;
 
-    public static void sort(Integer[] arr) {
+    public static void bubble(Integer[] arr) {
         Arrays.stream(arr).sorted();
+    }
+
+
+    public void reverse(int[] arr) {
+        int n = arr.length;
+
+        for (int i = 0, j = n - 1; i < j; i++, j--) {
+            int t = arr[i];
+            arr[i] = arr[j];
+            arr[j] = t;
+        }
     }
 
     public static void main(String[] arg) {
@@ -32,17 +43,7 @@ public class BubbleSort {
         System.out.println(Arrays.toString(numbers));
     }
 
-    public void reverse(int[] arr) {
-        int n = arr.length;
-
-        for (int i = 0, j = n - 1; i < j; i++, j--) {
-            int t = arr[i];
-            arr[i] = arr[j];
-            arr[j] = t;
-        }
-    }
-
-    private void bubble(int[] arr) {
+    public void bubble(int[] arr) {
 
         for (int i = 0; i < arr.length - 1; i++)
             for (int j = 0; j < (arr.length - i - 1); j++) {

@@ -1,17 +1,23 @@
 package io.octoprime.algo.ds;
 
+import java.util.Arrays;
+
 public class MedianOfTwoSortedArrays {
+
 
 
     public static void main(String[] args) {
         int[] x = {1, 3, 8, 9, 15};
         int[] y = {7, 11, 19, 21, 18, 25};
 
+        System.out.println(Arrays.toString(x) + " : " + x.length);
+        System.out.println(Arrays.toString(y) + " : " + y.length);
+
         double val = (new MedianOfTwoSortedArrays()).findMedianSortedArray(x, y);
         System.out.println(String.format("The mediam of two sorted array with varying length is: %1$,.2f", val));
     }
 
-    public double findMedianSortedArray(int[] input1, int[] input2) {
+    private double findMedianSortedArray(int[] input1, int[] input2) {
 
         if (input1.length > input2.length) {
             return findMedianSortedArray(input2, input1);

@@ -11,7 +11,7 @@ positions if they exist in the wrong order.
 
 Complexity: worse & average = O(N^2), best = O(n)
 */
-public class BubbleSort implements Sort {
+public class BubbleSort {
 
     private static int DEFAULT_SIZE = 10;
     private static int DEFAULT_RANGE = 100;
@@ -20,16 +20,16 @@ public class BubbleSort implements Sort {
         Arrays.stream(arr).sorted();
     }
 
-    public void sort(int[] arr) {
+    public static void main(String[] arg) {
+        BubbleSort sort = new BubbleSort();
 
-        for (int i = 0; i < arr.length - 1; i++)
-            for (int j = 0; j < (arr.length - i - 1); j++) {
-                if (arr[j] > arr[j + 1]) {
-                    int t = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = t;
-                }
-            }
+        int[] numbers = getRandomArray(DEFAULT_SIZE, DEFAULT_RANGE);
+        System.out.println("Input array: ");
+        System.out.println(Arrays.toString(numbers));
+
+        System.out.println("Sorted array: ");
+        sort.bubble(numbers);
+        System.out.println(Arrays.toString(numbers));
     }
 
     public void reverse(int[] arr) {
@@ -42,16 +42,15 @@ public class BubbleSort implements Sort {
         }
     }
 
-    public static void main(String[] arg) {
-        BubbleSort bubble = new BubbleSort();
+    private void bubble(int[] arr) {
 
-        int[] numbers = getRandomArray(DEFAULT_SIZE, DEFAULT_RANGE);
-
-        System.out.println("Input array: ");
-        System.out.println(Arrays.toString(numbers));
-
-        System.out.println("Sorted array: ");
-        bubble.sort(numbers);
-        System.out.println(Arrays.toString(numbers));
+        for (int i = 0; i < arr.length - 1; i++)
+            for (int j = 0; j < (arr.length - i - 1); j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int t = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = t;
+                }
+            }
     }
 }

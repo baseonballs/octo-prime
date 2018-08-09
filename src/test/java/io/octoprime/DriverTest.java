@@ -8,32 +8,28 @@ import junit.framework.TestSuite;
  * Unit test for simple App.
  */
 public class DriverTest
-    extends TestCase
-{
+        extends TestCase {
     /**
      * Create the test case
      *
      * @param testName name of the test case
      */
-    public DriverTest(String testName)
-    {
-        super( testName );
+    public DriverTest(String testName) {
+        super(testName);
     }
 
     /**
      * @return the suite of tests being tested
      */
-    public static Test suite()
-    {
+    public static Test suite() {
         return new TestSuite(DriverTest.class);
     }
 
     /**
      * Rigourous Test :-)
      */
-    public void testApp()
-    {
+    public void testApp() {
         System.out.println("Hello.");
-        assertTrue( true );
+        assertTrue(true);
     }
 }

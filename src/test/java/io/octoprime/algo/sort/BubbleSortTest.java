@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 
 import static io.octoprime.algo.ds.DataStructure.getRandomArray;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
@@ -51,5 +52,36 @@ public class BubbleSortTest {
         System.out.println("Sorted array: ");
         bubble.sort(numbers);
         System.out.println(Arrays.toString(numbers));
+    }
+
+
+    @Test
+    public void testBubbleSort() {
+        int[] array = {2, 1, 4, 6, 3, 5};
+        int[] sortedArray = {1, 2, 3, 4, 5, 6};
+        BubbleSort bubbleSort = new BubbleSort();
+        bubbleSort.sort(array);
+
+        assertArrayEquals(array, sortedArray);
+    }
+
+    @Test
+    public void testBubbleSortWithStreams() {
+        Integer[] array = {2, 1, 4, 6, 3, 5};
+        Integer[] sortedArray = {1, 2, 3, 4, 5, 6};
+        BubbleSort bubbleSort = new BubbleSort();
+        bubbleSort.bubbleSortWithStreams(array);
+
+        assertArrayEquals(array, sortedArray);
+    }
+
+    @Test
+    public void testOptimizedBubbleSort() {
+        Integer[] array = {10, 15, 3, 4, 5};
+        Integer[] sortedArray = {3, 4, 5, 10, 15};
+        BubbleSort bubbleSort = new BubbleSort();
+        bubbleSort.optimizedBubbleSort(array);
+
+        assertArrayEquals(array, sortedArray);
     }
 }

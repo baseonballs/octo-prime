@@ -2,19 +2,15 @@ package io.octoprime.algo;
 
 import java.util.Scanner;
 
-import static java.lang.StrictMath.sqrt;
-
 public class Scratch {
 
 
-    public static void divisors( int n )
-    {
+    public static void divisors(int n) {
         System.out.println(String.format("Divsors of %d", n));
 
-        for (int i=1; i <= n;i++)
-        {
-            if ( (n % i) == 0)
-            System.out.print(i+" ");
+        for (int i = 1; i <= n; i++) {
+            if ((n % i) == 0)
+                System.out.print(i + " ");
         }
 
         System.out.println();

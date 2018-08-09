@@ -2,13 +2,11 @@ package io.octoprime.algo.graph;
 
 public class BST {
 
-    class Node
-    {
+    class Node {
         int key;
         Node left, right;
 
-        public Node(int item)
-        {
+        public Node(int item) {
             key = item;
             left = right = null;
         }
@@ -16,21 +14,21 @@ public class BST {
 
     private Node _root;
 
-    BST()
-    {
+    BST() {
         _root = null;
     }
 
-    public Node getRoot() {return _root; }
-    void deleteItem(int key)
-    {
+    public Node getRoot() {
+        return _root;
+    }
+
+    void deleteItem(int key) {
         _root = delete(_root, key);
     }
 
-    Node delete(Node node, int key)
-    {
+    Node delete(Node node, int key) {
         /* Base Case: If the tree is empty */
-        if (node == null)  return node;
+        if (node == null) return node;
 
         /* Otherwise, recur down the tree */
         if (key < node.key)
@@ -40,8 +38,7 @@ public class BST {
 
             // if key is same as _root's key, then This is the node
             // to be deleted
-        else
-        {
+        else {
             // node with only one child or no child
             if (node.left == null)
                 return node.right;
@@ -59,26 +56,22 @@ public class BST {
         return node;
     }
 
-    int min(Node node)
-    {
+    int min(Node node) {
         if (node == null) return -1;
 
         int min = node.key;
-        while (node.left != null)
-        {
+        while (node.left != null) {
             min = node.left.key;
             node = node.left;
         }
         return min;
     }
 
-    int max(Node node)
-    {
-        if ( node == null) return -1;
+    int max(Node node) {
+        if (node == null) return -1;
 
         int max = node.key;
-        while ( node.right != null)
-        {
+        while (node.right != null) {
             max = node.right.key;
             node = node.right;
         }
@@ -86,16 +79,13 @@ public class BST {
         return max;
     }
 
-    void insert(int key)
-    {
+    void insert(int key) {
         _root = insertNode(_root, key);
     }
 
-    Node insertNode(Node node, int key)
-    {
+    Node insertNode(Node node, int key) {
         /* If the tree is empty, return a new node */
-        if (node == null)
-        {
+        if (node == null) {
             node = new Node(key);
             return node;
         }
@@ -110,52 +100,43 @@ public class BST {
         return node;
     }
 
-    void inOrderPrint()
-    {
+    void inOrderPrint() {
         inorderPrint(_root);
     }
 
-    void inorderPrint(Node node)
-    {
-        if (node != null)
-        {
+    void inorderPrint(Node node) {
+        if (node != null) {
             inorderPrint(node.left);
             System.out.print(node.key + " ");
             inorderPrint(node.right);
         }
     }
 
-    void postOrder()
-    {
+    void postOrder() {
         postOrderPrint(_root);
     }
-    void postOrderPrint(Node node)
-    {
-        if (node != null)
-        {
+
+    void postOrderPrint(Node node) {
+        if (node != null) {
             postOrderPrint(node.left);
             postOrderPrint(node.right);
             System.out.print(node.key + " ");
         }
     }
 
-    void preOrderPrint()
-    {
+    void preOrderPrint() {
         preOrderPrint(_root);
     }
 
-    void preOrderPrint(Node node)
-    {
-        if ( node != null)
-        {
+    void preOrderPrint(Node node) {
+        if (node != null) {
             System.out.print(node.key + " ");
             preOrderPrint(node.left);
             preOrderPrint(node.right);
         }
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         BST tree = new BST();
 
         /* Let us create following BST
@@ -181,14 +162,14 @@ public class BST {
         System.out.println(String.format("\n\nThe minimum key is:  %d", tree.min(tree.getRoot())));
         System.out.println(String.format("The maximum key is:  %d\n", tree.max(tree.getRoot())));
 
-        tree.deleteItem( 20 );
+        tree.deleteItem(20);
         System.out.println("Inorder traversal of the given tree");
         tree.inOrderPrint();
         System.out.println(String.format("\n\nThe minimum key is:  %d", tree.min(tree.getRoot())));
         System.out.println(String.format("The maximum key is:  %d\n", tree.max(tree.getRoot())));
 
 
-        if ( false ) {
+        if (false) {
             System.out.println("Inorder traversal of the given tree");
             tree.inOrderPrint();
 

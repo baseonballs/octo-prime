@@ -10,6 +10,7 @@ public class Stack {
 
     /**
      * constructor to create stack with size
+     *
      * @param size
      */
     public Stack(int size) {
@@ -21,35 +22,38 @@ public class Stack {
     /**
      * This method adds new entry to the _top
      * of the stack
+     *
      * @param entry
      * @throws Exception
      */
     public void push(int entry) throws Exception {
-        if(this.isStackFull()){
+        if (this.isStackFull()) {
             throw new Exception("Stack is already full. Can not add element.");
         }
-        System.out.println("Adding: "+entry);
+        System.out.println("Adding: " + entry);
         this._arr[++_top] = entry;
     }
 
     /**
      * This method removes an entry from the
      * _top of the stack.
+     *
      * @return
      * @throws Exception
      */
     public int pop() throws Exception {
-        if(this.isStackEmpty()){
+        if (this.isStackEmpty()) {
             throw new Exception("Stack is empty. Can not remove element.");
         }
         int entry = this._arr[_top--];
-        System.out.println("Removed entry: "+entry);
+        System.out.println("Removed entry: " + entry);
         return entry;
     }
 
     /**
      * This method returns _top of the stack
      * without removing it.
+     *
      * @return
      */
     public int peek() {
@@ -59,6 +63,7 @@ public class Stack {
     /**
      * This method returns true if the stack is
      * empty
+     *
      * @return
      */
     public boolean isStackEmpty() {
@@ -67,6 +72,7 @@ public class Stack {
 
     /**
      * This method returns true if the stack is full
+     *
      * @return
      */
     public boolean isStackFull() {

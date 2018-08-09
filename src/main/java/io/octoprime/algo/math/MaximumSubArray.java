@@ -49,18 +49,18 @@ public class MaximumSubArray {
     public int kandaneForMaxSubArrayForNegativ(int[] arr) {
         int maxEndHere = arr[0];
         int maxSoFar = arr[0];
-        for(int i=1;i<arr.length;i++){
-            maxEndHere = Math.max(arr[i], maxEndHere+arr[i]);
-            maxSoFar = Math.max(maxSoFar,maxEndHere);
+        for (int i = 1; i < arr.length; i++) {
+            maxEndHere = Math.max(arr[i], maxEndHere + arr[i]);
+            maxSoFar = Math.max(maxSoFar, maxEndHere);
         }
         return maxSoFar;
     }
 
     public static void main(String args[]) {
-        int arr[] = { 1, 8, -3, -7, 2, 7, -1, 9 };
+        int arr[] = {1, 8, -3, -7, 2, 7, -1, 9};
         MaximumSubArray maxSum = new MaximumSubArray();
         System.out.println("Maximum subarray is  " + maxSum.kandaneForMaxSubArray(arr));
-        int arrNeg[] = { -10, -8, -3, -7, -2, -7, -3, -9 };
+        int arrNeg[] = {-10, -8, -3, -7, -2, -7, -3, -9};
         System.out.println("Maximum Subarray when all elements are negative : " + maxSum.kandaneForMaxSubArrayForNegativ(arrNeg));
     }
 

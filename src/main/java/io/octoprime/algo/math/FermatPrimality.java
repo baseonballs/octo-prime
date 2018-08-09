@@ -1,13 +1,14 @@
 package io.octoprime.algo.math;
 
-import java.util.Scanner;
 import java.util.Random;
+import java.util.Scanner;
 
 public class FermatPrimality {
 
-    /** Function to check if prime or not **/
-    public boolean isPrime(long n, int iteration)
-    {
+    /**
+     * Function to check if prime or not
+     **/
+    public boolean isPrime(long n, int iteration) {
         /** base case **/
         if (n == 0 || n == 1)
             return false;
@@ -19,8 +20,7 @@ public class FermatPrimality {
             return false;
 
         Random rand = new Random();
-        for (int i = 0; i < iteration; i++)
-        {
+        for (int i = 0; i < iteration; i++) {
             long r = Math.abs(rand.nextLong());
             long a = r % (n - 1) + 1;
             if (modPow(a, n - 1, n) != 1)
@@ -28,20 +28,23 @@ public class FermatPrimality {
         }
         return true;
     }
-    /** Function to calculate (a ^ b) % c **/
-    public long modPow(long a, long b, long c)
-    {
+
+    /**
+     * Function to calculate (a ^ b) % c
+     **/
+    public long modPow(long a, long b, long c) {
         long res = 1;
-        for (int i = 0; i < b; i++)
-        {
+        for (int i = 0; i < b; i++) {
             res *= a;
             res %= c;
         }
         return res % c;
     }
-    /** Driver function **/
-    public static void main (String[] args)
-    {
+
+    /**
+     * Driver function
+     **/
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Fermat FermatPrimality Algorithm Test\n");
         /** Make an object of FermatPrimality class **/
@@ -55,8 +58,8 @@ public class FermatPrimality {
         /** check if prime **/
         boolean prime = fp.isPrime(num, k);
         if (prime)
-            System.out.println("\n"+ num +" is prime");
+            System.out.println("\n" + num + " is prime");
         else
-            System.out.println("\n"+ num +" is composite");
+            System.out.println("\n" + num + " is composite");
     }
 }

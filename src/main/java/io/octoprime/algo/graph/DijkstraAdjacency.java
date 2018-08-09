@@ -53,7 +53,7 @@ public class DijkstraAdjacency {
 
             // Update dist key of the adjacent vertices of the
             // picked vertex.
-            for (int j = 0; j< NUM_VERTICES; j++)
+            for (int j = 0; j < NUM_VERTICES; j++)
 
                 // Update dist[v] only if is not in sptSet, there is an
                 // edge from u to v, and total cost of path from src to

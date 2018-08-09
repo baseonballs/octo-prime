@@ -49,7 +49,7 @@ public class Sieve {
         if (number == 2) return true;
         if (number % 2 == 0) return false;
 
-        for (int d = 3; d <= (int)Math.sqrt((double)number); d++)
+        for (int d = 3; d <= (int) Math.sqrt((double) number); d++)
             if (number % d == 0)
                 return false;
 
@@ -61,6 +61,6 @@ public class Sieve {
         System.out.println("Enter a number: ");
         int n = scanner.nextInt();
 
-       System.out.println( "num primes: " + Sieve.printPrimes((new Sieve()).sieve(n)));
+        System.out.println("num primes: " + Sieve.printPrimes((new Sieve()).sieve(n)));
     }
 }

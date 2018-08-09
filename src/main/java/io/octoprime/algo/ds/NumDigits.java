@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class NumDigits {
 
-    public static int getNumDigitsUsingDivideAndConquer(int number)
-    {
+    public static int getNumDigitsUsingDivideAndConquer(int number) {
         if (number < 100000) {
             if (number < 100) {
                 if (number < 10) {
@@ -44,8 +43,8 @@ public class NumDigits {
             }
         }
     }
-    public static int getNumDigitsUsingPowersOfTwos(int number)
-    {
+
+    public static int getNumDigitsUsingPowersOfTwos(int number) {
         int length = 1;
         if (number >= 100000000) {
             length += 8;
@@ -65,8 +64,7 @@ public class NumDigits {
         return length;
     }
 
-    public static int getNumDigitsUsingMultiplication(int n)
-    {
+    public static int getNumDigitsUsingMultiplication(int n) {
         int length = 0;
         long temp = 1;
         while (temp <= n) {
@@ -76,18 +74,16 @@ public class NumDigits {
         return length;
     }
 
-    public static int getNumDigitUsingLog(int n)
-    {
+    public static int getNumDigitUsingLog(int n) {
         int length = (int) (Math.log10(n) + 1);
         return length;
     }
 
-    public static int getNumDigit1(String n)
-    {
+    public static int getNumDigit1(String n) {
         return n.length();
     }
 
-    public static  int numdigits0(int n) {
+    public static int numdigits0(int n) {
         int count = 0;
         if (n == 0) return 1;
         while (n > 0) {
@@ -98,8 +94,7 @@ public class NumDigits {
         return count;
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();
 

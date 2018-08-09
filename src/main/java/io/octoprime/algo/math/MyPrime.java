@@ -48,47 +48,40 @@ public class MyPrime {
         return true;
     }
 
-    public static boolean isPrime1(int n)
-    {
-        for (int i=2; i<n; i++)
-            if (n%i==0) return false;
+    public static boolean isPrime1(int n) {
+        for (int i = 2; i < n; i++)
+            if (n % i == 0) return false;
         return true;
     }
 
-    public boolean isPrimeOptimized (int n)
-    {
-        if (n<=1) return false;
-        if (n==2) return true;
-        if (n%2==0) return false;
-        int m=(int)Math.sqrt(n);
+    public boolean isPrimeOptimized(int n) {
+        if (n <= 1) return false;
+        if (n == 2) return true;
+        if (n % 2 == 0) return false;
+        int m = (int) Math.sqrt(n);
 
-        for (int i=3; i<=m; i+=2)
-            if (n%i==0)
+        for (int i = 3; i <= m; i += 2)
+            if (n % i == 0)
                 return false;
 
         return true;
     }
 
 
-
     // A function to print all prime factors
     // of a given number n
-    public static void primeFactors(int n)
-    {
+    public static void primeFactors(int n) {
         // Print the number of 2s that divide n
-        while (n%2==0)
-        {
+        while (n % 2 == 0) {
             System.out.print(2 + " ");
             n /= 2;
         }
 
         // n must be odd at this point.  So we can
         // skip one element (Note i = i +2)
-        for (int i = 3; i <= Math.sqrt(n); i+= 2)
-        {
+        for (int i = 3; i <= Math.sqrt(n); i += 2) {
             // While i divides n, print i and divide n
-            while (n%i == 0)
-            {
+            while (n % i == 0) {
                 System.out.print(i + " ");
                 n /= i;
             }
@@ -100,13 +93,11 @@ public class MyPrime {
             System.out.print(n);
     }
 
-    public static void testPrimeFactorization(int n)
-    {
+    public static void testPrimeFactorization(int n) {
         primeFactors(n);
     }
 
-    public static void testPrintPrimes(int n)
-    {
+    public static void testPrintPrimes(int n) {
         printPrimes(n);
         System.out.println(String.format("The number %d is %s a prime", n, (isPrime(n) == true) ? "" : "not"));
     }
@@ -118,7 +109,7 @@ public class MyPrime {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
 
-        testPrimeFactorization( n );
+        testPrimeFactorization(n);
 
         scanner.close();
     }

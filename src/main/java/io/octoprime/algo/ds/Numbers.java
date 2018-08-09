@@ -1,7 +1,5 @@
 package io.octoprime.algo.ds;
 
-import io.octoprime.algo.sort.BubbleSort;
-
 import java.util.Arrays;
 
 public class Numbers {
@@ -40,43 +38,37 @@ public class Numbers {
             return result;
         }
 
-        public String fromDecimal2(int n, int b)
-        {
-            String chars="0123456789ABCDEFGHIJ";
-            String result="";
+        public String fromDecimal2(int n, int b) {
+            String chars = "0123456789ABCDEFGHIJ";
+            String result = "";
 
-            while(n>0)
-            {
-                result=chars.charAt(n%b) + result;
-                n/=b;
+            while (n > 0) {
+                result = chars.charAt(n % b) + result;
+                n /= b;
             }
             return result;
         }
 
     }
 
-    public static class Fraction
-    {
+    public static class Fraction {
 
-        public int[] multiplyFractions(int[] a, int[] b)
-        {
-            int[] c={a[0]*b[0], a[1]*b[1]};
+        public int[] multiplyFractions(int[] a, int[] b) {
+            int[] c = {a[0] * b[0], a[1] * b[1]};
             return c;
         }
 
-        public int[] addFractions(int[] a, int[] b)
-        {
-            int denom= LCM.lcm(a[1],b[1]);
+        public int[] addFractions(int[] a, int[] b) {
+            int denom = LCM.lcm(a[1], b[1]);
 
-            int[] c={denom/a[1]*a[0] + denom/b[1]*b[0], denom};
+            int[] c = {denom / a[1] * a[0] + denom / b[1] * b[0], denom};
             return c;
         }
 
-        public void reduceFraction(int[] a)
-        {
-            int b=LCM.gcd(a[0],a[1]);
-            a[0]/=b;
-            a[1]/=b;
+        public void reduceFraction(int[] a) {
+            int b = LCM.gcd(a[0], a[1]);
+            a[0] /= b;
+            a[1] /= b;
         }
 
     }
@@ -104,7 +96,7 @@ public class Numbers {
         System.out.println(Arrays.toString(arrs));
         System.out.println(String.format("Index of min key is: %d", findMin(arrs)));
 
-        (new BubbleSort()).sort(arrs);
+        // (new BubbleSort()).sort(arrs);
         System.out.println(Arrays.toString(arrs));
 
     }

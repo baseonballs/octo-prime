@@ -1,6 +1,8 @@
 package io.octoprime.algo.ds;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Scanner;
 
 public class GCF {
 
@@ -41,8 +43,7 @@ public class GCF {
     }
 
 
-    public static boolean isCoPrime(Integer[] result)
-    {
+    public static boolean isCoPrime(Integer[] result) {
         return findmax(result) == 1;
     }
 
@@ -65,6 +66,6 @@ public class GCF {
         System.out.println("\nGreatest common factor is : " + findmax(result));
         System.out.println("\nLeast common factor is : " + findmin(result));
 
-        System.out.println("Is Relative Prime : " + ( isCoPrime(result)==true ? "yes":"no"));
+        System.out.println("Is Relative Prime : " + (isCoPrime(result) == true ? "yes" : "no"));
     }
 }

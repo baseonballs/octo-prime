@@ -28,11 +28,9 @@ public class UtilsString {
         return buffer.toString();
     }
 
-    public static String reverseString(String s)
-    {
+    public static String reverseString(String s) {
         char[] arr = s.toCharArray();
-        for (int i = 0, j = arr.length-1; i < j; i++, j--)
-        {
+        for (int i = 0, j = arr.length - 1; i < j; i++, j--) {
             char t = arr[i];
             arr[i] = arr[j];
             arr[j] = t;

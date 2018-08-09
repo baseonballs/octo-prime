@@ -2,51 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20207ac3-3947-4bc5-9b89-0fca36d24dc5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/Recursion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/game/TowerOfHanoi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/Practice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/Practice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/Scratch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/Scratch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/Temper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/Temper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/BitTiddler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/BitTiddler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/DataStructure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/DataStructure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/GCF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/GCF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/MedianOfTwoSortedArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/MedianOfTwoSortedArrays.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/NumDigits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/NumDigits.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/Numbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/Numbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/PowerofTwos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/PowerofTwos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/Sieve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/Sieve.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/SumDigits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/SumDigits.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/UtilsArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/UtilsArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/queue/DoublyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/queue/DoublyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/queue/DynamicStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/queue/DynamicStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/queue/PQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/queue/PQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/queue/SingleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/queue/SingleLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/queue/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/queue/Stack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/graph/BFSAdjacencyMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/graph/BFSAdjacencyMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/graph/BFSNeighborList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/graph/BFSNeighborList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/graph/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/graph/BST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/graph/BreadthFirstSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/graph/BreadthFirstSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/graph/DFSAdjacencyMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/graph/DFSAdjacencyMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/graph/DFSNeighborList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/graph/DFSNeighborList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/graph/DijkstraAdjacency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/graph/DijkstraAdjacency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/graph/Knapsack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/graph/Knapsack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/FermatPrimality.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/FermatPrimality.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/MaximumSubArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/MaximumSubArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/MyPrime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/MyPrime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/OverLappingRectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/OverLappingRectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/TempConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/TempConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/CountingSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/CountingSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/SelectionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/BalancedParens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/BalancedParens.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/PermuteString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/PermuteString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/RemoveUnwantedChar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/RemoveUnwantedChar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/ShiftedByK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/ShiftedByK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/StringMathExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/StringMathExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/UtilsString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/UtilsString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/octoprime/DriverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/octoprime/DriverTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/BubbleSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/BubbleSortTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,26 +25,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="36" />
+          <entry key="java" value="38" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="36" />
+          <entry key="JAVA" value="38" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5037" />
-          <entry key="txt" value="296" />
+          <entry key="java" value="5316" />
+          <entry key="txt" value="387" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5037" />
-          <entry key="PLAIN_TEXT" value="296" />
+          <entry key="JAVA" value="5316" />
+          <entry key="PLAIN_TEXT" value="387" />
         </counts>
       </usages-collector>
     </session>
@@ -96,11 +54,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/Temper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
               <caret line="22" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/game/TowerOfHanoi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="454">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/Recursion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -155,6 +131,8 @@
         <option value="$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/BubbleSortTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/BubbleSort.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/Temper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/game/TowerOfHanoi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/Recursion.java" />
       </list>
     </option>
   </component>
@@ -305,38 +283,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="octoprime" type="462c0819:PsiDirectoryNode" />
-              <item name="algo" type="462c0819:PsiDirectoryNode" />
-              <item name="graph" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="octo-prime" type="b2602c69:ProjectViewProjectNode" />
-              <item name="octo-prime" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="octoprime" type="462c0819:PsiDirectoryNode" />
-              <item name="algo" type="462c0819:PsiDirectoryNode" />
-              <item name="math" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="octo-prime" type="b2602c69:ProjectViewProjectNode" />
-              <item name="octo-prime" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="octoprime" type="462c0819:PsiDirectoryNode" />
-              <item name="algo" type="462c0819:PsiDirectoryNode" />
-              <item name="sort" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="octo-prime" type="b2602c69:ProjectViewProjectNode" />
-              <item name="octo-prime" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="octoprime" type="462c0819:PsiDirectoryNode" />
-              <item name="algo" type="462c0819:PsiDirectoryNode" />
-              <item name="strings" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="octo-prime" type="b2602c69:ProjectViewProjectNode" />
@@ -410,7 +357,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533841155321" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533855035126" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -428,13 +375,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Temper">
-    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.octoprime.algo.sort.BubbleSort" />
+  <component name="RunManager" selected="Application.TowerOfHanoi">
+    <configuration name="Temper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.octoprime.algo.Temper" />
       <module name="algo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.octoprime.algo.sort.*" />
+          <option name="PATTERN" value="io.octoprime.algo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -442,12 +389,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Temper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.octoprime.algo.Temper" />
+    <configuration name="TowerOfHanoi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.octoprime.game.TowerOfHanoi" />
       <module name="algo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.octoprime.algo.*" />
+          <option name="PATTERN" value="io.octoprime.game.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -507,19 +454,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.BubbleSort" />
       <item itemvalue="JUnit.BubbleSortTest.whenSortedWithBubbleSort_thenGetSortedArray" />
       <item itemvalue="JUnit.BubbleSortTest.testOptimizedBubbleSort" />
       <item itemvalue="JUnit.[engine:junit-jupiter]/[class:io.octoprime.algo.sort.BubbleSortTest] (1)" />
       <item itemvalue="Application.Temper" />
+      <item itemvalue="Application.TowerOfHanoi" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TowerOfHanoi" />
         <item itemvalue="Application.Temper" />
         <item itemvalue="JUnit.[engine:junit-jupiter]/[class:io.octoprime.algo.sort.BubbleSortTest] (1)" />
         <item itemvalue="JUnit.BubbleSortTest.whenSortedWithBubbleSort_thenGetSortedArray" />
         <item itemvalue="JUnit.BubbleSortTest.testOptimizedBubbleSort" />
-        <item itemvalue="Application.BubbleSort" />
       </list>
     </recent_temporary>
   </component>
@@ -555,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533769316529</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fixed implementations to sort algorithms and added better unit tests.">
+      <created>1533841747471</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1533841747471</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -601,6 +555,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.75268817" visible="true" weight="0.24583964" />
       <window_info id="Structure" order="1" sideWeight="0.24731183" side_tool="true" weight="0.2978227" />
@@ -611,7 +566,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.24731183" side_tool="true" weight="0.2978227" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4992224" visible="true" weight="0.43442622" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4992224" visible="true" weight="0.20491803" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -678,7 +633,8 @@
     <MESSAGE value="Added new implementation of finding median of two sorted arrays with varying lengths.  Should be able to handle length of odd &amp; even." />
     <MESSAGE value="Cleaned routine names for bubble, insertion, and selection." />
     <MESSAGE value="Fixed compilation error; this weas due to moved method signator via refactoring." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed compilation error; this weas due to moved method signator via refactoring." />
+    <MESSAGE value="Fixed implementations to sort algorithms and added better unit tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed implementations to sort algorithms and added better unit tests." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -774,6 +730,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/game/TowerOfHanoi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/Recursion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>

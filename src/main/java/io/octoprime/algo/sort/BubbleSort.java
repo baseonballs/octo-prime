@@ -28,9 +28,6 @@ public class BubbleSort implements Sort {
         }
     }
 
-    public void sort(Integer[] arr) {
-        sort(Arrays.stream(arr).mapToInt(x -> x).toArray());
-    }
 
     public void sort1(int[] arr) {
 
@@ -44,6 +41,10 @@ public class BubbleSort implements Sort {
             }
     }
 
+    /*
+    @params int[] arr
+    @author lucasjt
+     */
     public void sort(int[] arr) {
 
         for (int i = 0; i < arr.length; i++) {
@@ -73,10 +74,11 @@ public class BubbleSort implements Sort {
                 });
     }
 
-    public void optimizedBubbleSort(Integer[] arr) {
+    void optimizedBubbleSort(Integer[] arr) {
         int i = 0, n = arr.length;
-        boolean swapNeeded = true;
-        while ((i < (n - 1) && swapNeeded)) {
+        boolean swapNeeded;
+
+        while (i < (n - 1)) {
             swapNeeded = false;
 
             for (int j = 1; j < n - i; j++) {

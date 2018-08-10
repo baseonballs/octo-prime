@@ -1,40 +1,40 @@
 package io.octoprime.algo;
 
+import io.octoprime.AbstractUtils;
+
 import java.util.Arrays;
-import java.util.Random;
 
 
-public class Temper {
-
-    static Random random = new Random();
-
-    private static int[] generateRandomArray() {
-        int[] arr = new int[10];
-        for (int i = 0; i < arr.length; i++)
-            arr[i] = random.nextInt(100);
-
-        return arr;
-    }
+public class Temper extends AbstractUtils {
 
 
-    private static boolean[] sieve(int n) {
-        boolean[] primes = new boolean[n + 1];
-        Arrays.fill(primes, true);
+    private static void insertion(int arr[]) {
+        for (int i = 0; i < arr.length; i++) {
+            // storing current element whose left side is checked for its correct position .
+            int temp = arr[i];
+            int j = i;
 
-        for (int p = 2; p * p <= n; p++)
-            if (primes[p] == true) {
-                for (int x = 2 * p; x < primes.length; x += p)
-                    primes[x] = false;
+            // check whether the adjacent element in left side is greater or less than the current element.
+            while (j > 0 && temp < arr[j - 1]) {
+                // moving the left side element to one position forward.
+                arr[j] = arr[j - 1];
+                j = j - 1;
             }
-
-        return primes;
+            // moving current element to its  correct position.
+            arr[j] = temp;
+        }
     }
-
 
     public static void main(String[] arg) {
 
-        boolean[] primes = sieve(3);
-        for (int i = 2; i < primes.length; i++)
-            if (primes[i]) System.out.print(i + " ");
+        int[] arr = randomizeArray(10);
+
+        System.out.println(Arrays.toString((arr)));
+
+        insertion(arr);
+
+        System.out.println(Arrays.toString((arr)));
+
+
     }
 }

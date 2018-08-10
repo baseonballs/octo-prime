@@ -1,4 +1,4 @@
-package io.octoprime.algo.ds;
+package io.octoprime.algo.math;
 
 public class PowerofTwos {
 
@@ -6,7 +6,7 @@ public class PowerofTwos {
         while ((n % 2) == 0)
             n = n / 2;
 
-        return n == 1 ? true : false;
+        return n == 1;
     }
 
     public static boolean powerOfTwoBitwise(int n) {

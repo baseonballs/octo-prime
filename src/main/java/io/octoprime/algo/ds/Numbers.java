@@ -1,5 +1,7 @@
 package io.octoprime.algo.ds;
 
+import io.octoprime.algo.math.LCM;
+
 import java.util.Arrays;
 
 public class Numbers {

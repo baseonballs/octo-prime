@@ -10,15 +10,15 @@ public class Fibinacci {
     }
 
     public static int fibIter(int nth) {
-        int a = 0, b = 1, x = 0;
+        int f1 = 0, f2 = 1, sum = 0;
 
         for (int i = 2; i < nth + 1; i++) {
-            x = a + b;
-            a = b;
-            b = x;
+            sum = f1 + f2;
+            f1 = f2;
+            f2 = sum;
         }
 
-        return x;
+        return sum;
     }
 
 

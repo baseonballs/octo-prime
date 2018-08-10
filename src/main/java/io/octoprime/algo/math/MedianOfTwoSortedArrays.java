@@ -1,4 +1,4 @@
-package io.octoprime.algo.ds;
+package io.octoprime.algo.math;
 
 import java.util.Arrays;
 

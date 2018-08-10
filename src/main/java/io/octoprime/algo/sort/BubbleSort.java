@@ -16,9 +16,6 @@ public class BubbleSort implements Sort {
     private static int DEFAULT_SIZE = 10;
     private static int DEFAULT_RANGE = 100;
 
-    public static void sort(Integer[] arr) {
-        Arrays.stream(arr).sorted();
-    }
 
 
     public void reverse(int[] arr) {
@@ -31,6 +28,9 @@ public class BubbleSort implements Sort {
         }
     }
 
+    public void sort(Integer[] arr) {
+        sort(Arrays.stream(arr).mapToInt(x -> x).toArray());
+    }
 
     public void sort1(int[] arr) {
 

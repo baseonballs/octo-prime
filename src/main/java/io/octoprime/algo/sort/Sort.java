@@ -2,5 +2,7 @@ package io.octoprime.algo.sort;
 
 public interface Sort {
 
-    public void sort(int[] arr);
+    void sort(Integer[] arr);
+
+    void sort(int[] arr);
 }

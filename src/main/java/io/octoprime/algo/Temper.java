@@ -6,29 +6,35 @@ import java.util.Random;
 
 public class Temper {
 
+    static Random random = new Random();
 
-    private static void bubble(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 1; j < arr.length - 1; j++) {
-                if (arr[j - 1] < arr[j]) {
-                    int t = arr[j - 1];
-                    arr[j - 1] = arr[j];
-                    arr[j] = t;
-                }
-            }
-        }
+    private static int[] generateRandomArray() {
+        int[] arr = new int[10];
+        for (int i = 0; i < arr.length; i++)
+            arr[i] = random.nextInt(100);
+
+        return arr;
     }
+
+
+    private static boolean[] sieve(int n) {
+        boolean[] primes = new boolean[n + 1];
+        Arrays.fill(primes, true);
+
+        for (int p = 2; p * p <= n; p++)
+            if (primes[p] == true) {
+                for (int x = 2 * p; x < primes.length; x += p)
+                    primes[x] = false;
+            }
+
+        return primes;
+    }
+
 
     public static void main(String[] arg) {
 
-        Random r = new Random();
-
-        int[] arr = new int[10];
-        for (int i = 0; i < arr.length; i++)
-            arr[i] = r.nextInt(100);
-
-        System.out.println(Arrays.toString(arr));
-        bubble(arr);
-        System.out.println(Arrays.toString(arr));
+        boolean[] primes = sieve(3);
+        for (int i = 2; i < primes.length; i++)
+            if (primes[i]) System.out.print(i + " ");
     }
 }

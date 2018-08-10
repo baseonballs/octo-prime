@@ -17,6 +17,36 @@ public class BubbleSortTest {
     private static int[] _NUMBERS = new int[]{88, 5, 13, 2, 10, 19, 28, 33, 50, 92};
     private static BubbleSort _bubbleSort = new BubbleSort();
 
+    private void banner(String name) {
+        System.out.println("---------: ");
+        System.out.println(String.format("%s: ", name));
+        System.out.println("---------: ");
+    }
+
+    private void header(String s, boolean beforeLabel) {
+        if (beforeLabel)
+            System.out.println("before array: " + s);
+        else System.out.println("after  array: " + s);
+    }
+
+    @Test
+    void testBasic() {
+        BubbleSort bubble = new BubbleSort();
+
+        Integer[] array = {2, 1, 4, 6, 3, 5};
+        Integer[] sortedArray = {1, 2, 3, 4, 5, 6};
+        BubbleSort bubbleSort = new BubbleSort();
+
+        banner("testBasic");
+
+        header((Arrays.toString(array)), true);
+        bubbleSort.bubbleSortWithStreams(array);
+        header((Arrays.toString(array)), false);
+
+        assertArrayEquals(array, sortedArray);
+    }
+
+
     @Test
     public void testAsending() {
         assertTrue(_NUMBERS.length == TestConfig.ARRAY_SIZE);
@@ -84,4 +114,5 @@ public class BubbleSortTest {
 
         assertArrayEquals(array, sortedArray);
     }
+
 }

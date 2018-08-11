@@ -20,10 +20,14 @@ public class QuickSort {
 
     private int partition(int arr[], int start, int end) {
         int i = start + 1;
-        int piv = arr[start];            //make the first element as pivot element.
+        int piv = arr[start];
+
         for (int j = start + 1; j <= end; j++) {
-            /*rearrange the array by putting elements which are less than pivot
-               on one side and which are greater that on other. */
+
+            /*
+                rearrange the array by putting elements which are less than pivot
+                on one side and which are greater that on other.
+            */
             if (arr[j] < piv) {
                 int t = arr[i];
                 arr[i] = arr[j];

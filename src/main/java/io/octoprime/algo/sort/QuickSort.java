@@ -14,7 +14,7 @@ import static io.octoprime.algo.ds.DataStructure.getRandomArray;
 
     Complexity: Best = O(n log n); worse = O(n^2), average = O(2N Log N)
  */
-public class QuickSort {
+public class QuickSort implements Sort {
     private static int DEFAULT_SIZE = 10;
     private static int DEFAULT_RANGE = 100;
 

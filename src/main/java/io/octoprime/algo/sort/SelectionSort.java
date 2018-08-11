@@ -13,12 +13,12 @@ best: O(n^2)
 average: O(n^2)
 remark: n-exchanges; quadratic in best case
 */
-public class SelectionSort {
+public class SelectionSort implements Sort {
 
     private static int DEFAULT_SIZE = 10;
     private static int DEFAULT_RANGE = 100;
 
-    private static int[] selection(int[] arr) {
+    public void sort(int[] arr) {
 
         for (int i = 0; i < arr.length; i++) {
 
@@ -33,11 +33,11 @@ public class SelectionSort {
             arr[minIndex] = arr[i];
             arr[i] = t;
         }
-        return arr;
+
     }
 
     public static void main(String[] arg) {
-        BubbleSort bubble = new BubbleSort();
+        SelectionSort selection = new SelectionSort();
 
         int[] numbers = getRandomArray(DEFAULT_SIZE, DEFAULT_RANGE);
 
@@ -45,7 +45,7 @@ public class SelectionSort {
         System.out.println(Arrays.toString(numbers));
 
         System.out.println("Sorted array: ");
-        int[] arr2 = selection(numbers);
+        selection.sort(numbers);
 
         System.out.println(Arrays.toString(numbers));
     }

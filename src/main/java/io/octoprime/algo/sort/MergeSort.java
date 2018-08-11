@@ -1,6 +1,6 @@
 package io.octoprime.algo.sort;
 
-public class MergeSort {
+public class MergeSort implements Sort {
 
     private int[] array;
     private int[] tempMergArr;

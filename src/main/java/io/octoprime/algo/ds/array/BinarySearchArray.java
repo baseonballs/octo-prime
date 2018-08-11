@@ -1,12 +1,20 @@
 package io.octoprime.algo.ds.array;
 
+/**
+ *
+ */
 public class BinarySearchArray {
 
-    /*
-    Returns index of value if it is present in arr[start..end], else return -1
+    /**
+     *  Returns index of value if it is present in arr[start..end], else return -1
+     * @param arr
+     * @param start
+     * @param end
+     * @param value
+     * @return
      */
     int bsearch(int arr[], int start, int end, int value) {
-        if (end >= start) {
+        if (start <= end) {
             int mid = start + (end - start) / 2;
 
             if (arr[mid] == value)
@@ -21,12 +29,14 @@ public class BinarySearchArray {
         return -1;
     }
 
+    /**
+     * @param args
+     */
     public static void main(String args[]) {
-        BinarySearchArray bs = new BinarySearchArray();
         int arr[] = {2, 3, 4, 10, 40};
+        int target = 10;
 
-
-        int result = bs.bsearch(arr, 0, arr.length - 1, 10);
+        int result = new BinarySearchArray().bsearch(arr, 0, arr.length - 1, target);
         if (result == -1)
             System.out.println("Element not present");
         else

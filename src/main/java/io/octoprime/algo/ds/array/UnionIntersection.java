@@ -2,10 +2,23 @@ package io.octoprime.algo.ds.array;
 
 import java.util.Arrays;
 
-public class UnionAndIntersection {
+/**
+ *
+ */
+public class UnionIntersection {
 
-    // Prints union of arr1[0..m-1] and arr2[0..n-1]
-    void printUnion(int arr1[], int arr2[], int m, int n) {
+    private static BinarySearchArray _bs = new BinarySearchArray();
+
+    /**
+     * Prints union of arr1[0..m-1] and arr2[0..n-1]
+     *
+     * @param arr1
+     * @param arr2
+     * @param m
+     * @param n
+     */
+    void union(int arr1[], int arr2[], int m, int n) {
+
         // Before finding union, make sure arr1[0..m-1]
         // is smaller
         if (m > n) {
@@ -28,13 +41,20 @@ public class UnionAndIntersection {
         // Search every element of bigger array in smaller array
         // and print the element if not found
         for (int i = 0; i < n; i++) {
-            if (binarySearch(arr1, 0, m - 1, arr2[i]) == -1)
+            if (_bs.bsearch(arr1, 0, m - 1, arr2[i]) == -1)
                 System.out.print(arr2[i] + " ");
         }
     }
 
-    // Prints intersection of arr1[0..m-1] and arr2[0..n-1]
-    void printIntersection(int arr1[], int arr2[], int m, int n) {
+    /**
+     * Prints intersection of arr1[0..m-1] and arr2[0..n-1]
+     *
+     * @param arr1
+     * @param arr2
+     * @param m
+     * @param n
+     */
+    void intersection(int arr1[], int arr2[], int m, int n) {
         // Before finding intersection, make sure arr1[0..m-1]
         // is smaller
         if (m > n) {
@@ -54,45 +74,35 @@ public class UnionAndIntersection {
         // Search every element of bigger array in smaller array
         // and print the element if found
         for (int i = 0; i < n; i++) {
-            if (binarySearch(arr1, 0, m - 1, arr2[i]) != -1)
+            if (_bs.bsearch(arr1, 0, m - 1, arr2[i]) != -1)
                 System.out.print(arr2[i] + " ");
         }
     }
 
-    // A recursive binary search function. It returns location of x in
-    // given array arr[l..r] is present, otherwise -1
-    int binarySearch(int arr[], int l, int r, int x) {
-        if (r >= l) {
-            int mid = l + (r - l) / 2;
-
-            // If the element is present at the middle itself
-            if (arr[mid] == x)
-                return mid;
-
-            // If element is smaller than mid, then it can only
-            // be present in left subarray
-            if (arr[mid] > x)
-                return binarySearch(arr, l, mid - 1, x);
-
-            // Else the element can only be present in right subarray
-            return binarySearch(arr, mid + 1, r, x);
-        }
-
-        // We reach here when element is not present in array
-        return -1;
-    }
-
-    // Driver program to test above functions
+    /**
+     * Driver program to test above functions
+     * @param args
+     */
     public static void main(String[] args) {
-        UnionAndIntersection u_i = new UnionAndIntersection();
+        UnionIntersection ui = new UnionIntersection();
         int arr1[] = {7, 1, 5, 2, 3, 6};
         int arr2[] = {3, 8, 6, 20, 7};
-        int m = arr1.length;
-        int n = arr2.length;
-        System.out.println("Union of two arrays is ");
-        u_i.printUnion(arr1, arr2, m, n);
+
+        System.out.println("Array-1: " + Arrays.toString((arr1)));
+        System.out.println("Array-2: " + Arrays.toString((arr2)));
         System.out.println();
+
+        /*
+         * union of two arrays
+         */
+        System.out.println("Union of two arrays is ");
+        ui.union(arr1, arr2, arr1.length, arr2.length);
+        System.out.println();
+
+        /*
+         * intersection of two arrays.
+         */
         System.out.println("Intersection of two arrays is ");
-        u_i.printIntersection(arr1, arr2, m, n);
+        ui.intersection(arr1, arr2, arr1.length, arr2.length);
     }
 }

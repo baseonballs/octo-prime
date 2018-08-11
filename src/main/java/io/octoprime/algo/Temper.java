@@ -3,6 +3,9 @@ package io.octoprime.algo;
 import io.octoprime.AbstractUtils;
 import io.octoprime.algo.math.Factorial;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class Temper extends AbstractUtils {
 
@@ -44,6 +47,12 @@ public class Temper extends AbstractUtils {
     public static void main(String[] arg) {
 
         int[] arr = randomizeArray(10);
+        int[] arr2 = randomizeArray(10);
+
+        List<Integer> list = new ArrayList<>(10);
+        List<Integer> listB = new ArrayList<>(10);
+
+        list.retainAll(listB);
 
         int nth = 3;
 

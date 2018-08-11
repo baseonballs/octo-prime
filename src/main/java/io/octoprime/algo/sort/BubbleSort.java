@@ -16,7 +16,6 @@ public class BubbleSort implements Sort {
     private static int DEFAULT_SIZE = 10;
     private static int DEFAULT_RANGE = 100;
 
-
     public void sort(int[] arr) {
 
         for (int i = 0; i < arr.length - 1; i++) {

@@ -19,8 +19,9 @@ public class QuickSort {
     private static int DEFAULT_RANGE = 100;
 
     private int partition(int arr[], int start, int end) {
-        int i = start + 1;
+
         int piv = arr[start];
+        int i = start + 1;
 
         for (int j = start + 1; j <= end; j++) {
 

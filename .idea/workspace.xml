@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20207ac3-3947-4bc5-9b89-0fca36d24dc5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/MergeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/QuickSort2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/Temper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/Temper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/InsertionSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/SelectionSort.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,27 +34,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="97" />
+          <entry key="java" value="100" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="97" />
+          <entry key="JAVA" value="100" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="27" />
-          <entry key="java" value="13012" />
-          <entry key="txt" value="1024" />
+          <entry key="java" value="13031" />
+          <entry key="txt" value="1175" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="13012" />
-          <entry key="PLAIN_TEXT" value="1051" />
+          <entry key="JAVA" value="13031" />
+          <entry key="PLAIN_TEXT" value="1202" />
         </counts>
       </usages-collector>
     </session>
@@ -65,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/Temper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="11" selection-start-line="11" selection-end-line="19" selection-end-column="9" />
+            <state relative-caret-position="238">
+              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,20 +76,47 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/BubbleSort.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/QuickSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            <state relative-caret-position="-204">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/InsertionSort.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/QuickSort2.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+              <caret line="66" column="25" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/MergeSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/BubbleSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/InsertionSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -123,7 +152,6 @@
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/Recursion.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/SumOfConsecutivefIntegers.java" />
         <option value="$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/BubbleSortTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/InsertionSort.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/Sort.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/AbstractUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/Fibinacci.java" />
@@ -139,10 +167,13 @@
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/BinarySearchArray.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/Practice.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/SumDigits.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/QuickSort.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/SelectionSort.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/Temper.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/BubbleSort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/Temper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/QuickSort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/QuickSort2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/MergeSort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/InsertionSort.java" />
       </list>
     </option>
   </component>
@@ -293,6 +324,17 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="octoprime" type="462c0819:PsiDirectoryNode" />
               <item name="algo" type="462c0819:PsiDirectoryNode" />
+              <item name="ds" type="462c0819:PsiDirectoryNode" />
+              <item name="array" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="octo-prime" type="b2602c69:ProjectViewProjectNode" />
+              <item name="octo-prime" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="octoprime" type="462c0819:PsiDirectoryNode" />
+              <item name="algo" type="462c0819:PsiDirectoryNode" />
               <item name="sort" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -317,7 +359,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533965849482" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534002140464" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -342,7 +384,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Temper">
+  <component name="RunManager" selected="Application.MergeSort">
     <configuration name="BinarySearchArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.octoprime.algo.ds.array.BinarySearchArray" />
       <module name="algo" />
@@ -356,12 +398,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SumOfConsecutivefIntegers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.octoprime.algo.math.SumOfConsecutivefIntegers" />
+    <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.octoprime.algo.sort.MergeSort" />
       <module name="algo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.octoprime.algo.ds.array.*" />
+          <option name="PATTERN" value="io.octoprime.algo.sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuickSort2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.octoprime.algo.sort.QuickSort2" />
+      <module name="algo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.octoprime.algo.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -395,36 +450,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BubbleSortTest.testBasic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="algo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.octoprime.algo.sort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.octoprime.algo.sort" />
-      <option name="MAIN_CLASS_NAME" value="io.octoprime.algo.sort.BubbleSortTest" />
-      <option name="METHOD_NAME" value="testBasic" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Temper" />
-      <item itemvalue="Application.SumOfConsecutivefIntegers" />
-      <item itemvalue="JUnit.BubbleSortTest.testBasic" />
       <item itemvalue="Application.UnionAndIntersection" />
       <item itemvalue="Application.BinarySearchArray" />
+      <item itemvalue="Application.QuickSort2" />
+      <item itemvalue="Application.MergeSort" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MergeSort" />
+        <item itemvalue="Application.QuickSort2" />
         <item itemvalue="Application.Temper" />
         <item itemvalue="Application.BinarySearchArray" />
         <item itemvalue="Application.UnionAndIntersection" />
-        <item itemvalue="JUnit.BubbleSortTest.testBasic" />
-        <item itemvalue="Application.SumOfConsecutivefIntegers" />
       </list>
     </recent_temporary>
   </component>
@@ -523,7 +562,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533962126444</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fixed bubble sort implementation to allow for 0 offset or 1 offset.  You can start the compartion for [j] &amp; [j+1] or ( [j-1] &amp;&amp; [j]">
+      <created>1533965935262</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1533965935262</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -581,7 +627,7 @@
       <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.28688523" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49848714" visible="true" weight="0.28032786" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49848714" visible="true" weight="0.4262295" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -656,7 +702,8 @@
     <MESSAGE value="Added factorial class and also refactoring of basic math algorithms" />
     <MESSAGE value="Added new algorithm implemenations based on ideas for arrays &amp; lists." />
     <MESSAGE value="Moved sumOfDigitsTarget to math package." />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved sumOfDigitsTarget to math package." />
+    <MESSAGE value="fixed bubble sort implementation to allow for 0 offset or 1 offset.  You can start the compartion for [j] &amp; [j+1] or ( [j-1] &amp;&amp; [j]" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bubble sort implementation to allow for 0 offset or 1 offset.  You can start the compartion for [j] &amp; [j+1] or ( [j-1] &amp;&amp; [j]" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -929,13 +976,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/QuickSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/SelectionSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -943,27 +983,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/InsertionSort.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/BubbleSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        <state relative-caret-position="34">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/Temper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" selection-start-line="11" selection-end-line="19" selection-end-column="9" />
+        <state relative-caret-position="238">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/BubbleSort.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/QuickSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        <state relative-caret-position="-204">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/QuickSort2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="66" column="25" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/MergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/InsertionSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
         </state>
       </provider>
     </entry>

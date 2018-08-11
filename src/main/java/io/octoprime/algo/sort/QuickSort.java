@@ -2,73 +2,85 @@ package io.octoprime.algo.sort;
 
 import java.util.Arrays;
 
-import static io.octoprime.algo.ds.DataStructure.getRandomArray;
-
 /*
-    Quick sort is based on the divide-and-conquer approach based on the idea of choosing one element as a pivot element
-    and partitioning the array around it such that: Left side of pivot contains all the elements that are less than the
-    pivot element Right side contains all elements greater than the pivot
+Quicksort or partition-exchange sort, is a fast sorting algorithm, which is using divide and conquer algorithm. Quicksort first divides a large list into two smaller sub-lists: the low elements and the high elements. Quicksort can then recursively sort the sub-lists.
 
-    It reduces the space complexity and removes the use of the auxiliary array that is used in merge sort.
-    Selecting a random pivot in an array results in an improved time complexity in most of the cases.
+Steps to implement Quick sort:
 
-    Complexity: Best = O(n log n); worse = O(n^2), average = O(2N Log N)
+1) Choose an element, called pivot, from the list. Generally pivot can be the middle index element.
+2) Reorder the list so that all elements with values less than the pivot come before the pivot, while all elements with values greater than the pivot come after it (equal values can go either way). After this partitioning, the pivot is in its final position. This is called the partition operation.
+3) Recursively apply the above steps to the sub-list of elements with smaller values and separately the sub-list of elements with greater values.
  */
 public class QuickSort implements Sort {
-    private static int DEFAULT_SIZE = 10;
-    private static int DEFAULT_RANGE = 100;
 
-    private int partition(int arr[], int start, int end) {
+    private int length;
 
-        int piv = arr[start];
-        int i = start + 1;
+    /**
+     * @param arr
+     */
+    public void sort(int[] arr) {
 
-        for (int j = start + 1; j <= end; j++) {
+        if (arr == null || arr.length == 0) {
+            return;
+        }
+        qsort(arr, 0, arr.length - 1);
+    }
 
-            /*
-                rearrange the array by putting elements which are less than pivot
-                on one side and which are greater that on other.
-            */
-            if (arr[j] < piv) {
+    /**
+     * Performs the quicksort alorithm using the divide and conquer partition; Break partitions into two havles using
+     * a midepoint ( low + (high-low)/2 );
+     * In each iteration, we will identify a number from left side which
+     * is greater then the pivot value, and also we will identify a number
+     * from right side which is less then the pivot value. Once the search
+     * is done, then we exchange both numbers.
+     *
+     * @param arr
+     * @param low
+     * @param high
+     */
+    private void qsort(int[] arr, int low, int high) {
+
+        int i = low;
+        int j = high;
+
+        int pivot = arr[low + (high - low) / 2];
+
+        while (i <= j) {
+
+            // scan for all elemens less then pivot;
+            while (arr[i] < pivot) {
+                i++;
+            }
+            // scan for all elements greater then pivot;
+            while (arr[j] > pivot) {
+                j--;
+            }
+
+            // swap ith & jth element.
+            if (i <= j) {
                 int t = arr[i];
                 arr[i] = arr[j];
                 arr[j] = t;
 
-                i += 1;
+                i++;
+                j--;
             }
         }
-        //put the pivot element in its proper place.
-        int t = arr[start];
-        arr[start] = arr[i - 1];
-        arr[i - 1] = t;
-
-        return i - 1; // return the position of the pivot
+        if (low < j)
+            qsort(arr, low, j);
+        if (i < high)
+            qsort(arr, i, high);
     }
 
-    private void sort(int arr[], int start, int end) {
-        if (start < end) {
-            //stores the position of pivot element
-            int piv_pos = partition(arr, start, end);
-            sort(arr, start, piv_pos - 1);    //sorts the left side of pivot.
-            sort(arr, piv_pos + 1, end); //sorts the right side of pivot.
-        }
+    /**
+     * @param args
+     */
+    public static void main(String args[]) {
+
+        int[] arr = {24, 2, 45, 20, 56, 75, 2, 56, 99, 53, 12};
+
+        System.out.println("before: " + Arrays.toString(arr));
+        new QuickSort().sort(arr);
+        System.out.println("after : " + Arrays.toString(arr));
     }
-
-    public void sort(int A[]) {
-        sort(A, 0, A.length - 1);
-    }
-
-    public static void main(String[] arg) {
-        QuickSort quick = new QuickSort();
-
-        int[] numbers = getRandomArray(DEFAULT_SIZE, DEFAULT_RANGE);
-
-        System.out.println("Input array: ");
-        System.out.println(Arrays.toString(numbers));
-
-        System.out.println("Sorted array: ");
-        quick.sort(numbers);
-        System.out.println(Arrays.toString(numbers));
-    }
-
 }

@@ -1,65 +1,62 @@
 package io.octoprime.algo.sort;
 
+import java.util.Arrays;
+
 public class MergeSort implements Sort {
 
-    private int[] array;
-    private int[] tempMergArr;
-    private int length;
+    private int[] auxArr;
 
-    public static void main(String a[]) {
 
-        int[] inputArr = {45, 23, 11, 89, 77, 98, 4, 28, 65, 43};
-        MergeSort mms = new MergeSort();
-        mms.sort(inputArr);
-        for (int i : inputArr) {
-            System.out.print(i);
-            System.out.print(" ");
-        }
+    public void sort(int arr[]) {
+        this.auxArr = new int[arr.length];
+        merge(arr, 0, arr.length - 1);
     }
 
-    public void sort(int inputArr[]) {
-        this.array = inputArr;
-        this.length = inputArr.length;
-        this.tempMergArr = new int[length];
-        doMergeSort(0, length - 1);
-    }
+    private void merge(int[] arr, int low, int high) {
 
-    private void doMergeSort(int lowerIndex, int higherIndex) {
-
-        if (lowerIndex < higherIndex) {
-            int middle = lowerIndex + (higherIndex - lowerIndex) / 2;
+        if (low < high) {
+            int middle = low + (high - low) / 2;
             // Below step sorts the left side of the array
-            doMergeSort(lowerIndex, middle);
+            merge(arr, low, middle);
             // Below step sorts the right side of the array
-            doMergeSort(middle + 1, higherIndex);
+            merge(arr, middle + 1, high);
             // Now merge both sides
-            mergeParts(lowerIndex, middle, higherIndex);
+            combine(arr, low, middle, high);
         }
     }
 
-    private void mergeParts(int lowerIndex, int middle, int higherIndex) {
+    private void combine(int[] arr, int low, int middle, int high) {
 
-        for (int i = lowerIndex; i <= higherIndex; i++) {
-            tempMergArr[i] = array[i];
+        for (int i = low; i <= high; i++) {
+            auxArr[i] = arr[i];
         }
-        int i = lowerIndex;
+        int i = low;
         int j = middle + 1;
-        int k = lowerIndex;
-        while (i <= middle && j <= higherIndex) {
-            if (tempMergArr[i] <= tempMergArr[j]) {
-                array[k] = tempMergArr[i];
+        int k = low;
+        while (i <= middle && j <= high) {
+            if (auxArr[i] <= auxArr[j]) {
+                arr[k] = auxArr[i];
                 i++;
             } else {
-                array[k] = tempMergArr[j];
+                arr[k] = auxArr[j];
                 j++;
             }
             k++;
         }
         while (i <= middle) {
-            array[k] = tempMergArr[i];
+            arr[k] = auxArr[i];
             k++;
             i++;
         }
 
+    }
+
+    public static void main(String a[]) {
+
+        int[] arr = {45, 23, 11, 89, 77, 98, 4, 28, 65, 43};
+
+        System.out.println("before: " + Arrays.toString(arr));
+        new MergeSort().sort(arr);
+        System.out.println("after : " + Arrays.toString(arr));
     }
 }

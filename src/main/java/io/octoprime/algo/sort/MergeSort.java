@@ -2,16 +2,27 @@ package io.octoprime.algo.sort;
 
 import java.util.Arrays;
 
+/**
+ *
+ */
 public class MergeSort implements Sort {
 
     private int[] auxArr;
 
-
+    /**
+     * @param arr
+     */
     public void sort(int arr[]) {
         this.auxArr = new int[arr.length];
         merge(arr, 0, arr.length - 1);
     }
 
+    /**
+     *
+     * @param arr
+     * @param low
+     * @param high
+     */
     private void merge(int[] arr, int low, int high) {
 
         if (low < high) {
@@ -25,6 +36,13 @@ public class MergeSort implements Sort {
         }
     }
 
+    /**
+     *
+     * @param arr
+     * @param low
+     * @param middle
+     * @param high
+     */
     private void combine(int[] arr, int low, int middle, int high) {
 
         for (int i = low; i <= high; i++) {
@@ -51,7 +69,11 @@ public class MergeSort implements Sort {
 
     }
 
-    public static void main(String a[]) {
+    /**
+     * Driver code for testing the main functionality of class.  Note, we are not really using the arguments.
+     * @param args
+     */
+    public static void main(String args[]) {
 
         int[] arr = {45, 23, 11, 89, 77, 98, 4, 28, 65, 43};
 

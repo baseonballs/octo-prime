@@ -1,4 +1,4 @@
-package io.octoprime.algo.ds.queue;
+package io.octoprime.algo.ds.list;
 
 public class SingleLinkedList {
 
@@ -103,6 +103,6 @@ public class SingleLinkedList {
         ll.addAtIndex(4, 9);
         ll.addAtIndex(4, 9);
         ll.deleteAtIndex(4);
-        ll.printList();
+        printList();
     }
 }

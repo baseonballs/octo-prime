@@ -1,7 +1,9 @@
-package io.octoprime.algo.ds.queue;
+package io.octoprime.algo.ds.array;
 
-public class DynamicStack {
-
+/**
+ *
+ */
+public class StackArrayDynamic {
 
     private int _size;
     private int[] _arr;
@@ -12,7 +14,7 @@ public class DynamicStack {
      *
      * @param size
      */
-    public DynamicStack(int size) {
+    public StackArrayDynamic(int size) {
         this._size = size;
         this._arr = new int[_size];
         this._top = -1;
@@ -27,7 +29,7 @@ public class DynamicStack {
      */
     public void push(int entry) {
         if (this.isStackFull()) {
-            System.out.println(("Stack is full. Increasing the capacity."));
+            System.out.println(("StackArray is full. Increasing the capacity."));
             this.increaseStackCapacity();
         }
         System.out.println("Adding: " + entry);
@@ -43,7 +45,7 @@ public class DynamicStack {
      */
     public int pop() throws Exception {
         if (this.isStackEmpty()) {
-            throw new Exception("Stack is empty. Can not remove element.");
+            throw new Exception("StackArray is empty. Can not remove element.");
         }
         int entry = this._arr[_top--];
         System.out.println("Removed entry: " + entry);
@@ -90,7 +92,7 @@ public class DynamicStack {
     }
 
     public static void main(String[] args) {
-        DynamicStack stack = new DynamicStack(2);
+        StackArrayDynamic stack = new StackArrayDynamic(2);
         for (int i = 1; i < 10; i++) {
             stack.push(i);
         }

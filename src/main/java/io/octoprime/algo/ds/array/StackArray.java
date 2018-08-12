@@ -1,6 +1,9 @@
-package io.octoprime.algo.ds.queue;
+package io.octoprime.algo.ds.array;
 
-public class Stack {
+/**
+ * A stack implementation using an array.
+ */
+public class StackArray {
 
     private static int STACK_EMPTY = -1;
 
@@ -11,9 +14,9 @@ public class Stack {
     /**
      * constructor to create stack with size
      *
-     * @param size
+     * @param size size of array
      */
-    public Stack(int size) {
+    public StackArray(int size) {
         this._size = size;
         this._arr = new int[_size];
         this._top = STACK_EMPTY;
@@ -27,8 +30,8 @@ public class Stack {
      * @throws Exception
      */
     public void push(int entry) throws Exception {
-        if (this.isStackFull()) {
-            throw new Exception("Stack is already full. Can not add element.");
+        if (this.isFull()) {
+            throw new Exception("StackArray is already full. Can not add element.");
         }
         System.out.println("Adding: " + entry);
         this._arr[++_top] = entry;
@@ -38,12 +41,12 @@ public class Stack {
      * This method removes an entry from the
      * _top of the stack.
      *
-     * @return
+     * @return int element at top of stack.
      * @throws Exception
      */
     public int pop() throws Exception {
-        if (this.isStackEmpty()) {
-            throw new Exception("Stack is empty. Can not remove element.");
+        if (this.isEmpty()) {
+            throw new Exception("StackArray is empty. Can not remove element.");
         }
         int entry = this._arr[_top--];
         System.out.println("Removed entry: " + entry);
@@ -54,7 +57,7 @@ public class Stack {
      * This method returns _top of the stack
      * without removing it.
      *
-     * @return
+     * @return int element at top of stack without removing item from stack.
      */
     public int peek() {
         return _arr[_top];
@@ -64,23 +67,26 @@ public class Stack {
      * This method returns true if the stack is
      * empty
      *
-     * @return
+     * @return boolean
      */
-    public boolean isStackEmpty() {
+    public boolean isEmpty() {
         return (_top == STACK_EMPTY);
     }
 
     /**
      * This method returns true if the stack is full
      *
-     * @return
+     * @return boolean
      */
-    public boolean isStackFull() {
+    public boolean isFull() {
         return (_top == _size - 1);
     }
 
+    /**
+     * @param args standard arguments for CLI
+     */
     public static void main(String[] args) {
-        Stack stack = new Stack(5);
+        StackArray stack = new StackArray(5);
         try {
             stack.push(4);
             stack.push(8);
@@ -104,5 +110,4 @@ public class Stack {
             System.out.println(e.getMessage());
         }
     }
-
 }

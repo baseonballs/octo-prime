@@ -1,4 +1,4 @@
-package io.octoprime.algo.ds.queue;
+package io.octoprime.algo.ds.list;
 
 import java.util.NoSuchElementException;
 

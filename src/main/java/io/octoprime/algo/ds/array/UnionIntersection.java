@@ -37,8 +37,8 @@ public class UnionIntersection {
         }
 
         /**
-         *  Now arr1[] is smaller Sort the first array and print its elements (these two
-         *  steps can be swapped as order in output is not important)
+         *  Now arr1[] is smaller Sort the first array and add its elements (these two
+         *  steps can be swapped as order in collection is not important)
          */
         Arrays.sort(arr1);
         for (int i = 0; i < m; i++)
@@ -62,8 +62,9 @@ public class UnionIntersection {
      * @param arr2 second array
      */
     int[] intersection(int arr1[], int arr2[]) {
-        // Before finding intersection, make sure arr1[0..m-1]
-        // is smaller
+        LinkedList<Integer> list = new LinkedList();
+
+        // Before finding intersection, make sure arr1[0..m-1] is smaller
         int m = arr1.length;
         int n = arr2.length;
 
@@ -83,7 +84,6 @@ public class UnionIntersection {
 
         // Search every element of bigger array in smaller array
         // and print the element if found
-        LinkedList<Integer> list = new LinkedList();
 
         for (int i = 0; i < n; i++) {
             if (_bs.bsearch(arr1, 0, m - 1, arr2[i]) != -1)

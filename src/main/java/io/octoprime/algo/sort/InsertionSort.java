@@ -22,6 +22,13 @@ public class InsertionSort implements Sort {
         }
     }
 
+    /**
+     * Insertion sort based on ideas of exchange cards in hand.  Start with i+1 and find values to swap less
+     * then element at j;
+     *
+     * @param input
+     * @return
+     */
     public static int[] doInsertionSort(int[] input) {
 
         for (int i = 1; i < input.length; i++) {

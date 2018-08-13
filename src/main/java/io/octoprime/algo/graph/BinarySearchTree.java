@@ -1,6 +1,9 @@
 package io.octoprime.algo.graph;
 
-public class BST {
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class BinarySearchTree {
 
     class Node {
         int key;
@@ -14,7 +17,7 @@ public class BST {
 
     private Node _root;
 
-    BST() {
+    BinarySearchTree() {
         _root = null;
     }
 
@@ -79,6 +82,112 @@ public class BST {
         return max;
     }
 
+    /* Compute the "maxDepth" of a tree -- the number of
+      nodes along the longest path from the root node
+      down to the farthest leaf node.*/
+    int height(Node node) {
+        if (node == null)
+            return 0;
+        else {
+            /* compute the depth of each subtree */
+            int lDepth = height(node.left);
+            int rDepth = height(node.right);
+
+            return Math.max(lDepth, rDepth) + 1;
+        }
+    }
+
+
+    /* Function to get the maximum width of a binary tree*/
+    int getMaxWidth(Node node) {
+        int maxWidth = 0;
+        int width;
+        int h = height(node);
+        int i;
+
+        /* Get width of each level and compare
+           the width with maximum width so far */
+        for (i = 1; i <= h; i++) {
+            width = getWidth(node, i);
+            if (width > maxWidth)
+                maxWidth = width;
+        }
+
+        return maxWidth;
+    }
+
+    /* Get width of a given level */
+    int getWidth(Node node, int level) {
+        if (node == null)
+            return 0;
+
+        if (level == 1)
+            return 1;
+        else if (level > 1)
+            return getWidth(node.left, level - 1)
+                    + getWidth(node.right, level - 1);
+        return 0;
+    }
+
+
+    // Function to find the maximum width of
+    // the tree using level order traversal
+
+    /**
+     * We can use Queue based level order traversal to optimize the time complexity of this method.
+     * The Queue based level order traversal will take O(n) time in worst case. Thanks to Nitish, DivyaC and
+     * tech.login.id2 for suggesting this optimization. See their comments for implementation using queue-based
+     * traversal.
+     * <p>
+     * Method 2 (Using Level Order Traversal with Queue)
+     * In this method we store all the child nodes at the current level in the queue and then count the total
+     * number of nodes after the level order traversal for a particular level is completed. Since the queue now
+     * contains all the nodes of the next level, we can easily find out the total number of nodes in the next level
+     * by finding the size of queue. We then follow the same procedure for the successive levels. We store and update
+     * the maximum number of nodes found at each level.
+     *
+     * @param node
+     * @return
+     */
+    public int maxwidth(Node node) {
+        // Base case
+        if (node == null)
+            return 0;
+
+        // Initialize result
+        int maxwidth = 0;
+
+        // Do Level order traversal keeping
+        // track of number of nodes at every level
+        Queue<Node> q = new LinkedList<>();
+        q.add(node);
+        while (!q.isEmpty()) {
+            // Get the size of queue when the level order
+            // traversal for one level finishes
+            int count = q.size();
+
+            // Update the maximum node count value
+            maxwidth = Math.max(maxwidth, count);
+
+            // Iterate for all the nodes in
+            // the queue currently
+            while (count-- > 0) {
+                // Dequeue an node from queue
+                Node temp = q.remove();
+
+                // Enqueue left and right children
+                // of dequeued node
+                if (temp.left != null) {
+                    q.add(temp.left);
+                }
+                if (temp.right != null) {
+                    q.add(temp.right);
+                }
+            }
+        }
+        return maxwidth;
+    }
+
     void insert(int key) {
         _root = insertNode(_root, key);
     }
@@ -137,9 +246,9 @@ public class BST {
     }
 
     public static void main(String[] args) {
-        BST tree = new BST();
+        BinarySearchTree tree = new BinarySearchTree();
 
-        /* Let us create following BST
+        /* Let us create following BinarySearchTree
               50
            /     \
           30      70

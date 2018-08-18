@@ -10,64 +10,46 @@ public class BSTDriver extends AbstractUtils {
             int key;
             Node left, right;
 
-
             Node(int key) {
                 this.key = key;
                 left = right = null;
             }
         }
 
-        private Node _root;
-
-        public Node insert(int key) {
-            return _root = insert(_root, key);
-        }
-
-        private Node insert(Node node, int key) {
-            if (node == null)
-                return new Node(key);
-
-            if (key < node.key)
-                node.left = insert(node.left, key);
-            else node.right = insert(node.right, key);
-
-            return node;
-        }
-
-        public void printInOrder(Node n) {
-            if (n != null) {
-                printInOrder(n.left);
-                System.out.print(n.key + " ");
-                printInOrder(n.right);
-            }
-        }
+        Node _root;
 
         public Node getRoot() {
             return _root;
         }
 
-        public int min() {
-            Node n = getRoot();
+        public Node insert(int key) {
+            return _root = insert(getRoot(), key);
+        }
 
-            int key = n.key;
+        private Node insert(Node n, int key) {
+            if (n == null)
+                return new Node(key);
+            if (key < n.key)
+                n.left = insert(n.left, key);
+            else
+                n.right = insert(n.right, key);
+
+            return n;
+        }
+
+        public int min(Node n) {
+            //Node n = getRoot();
+            if (n == null) return -1;
+
+            int min = n.key;
             while (n.left != null) {
-                key = n.left.key;
+                min = n.left.key;
                 n = n.left;
             }
-            return key;
+
+            return min;
         }
 
-        int height(Node node) {
-            if (node == null)
-                return 0;
-            else {
-                /* compute the depth of each subtree */
-                int lDepth = height(node.left);
-                int rDepth = height(node.right);
-
-                return Math.max(lDepth, rDepth) + 1;
-            }
-        }
 
         public int max() {
             Node n = getRoot();
@@ -79,6 +61,41 @@ public class BSTDriver extends AbstractUtils {
             }
 
             return max;
+        }
+
+        public void printInOrder(Node n) {
+            if (n != null) {
+                printInOrder(n.left);
+                System.out.print(n.key + " ");
+                printInOrder(n.right);
+            }
+        }
+
+        public int height(Node n) {
+            if (n == null) return 0;
+            int lf = height(n.left);
+            int rt = height(n.right);
+            return Math.max(lf, rt) + 1;
+        }
+
+        public Node delete(Node n, int key) {
+            if (n == null) return n;
+
+            if (key < n.key)
+                n.left = delete(n.left, key);
+            else if (key > n.key)
+                n.right = delete(n.right, key);
+            else {
+                if (n.left == null) return n.right;
+                else if (n.right == null) return n.left;
+
+                n.key = min(n.right);
+
+                n.right = delete(n.right, key);
+
+            }
+
+            return n;
         }
     }
 
@@ -102,10 +119,16 @@ public class BSTDriver extends AbstractUtils {
 
         bst.printInOrder(bst.getRoot());
 
-        System.out.println("\nThe min value in tree is: " + bst.min());
+        System.out.println("\nThe min value in tree is: " + bst.min(bst.getRoot()));
         System.out.println("\nThe max value in tree is: " + bst.max());
         System.out.println("\nThe height of tree is: " + bst.height(bst.getRoot()));
 
+        System.out.println(String.format("delete value %d: ", 80));
+
+        bst.delete(bst.getRoot(), 80);
+
+        System.out.println("\nThe max value in tree is: " + bst.max());
+        System.out.println("\nThe height of tree is: " + bst.height(bst.getRoot()));
     }
 
 }

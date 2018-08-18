@@ -1,5 +1,6 @@
 package io.octoprime.algo.sort;
 
+import io.octoprime.AbstractTestUtils;
 import io.octoprime.TestConfig;
 import org.junit.jupiter.api.Test;
 
@@ -12,35 +13,20 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 /**
  * Unit test for simple App.
  */
-public class BubbleSortTest {
+public class BubbleSortTest extends AbstractTestUtils {
 
-    private static int[] _NUMBERS = new int[]{88, 5, 13, 2, 10, 19, 28, 33, 50, 92};
-    private static BubbleSort _bubbleSort = new BubbleSort();
-
-    private void banner(String name) {
-        System.out.println("---------: ");
-        System.out.println(String.format("%s: ", name));
-        System.out.println("---------: ");
-    }
-
-    private void header(String s, boolean beforeLabel) {
-        if (beforeLabel)
-            System.out.println("before array: " + s);
-        else System.out.println("after  array: " + s);
-    }
+    private static BubbleSort bubble = new BubbleSort();
 
     @Test
     void testBasic() {
-        BubbleSort bubble = new BubbleSort();
 
         Integer[] array = {2, 1, 4, 6, 3, 5};
         Integer[] sortedArray = {1, 2, 3, 4, 5, 6};
-        BubbleSort bubbleSort = new BubbleSort();
 
         banner("testBasic");
 
         header((Arrays.toString(array)), true);
-        bubbleSort.bubbleSortWithStreams(array);
+        bubble.bubbleSortWithStreams(array);
         header((Arrays.toString(array)), false);
 
         assertArrayEquals(array, sortedArray);
@@ -51,7 +37,7 @@ public class BubbleSortTest {
     public void testAsending() {
         assertTrue(_NUMBERS.length == TestConfig.ARRAY_SIZE);
 
-        _bubbleSort.sort(_NUMBERS);
+        bubble.sort(_NUMBERS);
 
         /*
         Must have at least two values in the array to assert natural order.
@@ -70,8 +56,6 @@ public class BubbleSortTest {
         System.out.println("testBubble.");
         assertTrue(true);
 
-        BubbleSort bubble = new BubbleSort();
-
         int[] numbers = getRandomArray(TestConfig.ARRAY_SIZE, TestConfig.RAND_RANGE);
 
         assertTrue(numbers.length == TestConfig.ARRAY_SIZE);
@@ -89,8 +73,8 @@ public class BubbleSortTest {
     public void testBubbleSort() {
         int[] array = {2, 1, 4, 6, 3, 5};
         int[] sortedArray = {1, 2, 3, 4, 5, 6};
-        BubbleSort bubbleSort = new BubbleSort();
-        bubbleSort.sort(array);
+
+        bubble.sort(array);
 
         assertArrayEquals(array, sortedArray);
     }
@@ -99,8 +83,8 @@ public class BubbleSortTest {
     public void testBubbleSortWithStreams() {
         Integer[] array = {2, 1, 4, 6, 3, 5};
         Integer[] sortedArray = {1, 2, 3, 4, 5, 6};
-        BubbleSort bubbleSort = new BubbleSort();
-        bubbleSort.bubbleSortWithStreams(array);
+
+        bubble.bubbleSortWithStreams(array);
 
         assertArrayEquals(array, sortedArray);
     }
@@ -109,8 +93,8 @@ public class BubbleSortTest {
     public void testOptimizedBubbleSort() {
         Integer[] array = {10, 15, 3, 4, 5};
         Integer[] sortedArray = {3, 4, 5, 10, 15};
-        BubbleSort bubbleSort = new BubbleSort();
-        bubbleSort.optimizedBubbleSort(array);
+
+        bubble.optimizedBubbleSort(array);
 
         assertArrayEquals(array, sortedArray);
     }

@@ -1,9 +1,9 @@
-package io.octoprime.algo.ds.list;
+package io.octoprime.algo.ds.tree;
 
 /**
  * Node object used by  singly linked list;
  */
-class TreeNode {
+public class TreeNode {
 
     int key;
     TreeNode left;

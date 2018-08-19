@@ -1,12 +1,13 @@
 package io.octoprime.algo.sort;
 
 import io.octoprime.AbstractTestUtils;
+import io.octoprime.TestConfig;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static io.octoprime.algo.ds.DataStructure.getRandomArray;
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Unit test for simple App.
@@ -16,7 +17,7 @@ public class SelectionSortTest extends AbstractTestUtils {
     private static SelectionSort selection = new SelectionSort();
 
     @Test
-    void testSelection() {
+    void testSelectionSort() {
 
         int[] array = {2, 1, 4, 6, 3, 5};
         int[] sortedArray = {1, 2, 3, 4, 5, 6};
@@ -112,6 +113,22 @@ public class SelectionSortTest extends AbstractTestUtils {
 
         assertEquals(arr.length, 10);
         assertArrayEquals(arr, sortedArray);
+    }
+
+    /**
+     * Rigourous Test :-)
+     */
+    @Test
+    public void randomzizeSelectionArray() {
+        banner("randomziedArray");
+
+        int[] numbers = getRandomArray(TestConfig.ARRAY_SIZE, TestConfig.RAND_RANGE);
+
+        assertTrue(numbers.length == TestConfig.ARRAY_SIZE);
+
+        header((Arrays.toString(numbers)), true);
+        selection.sort(numbers);
+        header((Arrays.toString(numbers)), false);
     }
 
 }

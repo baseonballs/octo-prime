@@ -7,8 +7,7 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 
 import static io.octoprime.algo.ds.DataStructure.getRandomArray;
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Unit test for simple App.
@@ -18,15 +17,15 @@ public class BubbleSortTest extends AbstractTestUtils {
     private static BubbleSort bubble = new BubbleSort();
 
     @Test
-    void testBasic() {
+    void testBubbleSort() {
 
-        Integer[] array = {2, 1, 4, 6, 3, 5};
-        Integer[] sortedArray = {1, 2, 3, 4, 5, 6};
+        int[] array = {2, 1, 4, 6, 3, 5};
+        int[] sortedArray = {1, 2, 3, 4, 5, 6};
 
         banner("testBasic");
 
         header((Arrays.toString(array)), true);
-        bubble.bubbleSortWithStreams(array);
+        bubble.sort(array);
         header((Arrays.toString(array)), false);
 
         assertArrayEquals(array, sortedArray);
@@ -34,50 +33,104 @@ public class BubbleSortTest extends AbstractTestUtils {
 
 
     @Test
-    public void testAsending() {
-        assertTrue(_NUMBERS.length == TestConfig.ARRAY_SIZE);
+    void testBubbleWith0Elements() {
 
-        bubble.sort(_NUMBERS);
+        int[] arr = {};
+        int[] sortedArray = {};
 
-        /*
-        Must have at least two values in the array to assert natural order.
-         */
-        if (_NUMBERS.length > 1)
-            for (int i = 0; i < _NUMBERS.length - 1; i++) {
-                assertTrue(_NUMBERS[i] <= _NUMBERS[i + 1]);
-            }
+        banner("testSelectionWith0Element");
+
+        header((Arrays.toString(arr)), true);
+        bubble.sort(arr);
+        header((Arrays.toString(arr)), false);
+
+        assertEquals(arr.length, 0);
+        assertArrayEquals(arr, sortedArray);
+    }
+
+    @Test
+    void testBubbleWith1Element() {
+
+        int[] arr = {1};
+        int[] sortedArray = {1};
+
+        banner("testSelectionWith1Element");
+
+        header((Arrays.toString(arr)), true);
+        bubble.sort(arr);
+        header((Arrays.toString(arr)), false);
+
+        assertEquals(arr.length, 1);
+        assertArrayEquals(arr, sortedArray);
+    }
+
+
+    @Test
+    void testBubbleWith2Elements() {
+
+        int[] arr = {1, -1};
+        int[] sortedArray = {-1, 1};
+
+        banner("testSelectionWith1Element");
+
+        header((Arrays.toString(arr)), true);
+        bubble.sort(arr);
+        header((Arrays.toString(arr)), false);
+
+        assertEquals(arr.length, 2);
+        assertArrayEquals(arr, sortedArray);
+    }
+
+
+    @Test
+    void testBubbleWithSortedElements() {
+
+        int[] arr = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9,};
+        int[] sortedArray = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+
+        banner("testSelectionWith1Element");
+
+        header((Arrays.toString(arr)), true);
+        bubble.sort(arr);
+        header((Arrays.toString(arr)), false);
+
+        assertEquals(arr.length, 10);
+        assertArrayEquals(arr, sortedArray);
+    }
+
+
+    @Test
+    void testBubbleWithDescendingElements() {
+
+        int[] arr = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+        int[] sortedArray = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+
+        banner("testSelectionWith1Element");
+
+        header((Arrays.toString(arr)), true);
+        bubble.sort(arr);
+        header((Arrays.toString(arr)), false);
+
+        assertEquals(arr.length, 10);
+        assertArrayEquals(arr, sortedArray);
     }
 
     /**
      * Rigourous Test :-)
      */
     @Test
-    public void randomziedArray() {
-        System.out.println("testBubble.");
-        assertTrue(true);
+    public void randomzizeBubbleArray() {
+        banner("randomziedArray");
 
         int[] numbers = getRandomArray(TestConfig.ARRAY_SIZE, TestConfig.RAND_RANGE);
 
         assertTrue(numbers.length == TestConfig.ARRAY_SIZE);
 
-        System.out.println("Input array: ");
-        System.out.println(Arrays.toString(numbers));
-
-        System.out.println("Sorted array: ");
+        header((Arrays.toString(numbers)), true);
         bubble.sort(numbers);
-        System.out.println(Arrays.toString(numbers));
+        header((Arrays.toString(numbers)), false);
     }
 
-
-    @Test
-    public void testBubbleSort() {
-        int[] array = {2, 1, 4, 6, 3, 5};
-        int[] sortedArray = {1, 2, 3, 4, 5, 6};
-
-        bubble.sort(array);
-
-        assertArrayEquals(array, sortedArray);
-    }
 
     @Test
     public void testBubbleSortWithStreams() {
@@ -90,7 +143,7 @@ public class BubbleSortTest extends AbstractTestUtils {
     }
 
     @Test
-    public void testOptimizedBubbleSort() {
+    public void testBubbleOptimizedSort() {
         Integer[] array = {10, 15, 3, 4, 5};
         Integer[] sortedArray = {3, 4, 5, 10, 15};
 

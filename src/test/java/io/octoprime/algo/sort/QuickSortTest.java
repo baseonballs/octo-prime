@@ -1,12 +1,13 @@
 package io.octoprime.algo.sort;
 
 import io.octoprime.AbstractTestUtils;
+import io.octoprime.TestConfig;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static io.octoprime.algo.ds.DataStructure.getRandomArray;
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Unit test for simple App.
@@ -114,4 +115,19 @@ public class QuickSortTest extends AbstractTestUtils {
         assertArrayEquals(arr, sortedArray);
     }
 
+    /**
+     * Rigourous Test :-)
+     */
+    @Test
+    public void randomzizeQSortArray() {
+        banner("randomziedArray");
+
+        int[] numbers = getRandomArray(TestConfig.ARRAY_SIZE, TestConfig.RAND_RANGE);
+
+        assertTrue(numbers.length == TestConfig.ARRAY_SIZE);
+
+        header((Arrays.toString(numbers)), true);
+        quick.sort(numbers);
+        header((Arrays.toString(numbers)), false);
+    }
 }

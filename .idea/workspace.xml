@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="20207ac3-3947-4bc5-9b89-0fca36d24dc5" name="Default Changelist" comment="Added height and max width of a binary tree.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/octoprime/AbstractTestUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/InsertionSortTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/SelectionSortTest.java" afterDir="false" />
+    <list default="true" id="20207ac3-3947-4bc5-9b89-0fca36d24dc5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/BSTDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/BSTDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/Temper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/Temper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/InsertionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/BubbleSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/BubbleSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/InsertionSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/InsertionSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/MergeSortTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/QuickSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/QuickSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/SelectionSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/SelectionSortTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,39 +24,40 @@
     <session id="523993401">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="3" />
-          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="162" />
+          <entry key="java" value="179" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="162" />
+          <entry key="JAVA" value="179" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="76" />
-          <entry key="java" value="22959" />
-          <entry key="txt" value="2101" />
+          <entry key="java" value="23289" />
+          <entry key="txt" value="2248" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="22959" />
-          <entry key="PLAIN_TEXT" value="2177" />
+          <entry key="JAVA" value="23289" />
+          <entry key="PLAIN_TEXT" value="2324" />
         </counts>
       </usages-collector>
     </session>
@@ -68,98 +67,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/BubbleSortTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="96" column="14" selection-start-line="96" selection-start-column="14" selection-end-line="96" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/InsertionSortTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1717">
+              <caret line="107" selection-start-line="107" selection-end-line="107" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/SelectionSortTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/BubbleSortTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+            <state relative-caret-position="1326">
+              <caret line="86" column="25" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/QuickSortTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/MergeSortTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/Sort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="e#121#122#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/SelectionSort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/io/octoprime/TestConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/graph/Knapsack.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/io/octoprime/AbstractTestUtils.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/SingleLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+            <state relative-caret-position="154">
+              <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/InsertionSort.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/ReverseLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="528">
+              <caret line="251" column="1" lean-forward="true" selection-start-line="251" selection-start-column="1" selection-end-line="251" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/BitTiddler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/Numbers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="106" column="5" lean-forward="true" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/BinarySearchArray.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/QuickSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/QuickSortTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="101" column="18" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -211,8 +204,6 @@
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/SelectionSort.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/MergeSort.java" />
         <option value="$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/MergeSortTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/QuickSortTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/QuickSort.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/BinarySearchArray.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/UnionAndIntersection.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/ListNode.java" />
@@ -231,9 +222,11 @@
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/Temper.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/InsertionSort.java" />
         <option value="$PROJECT_DIR$/src/test/java/io/octoprime/TestUtils.java" />
-        <option value="$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/InsertionSortTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/SelectionSortTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/BubbleSortTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/QuickSort.java" />
+        <option value="$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/SelectionSortTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/InsertionSortTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/QuickSortTest.java" />
       </list>
     </option>
   </component>
@@ -293,8 +286,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
+    <option name="x" value="260" />
+    <option name="y" value="-29" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
@@ -324,9 +317,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -378,6 +368,17 @@
               <item name="octoprime" type="462c0819:PsiDirectoryNode" />
               <item name="algo" type="462c0819:PsiDirectoryNode" />
               <item name="ds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="octo-prime" type="b2602c69:ProjectViewProjectNode" />
+              <item name="octo-prime" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="octoprime" type="462c0819:PsiDirectoryNode" />
+              <item name="algo" type="462c0819:PsiDirectoryNode" />
+              <item name="ds" type="462c0819:PsiDirectoryNode" />
+              <item name="array" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="octo-prime" type="b2602c69:ProjectViewProjectNode" />
@@ -465,13 +466,16 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534558841498" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534646974816" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -508,34 +512,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SelectionSortTest">
-    <configuration name="SelectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.octoprime.algo.sort.SelectionSort" />
-      <module name="algo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.octoprime.algo.sort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Temper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.octoprime.algo.Temper" />
-      <module name="algo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.octoprime.algo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InsertionSortTest.testBasic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.QuickSortTest">
+    <configuration name="InsertionSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="algo" />
       <extension name="coverage">
         <pattern>
@@ -545,8 +523,20 @@
       </extension>
       <option name="PACKAGE_NAME" value="io.octoprime.algo.sort" />
       <option name="MAIN_CLASS_NAME" value="io.octoprime.algo.sort.InsertionSortTest" />
-      <option name="METHOD_NAME" value="testBasic" />
-      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuickSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="algo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.octoprime.algo.sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.octoprime.algo.sort" />
+      <option name="MAIN_CLASS_NAME" value="io.octoprime.algo.sort.QuickSortTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -555,7 +545,7 @@
       <module name="algo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.octoprime.algo.sort.*" />
+          <option name="PATTERN" value="io.octoprime.algo.sort.SelectionSort" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -565,36 +555,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectionSortTest.testBasic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SelectionSortTest.testSelectionWithDescendingElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="algo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.octoprime.algo.sort.*" />
+          <option name="PATTERN" value="io.octoprime.algo.sort.SelectionSort" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="io.octoprime.algo.sort" />
       <option name="MAIN_CLASS_NAME" value="io.octoprime.algo.sort.SelectionSortTest" />
-      <option name="METHOD_NAME" value="testBasic" />
+      <option name="METHOD_NAME" value="testSelectionWithDescendingElements" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SelectionSortTest.testSelectionWithSortedElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="algo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.octoprime.algo.sort.SelectionSort" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.octoprime.algo.sort" />
+      <option name="MAIN_CLASS_NAME" value="io.octoprime.algo.sort.SelectionSortTest" />
+      <option name="METHOD_NAME" value="testSelectionWithSortedElement" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Temper" />
-      <item itemvalue="JUnit.InsertionSortTest.testBasic" />
-      <item itemvalue="Application.SelectionSort" />
-      <item itemvalue="JUnit.SelectionSortTest.testBasic" />
+      <item itemvalue="JUnit.SelectionSortTest.testSelectionWithSortedElement" />
+      <item itemvalue="JUnit.SelectionSortTest.testSelectionWithDescendingElements" />
       <item itemvalue="JUnit.SelectionSortTest" />
+      <item itemvalue="JUnit.InsertionSortTest" />
+      <item itemvalue="JUnit.QuickSortTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.QuickSortTest" />
+        <item itemvalue="JUnit.InsertionSortTest" />
         <item itemvalue="JUnit.SelectionSortTest" />
-        <item itemvalue="JUnit.SelectionSortTest.testBasic" />
-        <item itemvalue="JUnit.InsertionSortTest.testBasic" />
-        <item itemvalue="Application.SelectionSort" />
-        <item itemvalue="Application.Temper" />
+        <item itemvalue="JUnit.SelectionSortTest.testSelectionWithDescendingElements" />
+        <item itemvalue="JUnit.SelectionSortTest.testSelectionWithSortedElement" />
       </list>
     </recent_temporary>
   </component>
@@ -777,39 +783,46 @@
       <option name="project" value="LOCAL" />
       <updated>1534134763980</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="fixed unit tests.  Still need to address Integer[] vs int[]; the conversion is being done on a shadow array which is not what we want.">
+      <created>1534558915210</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1534558915210</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BubbleSortTest_testBasic - 2018.08.09 at 18h 41m 35s.xml">
-      <configuration name="BubbleSortTest.testBasic" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BubbleSortTest_testBasic - 2018.08.09 at 18h 42m 02s.xml">
-      <configuration name="BubbleSortTest.testBasic" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BubbleSortTest_testBasic - 2018.08.09 at 18h 43m 40s.xml">
-      <configuration name="BubbleSortTest.testBasic" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InsertionSortTest_testBasic - 2018.08.17 at 19h 07m 14s.xml">
-      <configuration name="InsertionSortTest.testBasic" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InsertionSortTest_testBasic - 2018.08.17 at 19h 09m 56s.xml">
-      <configuration name="InsertionSortTest.testBasic" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InsertionSortTest_testBasic - 2018.08.17 at 19h 11m 58s.xml">
-      <configuration name="InsertionSortTest.testBasic" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InsertionSortTest_testBasic - 2018.08.17 at 19h 14m 44s.xml">
-      <configuration name="InsertionSortTest.testBasic" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InsertionSortTest_testBasic - 2018.08.17 at 19h 14m 52s.xml">
-      <configuration name="InsertionSortTest.testBasic" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SelectionSortTest_testBasic - 2018.08.17 at 19h 16m 46s.xml">
       <configuration name="SelectionSortTest.testBasic" configurationId="JUnit" />
     </history-entry>
     <history-entry file="SelectionSortTest - 2018.08.17 at 19h 18m 22s.xml">
       <configuration name="SelectionSortTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SelectionSortTest_testSelectionWith0Element - 2018.08.18 at 17h 36m 49s.xml">
+      <configuration name="SelectionSortTest.testSelectionWith0Element" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SelectionSortTest_testSelectionWith1Element - 2018.08.18 at 17h 40m 16s.xml">
+      <configuration name="SelectionSortTest.testSelectionWith1Element" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SelectionSortTest_testSelectionWith2Element - 2018.08.18 at 17h 43m 40s.xml">
+      <configuration name="SelectionSortTest.testSelectionWith2Element" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SelectionSortTest_testSelectionWithSortedElement - 2018.08.18 at 17h 45m 24s.xml">
+      <configuration name="SelectionSortTest.testSelectionWithSortedElement" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SelectionSortTest_testSelectionWithDescendingElements - 2018.08.18 at 17h 46m 23s.xml">
+      <configuration name="SelectionSortTest.testSelectionWithDescendingElements" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SelectionSortTest - 2018.08.18 at 17h 51m 29s.xml">
+      <configuration name="SelectionSortTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InsertionSortTest - 2018.08.18 at 18h 01m 52s.xml">
+      <configuration name="InsertionSortTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QuickSortTest - 2018.08.18 at 19h 49m 30s.xml">
+      <configuration name="QuickSortTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -823,9 +836,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.75053304" visible="true" weight="0.27231467" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.75053304" visible="true" weight="0.2806354" />
       <window_info id="Structure" order="1" sideWeight="0.24946696" side_tool="true" weight="0.22163388" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -922,21 +934,10 @@
     <MESSAGE value="Ditto for Doubly Linked Lisat" />
     <MESSAGE value="Added implementation of permuation of substring." />
     <MESSAGE value="Added height and max width of a binary tree." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added height and max width of a binary tree." />
+    <MESSAGE value="fixed unit tests.  Still need to address Integer[] vs int[]; the conversion is being done on a shadow array which is not what we want." />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed unit tests.  Still need to address Integer[] vs int[]; the conversion is being done on a shadow array which is not what we want." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/InsertionSortTest.java</url>
-          <line>29</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/MyPrime.java">
@@ -946,24 +947,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/Numbers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1768">
-          <caret line="106" column="5" lean-forward="true" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/DataStructure.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-34">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/BitTiddler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="41" column="34" lean-forward="true" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -999,13 +986,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/ReverseLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="175" column="81" selection-start-line="175" selection-start-column="81" selection-end-line="175" selection-end-column="81" />
         </state>
       </provider>
     </entry>
@@ -1062,9 +1042,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
           <caret line="326" column="38" lean-forward="true" selection-start-line="326" selection-start-column="38" selection-end-line="326" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1089,20 +1066,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/QuickSortPartition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/QuickSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/MergeSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -1117,20 +1080,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/BinarySearchArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/KSmallestSum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="52" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1155,20 +1108,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/BubbleSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/graph/Knapsack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="430">
@@ -1190,13 +1129,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/SingleLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/IntersectionOf2Lists.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
@@ -1215,11 +1147,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="472">
           <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#453#454#0" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1251,13 +1178,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/SelectionSort.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/Sort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/MergeSortTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/InsertionSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -1265,51 +1193,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/Sort.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/SelectionSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#121#122#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/InsertionSortTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/QuickSortTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/MergeSortTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        <state relative-caret-position="306">
+          <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/SelectionSortTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        <state relative-caret-position="476">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/BubbleSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/QuickSortPartition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/InsertionSortTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1717">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/BubbleSortTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="96" column="14" selection-start-line="96" selection-start-column="14" selection-end-line="96" selection-end-column="14" />
+        <state relative-caret-position="1326">
+          <caret line="86" column="25" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/graph/Knapsack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/SingleLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/ReverseLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="251" column="1" lean-forward="true" selection-start-line="251" selection-start-column="1" selection-end-line="251" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/BitTiddler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/Numbers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="106" column="5" lean-forward="true" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/BinarySearchArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/QuickSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/octoprime/algo/sort/QuickSortTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="101" column="18" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
         </state>
       </provider>
     </entry>

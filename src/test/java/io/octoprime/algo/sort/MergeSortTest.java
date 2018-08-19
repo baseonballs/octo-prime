@@ -12,20 +12,20 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * Unit test for simple App.
  */
-public class BubbleSortTest extends AbstractTestUtils {
+public class MergeSortTest extends AbstractTestUtils {
 
-    private static BubbleSort bubble = new BubbleSort();
+    private static MergeSort merge = new MergeSort();
 
     @Test
-    void testBubbleSort() {
+    void testMergeSort() {
 
         int[] array = {2, 1, 4, 6, 3, 5};
         int[] sortedArray = {1, 2, 3, 4, 5, 6};
 
-        banner("testBubbleSort");
+        banner("testBasic");
 
         header((Arrays.toString(array)), true);
-        bubble.sort(array);
+        merge.sort(array);
         header((Arrays.toString(array)), false);
 
         assertArrayEquals(array, sortedArray);
@@ -33,15 +33,15 @@ public class BubbleSortTest extends AbstractTestUtils {
 
 
     @Test
-    void testBubbleWith0Elements() {
+    void testMergeWith0Elements() {
 
         int[] arr = {};
         int[] sortedArray = {};
 
-        banner("testBubbleWith0Elements");
+        banner("testMergeWith0Element");
 
         header((Arrays.toString(arr)), true);
-        bubble.sort(arr);
+        merge.sort(arr);
         header((Arrays.toString(arr)), false);
 
         assertEquals(arr.length, 0);
@@ -49,15 +49,15 @@ public class BubbleSortTest extends AbstractTestUtils {
     }
 
     @Test
-    void testBubbleWith1Element() {
+    void testMergenWith1Element() {
 
         int[] arr = {1};
         int[] sortedArray = {1};
 
-        banner("testBubbleWith1Element");
+        banner("testMergeWith1Element");
 
         header((Arrays.toString(arr)), true);
-        bubble.sort(arr);
+        merge.sort(arr);
         header((Arrays.toString(arr)), false);
 
         assertEquals(arr.length, 1);
@@ -66,15 +66,15 @@ public class BubbleSortTest extends AbstractTestUtils {
 
 
     @Test
-    void testBubbleWith2Elements() {
+    void testMergeWith2Elements() {
 
         int[] arr = {1, -1};
         int[] sortedArray = {-1, 1};
 
-        banner("testBubbleWith2Elements");
+        banner("testMergeWith1Element");
 
         header((Arrays.toString(arr)), true);
-        bubble.sort(arr);
+        merge.sort(arr);
         header((Arrays.toString(arr)), false);
 
         assertEquals(arr.length, 2);
@@ -83,15 +83,15 @@ public class BubbleSortTest extends AbstractTestUtils {
 
 
     @Test
-    void testBubbleWithSortedElements() {
+    void testMergeWithSortedElements() {
 
         int[] arr = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9,};
         int[] sortedArray = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 
-        banner("testBubbleWithSortedElements");
+        banner("testMergeWithSortedElements");
 
         header((Arrays.toString(arr)), true);
-        bubble.sort(arr);
+        merge.sort(arr);
         header((Arrays.toString(arr)), false);
 
         assertEquals(arr.length, 10);
@@ -100,15 +100,15 @@ public class BubbleSortTest extends AbstractTestUtils {
 
 
     @Test
-    void testBubbleWithDescendingElements() {
+    void testMergeWithDescendingElements() {
 
         int[] arr = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
         int[] sortedArray = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 
-        banner("testBubbleWithDescendingElements");
+        banner("testMergeWithDescendingElements");
 
         header((Arrays.toString(arr)), true);
-        bubble.sort(arr);
+        merge.sort(arr);
         header((Arrays.toString(arr)), false);
 
         assertEquals(arr.length, 10);
@@ -119,37 +119,15 @@ public class BubbleSortTest extends AbstractTestUtils {
      * Rigourous Test :-)
      */
     @Test
-    public void randomzizeBubbleArray() {
-        banner("randomzizeBubbleArray");
+    public void randomzizeQSortArray() {
+        banner("randomzizeQSortArray");
 
         int[] numbers = getRandomArray(TestConfig.ARRAY_SIZE, TestConfig.RAND_RANGE);
 
         assertTrue(numbers.length == TestConfig.ARRAY_SIZE);
 
         header((Arrays.toString(numbers)), true);
-        bubble.sort(numbers);
+        merge.sort(numbers);
         header((Arrays.toString(numbers)), false);
     }
-
-
-    @Test
-    public void testBubbleSortWithStreams() {
-        Integer[] array = {2, 1, 4, 6, 3, 5};
-        Integer[] sortedArray = {1, 2, 3, 4, 5, 6};
-
-        bubble.bubbleSortWithStreams(array);
-
-        assertArrayEquals(array, sortedArray);
-    }
-
-    @Test
-    public void testBubbleOptimizedSort() {
-        Integer[] array = {10, 15, 3, 4, 5};
-        Integer[] sortedArray = {3, 4, 5, 10, 15};
-
-        bubble.optimizedBubbleSort(array);
-
-        assertArrayEquals(array, sortedArray);
-    }
-
 }

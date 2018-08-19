@@ -22,7 +22,7 @@ public class InsertionSortTest extends AbstractTestUtils {
         int[] array = {2, 1, 4, 6, 3, 5};
         int[] sortedArray = {1, 2, 3, 4, 5, 6};
 
-        banner("testBasic");
+        banner("testInsertionSort");
 
         header((Arrays.toString(array)), true);
         insertion.sort(array);
@@ -38,7 +38,7 @@ public class InsertionSortTest extends AbstractTestUtils {
         int[] arr = {};
         int[] sortedArray = {};
 
-        banner("testSelectionWith0Element");
+        banner("testInsertionnWith0Elements");
 
         header((Arrays.toString(arr)), true);
         insertion.sort(arr);
@@ -54,7 +54,7 @@ public class InsertionSortTest extends AbstractTestUtils {
         int[] arr = {1};
         int[] sortedArray = {1};
 
-        banner("testSelectionWith1Element");
+        banner("testInsertionWith1Element");
 
         header((Arrays.toString(arr)), true);
         insertion.sort(arr);
@@ -71,7 +71,7 @@ public class InsertionSortTest extends AbstractTestUtils {
         int[] arr = {1, -1};
         int[] sortedArray = {-1, 1};
 
-        banner("testSelectionWith1Element");
+        banner("testInsertionWith2Elements");
 
         header((Arrays.toString(arr)), true);
         insertion.sort(arr);
@@ -88,7 +88,7 @@ public class InsertionSortTest extends AbstractTestUtils {
         int[] arr = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9,};
         int[] sortedArray = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 
-        banner("testSelectionWith1Element");
+        banner("testInsertionWithSortedElements");
 
         header((Arrays.toString(arr)), true);
         insertion.sort(arr);
@@ -105,7 +105,7 @@ public class InsertionSortTest extends AbstractTestUtils {
         int[] arr = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
         int[] sortedArray = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 
-        banner("testSelectionWith1Element");
+        banner("testInsertionWithDescendingElements");
 
         header((Arrays.toString(arr)), true);
         insertion.sort(arr);
@@ -120,7 +120,7 @@ public class InsertionSortTest extends AbstractTestUtils {
      */
     @Test
     public void randomzizeInsertionArray() {
-        banner("randomziedArray");
+        banner("randomzizeInsertionArray");
 
         int[] numbers = getRandomArray(TestConfig.ARRAY_SIZE, TestConfig.RAND_RANGE);
 

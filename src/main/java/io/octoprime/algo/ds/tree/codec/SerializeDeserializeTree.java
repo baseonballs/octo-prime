@@ -1,4 +1,6 @@
-package io.octoprime.algo.ds.tree;
+package io.octoprime.algo.ds.tree.codec;
+
+import io.octoprime.algo.ds.tree.TreeNode;
 
 import java.util.LinkedList;
 

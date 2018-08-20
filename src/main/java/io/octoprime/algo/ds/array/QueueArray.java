@@ -1,7 +1,7 @@
-package io.octoprime.algo.ds.queue;
+package io.octoprime.algo.ds.array;
 
 // array based implemenation of a queue.
-public class Queue {
+public class QueueArray {
 
     private int _capacity;
     int _arr[];
@@ -9,7 +9,7 @@ public class Queue {
     int _rear = -1;
     int _size = 0;
 
-    public Queue(int queueSize) {
+    public QueueArray(int queueSize) {
         this._capacity = queueSize;
         _arr = new int[this._capacity];
     }
@@ -29,7 +29,7 @@ public class Queue {
             }
             _arr[_rear] = item;
             _size++;
-            System.out.println("Element " + item + " is pushed to Queue !");
+            System.out.println("Element " + item + " is pushed to QueueArray !");
         }
     }
 
@@ -38,7 +38,7 @@ public class Queue {
      */
     public void dequeue() {
         if (isQueueEmpty()) {
-            System.out.println("Underflow ! Unable to remove element from Queue");
+            System.out.println("Underflow ! Unable to remove element from QueueArray");
         } else {
             _front++;
             if (_front == _capacity - 1) {
@@ -70,12 +70,12 @@ public class Queue {
      * @return
      */
     public boolean isQueueEmpty() {
-        return (_size == 0) ? true : false;
+        return _size == 0;
     }
 
     public static void main(String a[]) {
 
-        Queue queue = new Queue(4);
+        QueueArray queue = new QueueArray(4);
         queue.enqueue(4);
         queue.dequeue();
         queue.enqueue(56);

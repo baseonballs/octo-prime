@@ -134,12 +134,12 @@ public class BinarySearchTree {
     // the tree using level order traversal
 
     /**
-     * We can use Queue based level order traversal to optimize the time complexity of this method.
-     * The Queue based level order traversal will take O(n) time in worst case. Thanks to Nitish, DivyaC and
+     * We can use QueueArray based level order traversal to optimize the time complexity of this method.
+     * The QueueArray based level order traversal will take O(n) time in worst case. Thanks to Nitish, DivyaC and
      * tech.login.id2 for suggesting this optimization. See their comments for implementation using queue-based
      * traversal.
      * <p>
-     * Method 2 (Using Level Order Traversal with Queue)
+     * Method 2 (Using Level Order Traversal with QueueArray)
      * In this method we store all the child nodes at the current level in the queue and then count the total
      * number of nodes after the level order traversal for a particular level is completed. Since the queue now
      * contains all the nodes of the next level, we can easily find out the total number of nodes in the next level

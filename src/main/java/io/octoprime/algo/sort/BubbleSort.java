@@ -10,6 +10,10 @@ import static io.octoprime.algo.ds.DataStructure.getRandomArray;
  * positions if they exist in the wrong order.
  * <p>
  * Complexity: worse & average = O(N^2), best = O(n)
+ * worse:   O(n^2)
+ * average: O(n^2)
+ * best:    O(n)
+ * avg
  */
 public class BubbleSort implements Sort {
 

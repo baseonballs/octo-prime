@@ -16,7 +16,7 @@ public class BubbleSort implements Sort {
     private static int DEFAULT_SIZE = 10;
     private static int DEFAULT_RANGE = 100;
 
-    public void sort(int[] arr) {
+    public void sort1(int[] arr) {
 
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = 0; j < (arr.length - 1); j++) {
@@ -29,10 +29,10 @@ public class BubbleSort implements Sort {
         }
     }
 
-    public void sort2(int[] arr) {
+    public void sort(int[] arr) {
 
         for (int i = 0; i < arr.length; i++) {
-            for (int j = 1; j < (arr.length - 1); j++) {
+            for (int j = 1; j < arr.length; j++) {
                 if (arr[j - 1] > arr[j]) {
                     //swap elements
                     int temp = arr[j - 1];

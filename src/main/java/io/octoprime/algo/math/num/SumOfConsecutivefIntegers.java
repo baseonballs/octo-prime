@@ -1,4 +1,4 @@
-package io.octoprime.algo.math;
+package io.octoprime.algo.math.num;
 
 // sum of consecutive integer is ( n * (n+1) ) / 2
 

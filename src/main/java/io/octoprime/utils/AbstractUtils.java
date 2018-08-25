@@ -1,4 +1,4 @@
-package io.octoprime;
+package io.octoprime.utils;
 
 import java.util.Random;
 

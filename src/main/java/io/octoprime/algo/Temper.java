@@ -1,6 +1,6 @@
 package io.octoprime.algo;
 
-import io.octoprime.AbstractUtils;
+import io.octoprime.utils.AbstractUtils;
 
 import java.util.Arrays;
 

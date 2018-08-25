@@ -1,6 +1,6 @@
 package io.octoprime.algo;
 
-import io.octoprime.AbstractUtils;
+import io.octoprime.utils.AbstractUtils;
 
 
 public class BSTDriver extends AbstractUtils {

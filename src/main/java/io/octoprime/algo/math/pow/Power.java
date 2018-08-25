@@ -1,4 +1,4 @@
-package io.octoprime.algo.math;
+package io.octoprime.algo.math.pow;
 
 import java.util.Scanner;
 

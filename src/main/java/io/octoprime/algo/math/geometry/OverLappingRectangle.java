@@ -1,4 +1,4 @@
-package io.octoprime.algo.math;
+package io.octoprime.algo.math.geometry;
 
 public class OverLappingRectangle {
 
@@ -14,9 +14,7 @@ public class OverLappingRectangle {
 
     public static boolean doOverlap(Point[] rect1, Point[] rect2) {
         if (rect1[0].x > rect2[0].x || rect1[1].x > rect2[1].x) return false;
-        if (rect1[0].y < rect2[0].y || rect1[1].y < rect2[1].y) return false;
-
-        return true;
+        return rect1[0].y >= rect2[0].y && rect1[1].y >= rect2[1].y;
     }
 
     public static void main(String[] args) {

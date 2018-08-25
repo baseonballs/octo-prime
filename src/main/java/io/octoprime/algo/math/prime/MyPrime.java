@@ -1,4 +1,4 @@
-package io.octoprime.algo.math;
+package io.octoprime.algo.math.prime;
 
 import java.math.BigInteger;
 import java.util.Scanner;

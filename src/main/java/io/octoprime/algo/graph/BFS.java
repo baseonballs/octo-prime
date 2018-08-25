@@ -3,13 +3,13 @@ package io.octoprime.algo.graph;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-public class BreadthFirstSearch {
+public class BFS {
 
     private int V;   // No. of vertices
     private LinkedList<Integer> adj[]; //Adjacency Lists
 
     // Constructor
-    BreadthFirstSearch(int v) {
+    BFS(int v) {
         V = v;
         adj = new LinkedList[v];
         for (int i = 0; i < v; ++i)
@@ -55,7 +55,7 @@ public class BreadthFirstSearch {
 
     // Driver method to
     public static void main(String args[]) {
-        BreadthFirstSearch g = new BreadthFirstSearch(4);
+        BFS g = new BFS(4);
 
         g.addEdge(0, 1);
         g.addEdge(0, 2);

@@ -8,15 +8,15 @@ public class TowerOfHanoi {
 
     static int count = 0;
 
-    public void solve(int n, String start, String auxiliary, String end) {
+    public void solve(int n, String start, String aux, String end) {
         if (n == 1) {
             System.out.println(start + " -> " + end);
             count++;
         } else {
-            solve(n - 1, start, end, auxiliary);
+            solve(n - 1, start, end, aux);
             System.out.println(start + " -> " + end);
             count++;
-            solve(n - 1, auxiliary, start, end);
+            solve(n - 1, aux, start, end);
         }
     }
 

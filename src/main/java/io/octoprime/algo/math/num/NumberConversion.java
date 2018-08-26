@@ -4,7 +4,7 @@ import io.octoprime.utils.UtilsArray;
 
 import java.util.Arrays;
 
-public class Numbers {
+public class NumberConversion {
 
     /*
         Integer.toBinaryString(n);
@@ -76,24 +76,21 @@ public class Numbers {
     }
 
     public static int findMin(int[] arr) {
-        int index = -1;
-        int min = Integer.MAX_VALUE;
 
+        int min = 0;
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] < min) {
-                min = arr[i];
-                index = i;
-            }
+            if (arr[i] < arr[min])
+                min = i;
         }
 
-        return index;
+        return min;
     }
 
     static void testMinValue() {
 
         UtilsArray units = new UtilsArray();
 
-        int[] arrs = units.randomArrayAsInt(10, 10000);
+        int[] arrs = units.randomArrayAsInt(10, 100);
 
         System.out.println(Arrays.toString(arrs));
         System.out.println(String.format("Index of min key is: %d", findMin(arrs)));
@@ -104,5 +101,7 @@ public class Numbers {
     }
 
     public static void main(String[] args) {
+
+        testMinValue();
     }
 }

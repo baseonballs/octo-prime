@@ -64,13 +64,12 @@ public class RabinKarpTextSearch extends AbstractTextSearchUtils implements Text
      * @param args
      */
     public static void main(String[] args) {
-        String s = "Hello World.";
+        String s = "I saw an old lady who ate a fly.  I don't know why she at the fly.";
 
-        String p = "World";
+        String p = "don't";
 
         int index = new RabinKarpTextSearch().search(s.toCharArray(), p.toCharArray());
         if (index != -1)
             System.out.println(String.format("The paternn (\"%s\") found in (\"%s\") at index %d.", p, s, index));
-
     }
 }

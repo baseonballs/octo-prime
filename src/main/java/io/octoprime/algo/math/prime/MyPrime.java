@@ -10,7 +10,7 @@ public class MyPrime {
         int num = 0;
 
 
-        System.out.println("\nPrime Numbers up to " + n + ".");
+        System.out.println("\nPrime NumberConversion up to " + n + ".");
 
         for (int i = 1; i <= n; i++) {
             int counter = 0;

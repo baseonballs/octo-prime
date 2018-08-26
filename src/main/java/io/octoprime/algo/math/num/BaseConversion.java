@@ -16,9 +16,9 @@ public class BaseConversion {
 
         StringBuilder sb = new StringBuilder();
 
-        for (int i = 0; n > 0; i++) {
+        for (int i = 0; i < size; i++) {
             bin[i] = n % 2;
-            n >>= 1;
+            n >>>= 1;
         }
 
         // printing binary array in reverse order
@@ -29,9 +29,10 @@ public class BaseConversion {
     }
 
     public static void main(String[] args) {
-        int num = 8;
+        int num = 15;
+        int size = 8;
 
         System.out.println(String.format("The number is : %d", num));
-        System.out.println(String.format("The number is : %s", new BaseConversion().decToBinary(num, 8)));
+        System.out.println(String.format("The number is : %s", new BaseConversion().decToBinary(num, size)));
     }
 }

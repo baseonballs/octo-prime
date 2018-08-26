@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static io.octoprime.algo.ds.DataStructure.getRandomArray;
+import static io.octoprime.utils.DataStructure.getRandomArray;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**

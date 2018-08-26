@@ -2,7 +2,7 @@ package io.octoprime.algo.sort;
 
 import java.util.Arrays;
 
-import static io.octoprime.algo.ds.DataStructure.getRandomArray;
+import static io.octoprime.utils.DataStructure.getRandomArray;
 
 /*
     Quick sort is based on the divide-and-conquer approach based on the idea of choosing one element as a pivot element

@@ -1,4 +1,4 @@
-package io.octoprime.algo.strings;
+package io.octoprime.algo.strings.pattern;
 
 public class StringMathExample {
 

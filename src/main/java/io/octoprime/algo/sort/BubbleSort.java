@@ -3,7 +3,7 @@ package io.octoprime.algo.sort;
 import java.util.Arrays;
 import java.util.stream.IntStream;
 
-import static io.octoprime.algo.ds.DataStructure.getRandomArray;
+import static io.octoprime.utils.DataStructure.getRandomArray;
 
 /**
  * Bubble sort is based on the idea of repeatedly comparing pairs of adjacent elements and then swapping their

@@ -2,7 +2,7 @@ package io.octoprime.algo.sort;
 
 import java.util.Arrays;
 
-import static io.octoprime.algo.ds.DataStructure.getRandomArray;
+import static io.octoprime.utils.DataStructure.getRandomArray;
 
 /**
  * The insertion sort algorithm is based on the idea of cards in the hand.  Start with i+1, and scan toe the left of the

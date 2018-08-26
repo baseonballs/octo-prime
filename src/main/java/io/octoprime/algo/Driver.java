@@ -1,7 +1,7 @@
 package io.octoprime.algo;
 
-import io.octoprime.algo.ds.UtilsArray;
 import io.octoprime.algo.sort.BubbleSort;
+import io.octoprime.utils.UtilsArray;
 
 import java.util.ArrayList;
 import java.util.List;

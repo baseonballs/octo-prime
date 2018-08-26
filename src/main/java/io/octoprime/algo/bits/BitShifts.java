@@ -1,4 +1,4 @@
-package io.octoprime.algo.math.bits;
+package io.octoprime.algo.bits;
 
 public class BitShifts {
 

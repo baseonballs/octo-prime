@@ -1,4 +1,4 @@
-package io.octoprime.algo.ds;
+package io.octoprime.utils;
 
 import io.octoprime.algo.strings.UtilsString;
 

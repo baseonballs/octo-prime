@@ -1,6 +1,6 @@
-package io.octoprime.algo.ds;
+package io.octoprime.algo.math.num;
 
-import io.octoprime.algo.math.LCM;
+import io.octoprime.utils.UtilsArray;
 
 import java.util.Arrays;
 

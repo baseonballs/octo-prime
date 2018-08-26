@@ -2,7 +2,7 @@ package io.octoprime.algo.sort;
 
 import java.util.Arrays;
 
-import static io.octoprime.algo.ds.DataStructure.getRandomArray;
+import static io.octoprime.utils.DataStructure.getRandomArray;
 
 /*
 The Selection sort algorithm is based on the idea of finding the minimum or maximum element in an unsorted array

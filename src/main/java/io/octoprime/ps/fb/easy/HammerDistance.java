@@ -63,7 +63,7 @@ public class HammerDistance {
         int b = 32;
 
         while (b-- > 0) {
-            if ((n & 0x0001) == 1)
+            if ((n & 1) == 1)
                 count++;
 
             n >>= 1;
@@ -72,25 +72,6 @@ public class HammerDistance {
         return count;
     }
 
-
-    public static boolean isSigned(int n) {
-        return n >> 31 == 1;
-    }
-
-    /**
-     * You can turn off a bit by anding with a binary number of all 1's, except for the bit to be set.
-     * <p>
-     * 01010101 & ~(1<<2) == 01010101 & 11111011 == 01010001
-     *
-     * @return
-     */
-    public static int setBit(int flag, int bit, boolean isEnable) {
-        if (isEnable)
-            flag &= (1 << bit);
-        else flag |= (1 << bit);
-
-        return flag;
-    }
 
 
     /**
@@ -103,7 +84,5 @@ public class HammerDistance {
         System.out.println("hammingDistance0::distance: " + hammingDistance0(1, 4));
 
         System.out.println("weight: " + hammerWeight(128));
-
-        System.out.println(String.format("is signed (%d): %s", -1, isSigned(-1)));
     }
 }

@@ -1,6 +1,6 @@
 package io.octoprime.algo.bits;
 
-public class BitTiddler {
+public class BitTwiddler {
 
     //2n == (1 << n); 0 <= n < 32
 

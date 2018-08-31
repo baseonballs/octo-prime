@@ -64,38 +64,57 @@ public class NumDigits {
         return length;
     }
 
-    public static int getNumDigitsUsingMultiplication(int n) {
-        int length = 0;
-        long temp = 1;
-        while (temp <= n) {
-            length++;
-            temp *= 10;
-        }
-        return length;
-    }
-
+    /**
+     * @param n
+     * @return
+     */
     public static int getNumDigitUsingLog(int n) {
         int length = (int) (Math.log10(n) + 1);
         return length;
     }
 
+    /**
+     *
+     * @param n
+     * @return
+     */
     public static int getNumDigit1(String n) {
         return n.length();
     }
 
+    /**
+     *
+     * @param n
+     * @return
+     */
     public static int numdigits0(int n) {
         int count = 0;
+
+
         if (n == 0) return 1;
-        while (n > 0) {
-            n /= 10;
+        for (; n > 0; n /= 10)
             count++;
-        }
+
+        return count;
+    }
+
+    /**
+     * @param n
+     * @return
+     */
+    public static int getNumDigitsUsingPlaceValue(int n) {
+
+        int count = 0;
+        for (int pv = 1; pv <= n; pv *= 10)
+            count++;
 
         return count;
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter a number: ");
         int num = scanner.nextInt();
 
         System.out.println("Number of digits: " + numdigits0(num));

@@ -36,6 +36,21 @@ public class Fibinacci {
     }
 
 
+    /**
+     * @param n: an integer
+     * @return an integer f(n)
+     */
+    public int fib(int n) {
+        int a = 0, b = 1;
+        while (--n > 0) {
+            int c = a + b;
+            a = b;
+            b = c;
+        }
+        return a;
+    }
+
+
     /*
         { 0, 1, 1, 2, 3, 5, 8, 13, 21,...}
      */

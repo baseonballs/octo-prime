@@ -107,6 +107,5 @@ public class BaseConversion {
         System.out.println(String.format("The number in binary is : %s", new BaseConversion().decToBinary(num, size)));
         System.out.println(String.format("The number in hex is : %s", new BaseConversion().decToHex(num)));
         System.out.println(String.format("The number in roman is : %s", new BaseConversion().decToRomanNumeral(num)));
-
     }
 }

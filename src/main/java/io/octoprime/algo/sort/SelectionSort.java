@@ -22,7 +22,9 @@ public class SelectionSort implements Sort {
 
         for (int i = 0; i < arr.length; i++) {
 
-            // find the miniumal value.
+            /**
+             * locate the minimum index.
+             */
             int minIndex = i;
             for (int j = i + 1; j < arr.length; j++)
                 if (arr[j] < arr[minIndex])

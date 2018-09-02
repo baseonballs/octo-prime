@@ -35,21 +35,20 @@ public class InsertionSort implements Sort {
      * Insertion sort based on ideas of exchange cards in hand.  Start with i+1 and find values to swap less
      * then element at j;
      *
-     * @param input
+     * @param arr
      * @return
      */
-    public static int[] doInsertionSort(int[] input) {
+    public static void isort(int[] arr) {
 
-        for (int i = 1; i < input.length; i++) {
+        for (int i = 1; i < arr.length; i++) {
             for (int j = i; j > 0; j--) {
-                if (input[j] < input[j - 1]) {
-                    int temp = input[j];
-                    input[j] = input[j - 1];
-                    input[j - 1] = temp;
+                if (arr[j] < arr[j - 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j - 1];
+                    arr[j - 1] = temp;
                 }
             }
         }
-        return input;
     }
 
     public static void main(String[] arg) {

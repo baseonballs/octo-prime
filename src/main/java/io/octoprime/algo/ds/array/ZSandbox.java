@@ -6,24 +6,11 @@ import java.util.Arrays;
 
 public class ZSandbox {
 
-
-    public static void bsort(int[] arr) {
+    public static void sort(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
-            for (int j = 1; j < arr.length; j++) {
-                if (arr[j - 1] > arr[j]) {
-                    int t = arr[j - 1];
-                    arr[j - 1] = arr[j];
-                    arr[j] = t;
-                }
-            }
-        }
-    }
 
-
-    public static void isort(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
             int m = i;
-            for (int j = i + 1; j < arr.length; j++) {
+            for (int j = i; j < arr.length; j++) {
                 if (arr[j] < arr[m]) m = j;
             }
 
@@ -33,32 +20,20 @@ public class ZSandbox {
         }
     }
 
-    public static void ssort(int[] arr) {
 
-        for (int i = 1; i < arr.length; i++) {
-            for (int j = i; j > 0; j--) {
-                if (arr[j] < arr[j - 1]) {
-                    int t = arr[j];
-                    arr[j] = arr[j - 1];
-                    arr[j - 1] = t;
-                }
-            }
-        }
-    }
+    int bsearch(int[] arr, int low, int high, int value) {
 
-
-    public int bsearch(int[] arr, int low, int high, int key) {
         if (low <= high) {
             int pivot = low + (high - low) / 2;
 
-            if (key == arr[pivot]) return pivot;
-
-            if (low < arr[pivot]) return bsearch(arr, low, pivot - 1, key);
-            else if (low > arr[pivot]) return bsearch(arr, pivot + 1, high, key);
+            if (value == arr[pivot]) return pivot;
+            if (value < arr[pivot]) return bsearch(arr, low, pivot - 1, value);
+            if (value > arr[pivot]) return bsearch(arr, pivot + 1, high, value);
         }
 
         return -1;
     }
+
 
     public static void main(String[] args) {
 
@@ -66,7 +41,7 @@ public class ZSandbox {
         int[] arr = new UtilsArray().randomArrayAsInt(10, 100);
 
         System.out.println(Arrays.toString(arrs));
-        ssort(arrs);
+        sort(arrs);
         System.out.println(Arrays.toString(arrs));
 
         int bIndex = new ZSandbox().bsearch(arrs, 0, arrs.length - 1, 2);

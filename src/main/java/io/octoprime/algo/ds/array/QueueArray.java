@@ -1,76 +1,89 @@
 package io.octoprime.algo.ds.array;
 
-// array based implemenation of a queue.
+/**
+ * Array based implementation of a queue.
+ */
 public class QueueArray {
+    int front, rear, size;
+    int capacity;
+    int array[];
 
-    private int _capacity;
-    int _arr[];
-    int _front = 0;
-    int _rear = -1;
-    int _size = 0;
-
-    public QueueArray(int queueSize) {
-        this._capacity = queueSize;
-        _arr = new int[this._capacity];
+    public QueueArray(int capacity) {
+        this.capacity = capacity;
+        front = this.size = 0;
+        rear = capacity - 1;
+        array = new int[this.capacity];
     }
 
     /**
-     * this method adds element at the end of the queue.
-     *
-     * @param item
-     */
-    public void enqueue(int item) {
-        if (isQueueFull()) {
-            System.out.println("Overflow ! Unable to add element: " + item);
-        } else {
-            _rear++;
-            if (_rear == _capacity - 1) {
-                _rear = 0;
-            }
-            _arr[_rear] = item;
-            _size++;
-            System.out.println("Element " + item + " is pushed to QueueArray !");
-        }
-    }
-
-    /**
-     * this method removes an element from the top of the queue
-     */
-    public void dequeue() {
-        if (isQueueEmpty()) {
-            System.out.println("Underflow ! Unable to remove element from QueueArray");
-        } else {
-            _front++;
-            if (_front == _capacity - 1) {
-                System.out.println("Pop operation done ! removed: " + _arr[_front - 1]);
-                _front = 0;
-            } else {
-                System.out.println("Pop operation done ! removed: " + _arr[_front - 1]);
-            }
-            _size--;
-        }
-    }
-
-    /**
-     * This method checks whether the queue is full or notQueueImpl
-     *
-     * @return boolean
-     */
-    public boolean isQueueFull() {
-        boolean status = false;
-        if (_size == _capacity) {
-            status = true;
-        }
-        return status;
-    }
-
-    /**
-     * This method checks whether the queue is empty or not
+     * Queue is full when size becomes equal to the capacity
      *
      * @return
      */
-    public boolean isQueueEmpty() {
-        return _size == 0;
+    boolean isFull() {
+        return (size == capacity - 1);
+    }
+
+    /**
+     * Queue is empty when size is 0
+     *
+     * @return
+     */
+    boolean isEmpty() {
+        return (size == 0);
+    }
+
+    /**
+     * Method to add an item to the queue. It changes rear and size
+     *
+     * @param item
+     */
+    void enqueue(int item) {
+        if (isFull())
+            return;
+        this.rear = (this.rear + 1) % this.capacity;
+        this.array[this.rear] = item;
+        this.size++;
+        System.out.println(item + " enqueued to queue");
+    }
+
+    /**
+     * Method to remove an item from queue. It changes front and size
+     *
+     * @return
+     */
+    int dequeue() {
+        if (isEmpty())
+            return Integer.MIN_VALUE;
+
+        int item = this.array[this.front];
+        this.front = (this.front + 1) % this.capacity;
+        this.size--;
+        return item;
+    }
+
+    /**
+     * Method to get front of queue
+     *
+     * @return
+     */
+    public int peekFront() {
+        if (isEmpty())
+            return Integer.MIN_VALUE;
+
+        return this.array[this.front];
+    }
+
+    /**
+     * Method to get rear of queue
+     *
+     * @return
+     */
+    public int peekRear() {
+        if (isEmpty())
+            return Integer.MIN_VALUE;
+
+        return this.array[this.rear];
     }
 
     public static void main(String a[]) {

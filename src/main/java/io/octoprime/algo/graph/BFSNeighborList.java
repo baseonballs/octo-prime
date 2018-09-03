@@ -5,8 +5,10 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-// link: https://java2blog.com/breadth-first-search-in-java/
 
+/**
+ * ref: link: https://java2blog.com/breadth-first-search-in-java/
+ */
 public class BFSNeighborList {
 
 

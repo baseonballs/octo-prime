@@ -18,7 +18,7 @@ public class SingleLinkedList {
 
     //Class variables for the Linked List
     private static Node head;
-    private static int numNodes;
+    private static int size;
 
     public SingleLinkedList(Object data) {
         head = new Node(data);
@@ -28,7 +28,7 @@ public class SingleLinkedList {
         Node temp = head;
         head = new Node(data);
         head.next = temp;
-        numNodes++;
+        size++;
     }
 
     public void addAtTail(Object data) {
@@ -38,7 +38,7 @@ public class SingleLinkedList {
         }
 
         temp.next = new Node(data);
-        numNodes++;
+        size++;
     }
 
     public void addAtIndex(int index, Object data) {
@@ -50,7 +50,7 @@ public class SingleLinkedList {
         holder = temp.next;
         temp.next = new Node(data);
         temp.next.next = holder;
-        numNodes++;
+        size++;
     }
 
     public void deleteAtIndex(int index) {
@@ -59,7 +59,7 @@ public class SingleLinkedList {
             temp = temp.next;
         }
         temp.next = temp.next.next;
-        numNodes--;
+        size--;
     }
 
     public static int find(Node n) {
@@ -89,7 +89,7 @@ public class SingleLinkedList {
     }
 
     public static int getSize() {
-        return numNodes;
+        return size;
     }
 
     public static void main(String[] args) {

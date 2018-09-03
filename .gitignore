@@ -1,5 +1,6 @@
 # ignore resources
 target/
+.idea/workspace.xml
 
 # ... but the following
 !/.profile

@@ -1,7 +1,7 @@
 package io.octoprime.algo.ds.array;
 
 /**
- * A stack implementation using an array.
+ * A stack implementation using an arr.
  */
 public class StackArray {
 
@@ -14,7 +14,7 @@ public class StackArray {
     /**
      * constructor to create stack with size
      *
-     * @param size size of array
+     * @param size size of arr
      */
     public StackArray(int size) {
         this._size = size;

@@ -20,23 +20,13 @@ public class BinarySearchTree {
     static boolean TEST_SEARCH = false;
     static boolean TEST_SERDESER = true;
 
-    class Node {
-        int key;
-        Node left, right;
-
-        public Node(int item) {
-            key = item;
-            left = right = null;
-        }
-    }
-
-    private Node _root;
+    private TreeNode _root;
 
     BinarySearchTree() {
         _root = null;
     }
 
-    public Node getRoot() {
+    public TreeNode getRoot() {
         return _root;
     }
 
@@ -44,7 +34,7 @@ public class BinarySearchTree {
         _root = delete(_root, key);
     }
 
-    Node delete(Node node, int key) {
+    TreeNode delete(TreeNode node, int key) {
         /* Base Case: If the tree is empty */
         if (node == null) return node;
 
@@ -67,14 +57,14 @@ public class BinarySearchTree {
             // in the right subtree)
             node.key = min(node.right);
 
-            // Delete the inOrderPrint successor
+            // Delete the in-order successor
             node.right = delete(node.right, node.key);
         }
 
         return node;
     }
 
-    int min(Node node) {
+    int min(TreeNode node) {
         if (node == null) return -1;
 
         int min = node.key;
@@ -85,7 +75,7 @@ public class BinarySearchTree {
         return min;
     }
 
-    int max(Node node) {
+    int max(TreeNode node) {
         if (node == null) return -1;
 
         int max = node.key;
@@ -100,7 +90,7 @@ public class BinarySearchTree {
     /* Compute the "maxDepth" of a tree -- the number of
       nodes along the longest path from the root node
       down to the farthest leaf node.*/
-    int height(Node node) {
+    int height(TreeNode node) {
         if (node == null)
             return 0;
         else {
@@ -114,7 +104,7 @@ public class BinarySearchTree {
 
 
     /* Function to get the maximum width of a binary tree*/
-    int getMaxWidth(Node node) {
+    int getMaxWidth(TreeNode node) {
         int maxWidth = 0;
         int width;
         int h = height(node);
@@ -132,7 +122,7 @@ public class BinarySearchTree {
     }
 
     /* Get width of a given level */
-    int getWidth(Node node, int level) {
+    int getWidth(TreeNode node, int level) {
         if (node == null)
             return 0;
 
@@ -164,7 +154,7 @@ public class BinarySearchTree {
      * @param node
      * @return
      */
-    public int maxwidth(Node node) {
+    public int maxwidth(TreeNode node) {
         // Base case
         if (node == null)
             return 0;
@@ -174,7 +164,7 @@ public class BinarySearchTree {
 
         // Do Level order traversal keeping
         // track of number of nodes at every level
-        Queue<Node> q = new LinkedList<>();
+        Queue<TreeNode> q = new LinkedList<>();
         q.add(node);
         while (!q.isEmpty()) {
             // Get the size of queue when the level order
@@ -188,7 +178,7 @@ public class BinarySearchTree {
             // the queue currently
             while (count-- > 0) {
                 // Dequeue an node from queue
-                Node temp = q.remove();
+                TreeNode temp = q.remove();
 
                 // Enqueue left and right children
                 // of dequeued node
@@ -207,10 +197,10 @@ public class BinarySearchTree {
         _root = insertNode(_root, key);
     }
 
-    Node insertNode(Node node, int key) {
+    TreeNode insertNode(TreeNode node, int key) {
         /* If the tree is empty, return a new node */
         if (node == null) {
-            node = new Node(key);
+            node = new TreeNode(key);
             return node;
         }
 
@@ -224,7 +214,7 @@ public class BinarySearchTree {
         return node;
     }
 
-    Node find(Node node, int key) {
+    TreeNode find(TreeNode node, int key) {
         if (node == null) return null;
 
         if (key < node.key)
@@ -242,11 +232,10 @@ public class BinarySearchTree {
         return isWithinMinMaxConstraint(_root, Integer.MIN_VALUE, Integer.MAX_VALUE);
     }
 
-
     /**
      * Returns true if the given tree is a BST and its values are >= min and <= max.
      */
-    boolean isWithinMinMaxConstraint(Node node, int min, int max) {
+    boolean isWithinMinMaxConstraint(TreeNode node, int min, int max) {
         /* an empty tree is BST */
         if (node == null)
             return true;
@@ -260,7 +249,7 @@ public class BinarySearchTree {
         inorderPrint(_root);
     }
 
-    void inorderPrint(Node node) {
+    void inorderPrint(TreeNode node) {
         if (node != null) {
             inorderPrint(node.left);
             System.out.print(node.key + " ");
@@ -272,7 +261,7 @@ public class BinarySearchTree {
         postOrderPrint(_root);
     }
 
-    void postOrderPrint(Node node) {
+    void postOrderPrint(TreeNode node) {
         if (node != null) {
             postOrderPrint(node.left);
             postOrderPrint(node.right);
@@ -284,7 +273,7 @@ public class BinarySearchTree {
         preOrderPrint(_root);
     }
 
-    void preOrderPrint(Node node) {
+    void preOrderPrint(TreeNode node) {
         if (node != null) {
             System.out.print(node.key + " ");
             preOrderPrint(node.left);
@@ -297,14 +286,14 @@ public class BinarySearchTree {
      *
      * @param n
      */
-    void levelOrderTraversal(Node n) {
+    void levelOrderTraversal(TreeNode n) {
         if (n == null) return;
 
-        Queue<Node> q = new LinkedList<Node>();
+        Queue<TreeNode> q = new LinkedList<TreeNode>();
         q.add(n);
 
         while (!q.isEmpty()) {
-            Node elem = q.poll();
+            TreeNode elem = q.poll();
 
             System.out.print(elem.key + " ");
 
@@ -360,9 +349,9 @@ public class BinarySearchTree {
         return root.key;
     }
 
-    public boolean isValidBST(Node node) {
-        Stack<Node> stack = new Stack<>();
-        Node t = null;
+    public boolean isValidBST(TreeNode node) {
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode t = null;
 
         if (node == null) return true;
         while (node != null || !stack.isEmpty()) {
@@ -385,16 +374,16 @@ public class BinarySearchTree {
      * to serialize a binary tree which denote by a root node to a string which
      * can be easily deserialized by your own "deserialize" method later.
      */
-    public String serialize(Node root) {
+    public String serialize(TreeNode root) {
         if (root == null) return "";
 
-        Queue<Node> queue = new LinkedList<>();
+        Queue<TreeNode> queue = new LinkedList<>();
         List<String> elems = new ArrayList<>();
 
         queue.offer(root);
 
         while (!queue.isEmpty()) {
-            Node node = queue.poll();
+            TreeNode node = queue.poll();
             if (node == null) {
                 elems.add("#");
             } else {
@@ -424,22 +413,22 @@ public class BinarySearchTree {
      * designed by yourself, and deserialize it here as you serialize it in
      * "serialize" method.
      */
-    public Node deserialize(String data) {
+    public TreeNode deserialize(String data) {
         if (data == null || data.length() == 0) {
             return null;
         }
         String[] parts = data.split(",");
-        Queue<Node> queue = new LinkedList<>();
-        Node root = new Node(Integer.parseInt(parts[0]));
+        Queue<TreeNode> queue = new LinkedList<>();
+        TreeNode root = new TreeNode(Integer.parseInt(parts[0]));
         queue.offer(root);
         int i = 1;
         while (i < parts.length) {
-            Node node = queue.poll();
+            TreeNode node = queue.poll();
 
             if (parts[i].equals("#")) {
                 node.left = null;
             } else {
-                Node left = new Node(Integer.parseInt(parts[i]));
+                TreeNode left = new TreeNode(Integer.parseInt(parts[i]));
                 node.left = left;
                 queue.offer(left);
             }
@@ -449,7 +438,7 @@ public class BinarySearchTree {
             if (parts[i + 1].equals("#")) {
                 node.right = null;
             } else {
-                Node right = new Node(Integer.parseInt(parts[i + 1]));
+                TreeNode right = new TreeNode(Integer.parseInt(parts[i + 1]));
                 node.right = right;
                 queue.offer(right);
             }
@@ -482,7 +471,7 @@ public class BinarySearchTree {
         }
 
         if (TEST_SEARCH) {
-            Node n = tree.find(tree.getRoot(), 20);
+            TreeNode n = tree.find(tree.getRoot(), 20);
             if (n == null) System.out.println("Node not found for key = " + 20);
             else System.out.println("Node  found for key = " + 20);
         }
@@ -524,7 +513,7 @@ public class BinarySearchTree {
             String ser = tree.serialize(tree.getRoot());
             System.out.println("\nSerialized tree: " + ser);
 
-            Node n = tree.deserialize(ser);
+            TreeNode n = tree.deserialize(ser);
 
             tree.preOrderPrint(n);
         }

@@ -5,13 +5,13 @@ package io.octoprime.algo.ds.array;
 
 Maximum subArray problem:
 From Wikipedia :
-In computer science, the maximum subarray problem is the task of finding the contiguous subarray within a one-dimensional array of numbers which has the largest sum. For example, for the sequence of values −2, 1, −3, 4, −1, 2, 1, −5, 4; the contiguous subarray with the largest sum is 4, −1, 2, 1, with sum 6.
+In computer science, the maximum subarray problem is the task of finding the contiguous subarray within a one-dimensional arr of numbers which has the largest sum. For example, for the sequence of values −2, 1, −3, 4, −1, 2, 1, −5, 4; the contiguous subarray with the largest sum is 4, −1, 2, 1, with sum 6.
 
-Kadane ‘s Algorithm can be used to solve maximum sub array problem
+Kadane ‘s Algorithm can be used to solve maximum sub arr problem
 
 Kadane’s algorithm:
 Initialize maxSoFar= 0 and maxEndingHere = 0
-Iterate over each element of the array
+Iterate over each element of the arr
 maxEndingHere = maxEndingHere + a[i]
 if(maxEndingHere < 0)
  maxEndingHere = 0
@@ -25,7 +25,7 @@ public class MaximumSubArray {
 
 
     /* Kadane algorithm
-     * It won't work when all elements of array are negative
+     * It won't work when all elements of arr are negative
      */
     public int kandaneForMaxSubArray(int[] arr) {
         int maxEndHere = 0;

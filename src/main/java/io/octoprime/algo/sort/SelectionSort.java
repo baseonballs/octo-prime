@@ -35,7 +35,6 @@ public class SelectionSort implements Sort {
             arr[minIndex] = arr[i];
             arr[i] = t;
         }
-
     }
 
     public static void main(String[] arg) {

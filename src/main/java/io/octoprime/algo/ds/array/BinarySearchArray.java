@@ -6,7 +6,8 @@ package io.octoprime.algo.ds.array;
 public class BinarySearchArray {
 
     /**
-     *  Returns index of value if it is present in arr[start..end], else return -1
+     * Returns index of value if it is present in arr[start..end], else return -1
+     *
      * @param arr
      * @param start
      * @param end

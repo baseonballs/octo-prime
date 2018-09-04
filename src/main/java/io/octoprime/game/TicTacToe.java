@@ -2,7 +2,6 @@ package io.octoprime.game;
 
 public class TicTacToe {
 
-
     private char[][] board;
     private char currentPlayerMark;
 
@@ -11,7 +10,6 @@ public class TicTacToe {
         currentPlayerMark = 'x';
         initializeBoard();
     }
-
 
     // Set/Reset the board back to all empty values.
     private void initializeBoard() {
@@ -25,7 +23,6 @@ public class TicTacToe {
             }
         }
     }
-
 
     // Print the current board (may be replaced by GUI implementation later)
     public void printBoard() {
@@ -45,17 +42,16 @@ public class TicTacToe {
     // Loop through all cells of the board and if one is found to be empty (contains char '-') then return false.
     // Otherwise the board is full.
     public boolean isBoardFull() {
-        boolean isFull = true;
 
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 if (board[i][j] == '-') {
-                    isFull = false;
+                    return false;
                 }
             }
         }
 
-        return isFull;
+        return true;
     }
 
 
@@ -88,17 +84,16 @@ public class TicTacToe {
     }
 
 
-    // Check the two diagonals to see if either is a win. Return true if either wins.
-    private boolean checkDiagonalsForWin() {
-        return ((checkRowCol(board[0][0], board[1][1], board[2][2])) || (checkRowCol(board[0][2], board[1][1], board[2][0])));
-    }
-
-
     // Check to see if all three values are the same (and not empty) indicating a win.
     private boolean checkRowCol(char c1, char c2, char c3) {
         return ((c1 != '-') && (c1 == c2) && (c2 == c3));
     }
 
+
+    // Check the two diagonals to see if either is a win. Return true if either wins.
+    private boolean checkDiagonalsForWin() {
+        return ((checkRowCol(board[0][0], board[1][1], board[2][2])) || (checkRowCol(board[0][2], board[1][1], board[2][0])));
+    }
 
     // Change player marks back and forth.
     public void changePlayer() {

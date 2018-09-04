@@ -67,7 +67,7 @@ public class MediamOfTwoSortedArrays2 {
             int aMid = aLen * k / (aLen + bLen); // a's middle count
             int bMid = k - aMid - 1; // b's middle count
 
-            // make aMid and bMid to be array index
+            // make aMid and bMid to be arr index
             aMid = aMid + aStart;
             bMid = bMid + bStart;
 

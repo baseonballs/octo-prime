@@ -13,8 +13,8 @@ public class UnionIntersection {
     /**
      * Prints union of arr1[0..m-1] and arr2[0..n-1]
      *
-     * @param arr1 first array
-     * @param arr2 second array
+     * @param arr1 first arr
+     * @param arr2 second arr
      */
     int[] union(int arr1[], int arr2[]) {
 
@@ -37,7 +37,7 @@ public class UnionIntersection {
         }
 
         /**
-         *  Now arr1[] is smaller Sort the first array and add its elements (these two
+         *  Now arr1[] is smaller Sort the first arr and add its elements (these two
          *  steps can be swapped as order in collection is not important)
          */
         Arrays.sort(arr1);
@@ -45,7 +45,7 @@ public class UnionIntersection {
             list.add(arr1[i]);
 
         /**
-         * Search every element of bigger array in smaller array and add the element if not found
+         * Search every element of bigger arr in smaller arr and add the element if not found
          */
         for (int i = 0; i < n; i++) {
             if (_bs.bsearch(arr1, 0, m - 1, arr2[i]) == -1)
@@ -58,8 +58,8 @@ public class UnionIntersection {
     /**
      * Prints intersection of arr1[0..m-1] and arr2[0..n-1]
      *
-     * @param arr1 first array
-     * @param arr2 second array
+     * @param arr1 first arr
+     * @param arr2 second arr
      */
     int[] intersection(int arr1[], int arr2[]) {
         LinkedList<Integer> list = new LinkedList();
@@ -79,10 +79,10 @@ public class UnionIntersection {
         }
 
         // Now arr1[] is smaller
-        // Sort smaller array arr1[0..m-1]
+        // Sort smaller arr arr1[0..m-1]
         Arrays.sort(arr1);
 
-        // Search every element of bigger array in smaller array
+        // Search every element of bigger arr in smaller arr
         // and print the element if found
 
         for (int i = 0; i < n; i++) {

@@ -46,6 +46,6 @@ public class MedianOfTwoSortedArrays {
         System.out.println(Arrays.toString(arr2) + " : size = " + arr2.length);
 
         double val = (new MedianOfTwoSortedArrays()).findMedianSortedArray(arr1, arr2);
-        System.out.println(String.format("The mediam of two sorted array with varying length is: %1$,.2f", val));
+        System.out.println(String.format("The mediam of two sorted arr with varying length is: %1$,.2f", val));
     }
 }

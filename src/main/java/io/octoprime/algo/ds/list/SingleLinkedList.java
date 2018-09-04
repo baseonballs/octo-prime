@@ -92,6 +92,70 @@ public class SingleLinkedList {
         return size;
     }
 
+    /**
+     * detects if the list has a cycle.
+     *
+     * @param head
+     * @return
+     */
+    public boolean hasCycle(ListNode head) {
+        ListNode fast = head;
+        ListNode slow = head;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+
+            if (slow == fast)
+                return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * @param head
+     * @return
+     */
+    public ListNode reverseIter(ListNode head) {
+
+        ListNode prev = null;
+        ListNode curr = head;
+        while (curr != null) {
+            ListNode temp = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = temp;
+        }
+
+        /**
+         * fix head node.
+         */
+        return head = prev;
+    }
+
+    /**
+     * case1: empty list
+     * case2: only one element list
+     * case3: reverse from the rest after head
+     * reverse between head and head->next
+     * finally: unlink list from the rest.
+     *
+     * @param head
+     * @return
+     */
+    public ListNode reverse(ListNode head) {
+        if (head == null || head.next == null) return head;
+
+        ListNode prev = reverse(head.next);
+
+        head.next.next = head;
+        head.next = null;
+
+        return prev;
+    }
+
+
     public static void main(String[] args) {
         System.out.println("/=/=/=/= TESTING /=/=/=/=");
         SingleLinkedList ll = new SingleLinkedList(10);

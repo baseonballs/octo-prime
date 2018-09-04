@@ -51,7 +51,7 @@ public class QuickSort implements Sort {
 
         while (i <= j) {
 
-            // scan for all elemens less then pivot;
+            // scan for all elements less then pivot;
             while (arr[i] < pivot) {
                 i++;
             }

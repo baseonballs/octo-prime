@@ -19,16 +19,14 @@ package io.octoprime.algo.ds.tree;
  */
 public class LCA {
 
-    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode
+    public TreeNode lca(TreeNode root, TreeNode
             A, TreeNode B) {
-        if (root == null) {
-            return null;
-        }
-        if (root == A || root == B) {
+
+        if ((root == null) || (root == A || root == B)) {
             return root;
         }
-        TreeNode left = lowestCommonAncestor(root.left, A, B);
-        TreeNode right = lowestCommonAncestor(root.right, A, B);
+        TreeNode left = lca(root.left, A, B);
+        TreeNode right = lca(root.right, A, B);
 
         if (left != null && right != null) {
             return root;

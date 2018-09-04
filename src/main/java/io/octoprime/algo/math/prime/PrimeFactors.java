@@ -7,7 +7,10 @@ import static java.lang.StrictMath.sqrt;
 
 public class PrimeFactors {
 
-    //
+    /**
+     * @param number
+     * @return
+     */
     public static List<Integer> primeFactors(int number) {
         int n = number;
         List<Integer> factors = new ArrayList<Integer>();
@@ -20,7 +23,11 @@ public class PrimeFactors {
         return factors;
     }
 
-    // more optimized;
+    /**
+     * Optimized using sqrt(n).
+     * @param numbers
+     * @return
+     */
     public static List<Integer> primeFactors2(int numbers) {
         int n = numbers;
         List<Integer> factors = new ArrayList<Integer>();

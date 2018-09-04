@@ -97,17 +97,17 @@ public class LCM {
     }
 
     // extended Euclidean Algorithm
-    public static int gcdBasic(int a, int b) {
+    public static int gcd1(int a, int b) {
         if (a == 0)
             return b;
 
-        return gcdBasic(b % a, a);
+        return gcd1(b % a, a);
     }
 
     // recursive implementation
-    public static int gcdBasic2(int a, int b) {
+    public static int gcd2(int a, int b) {
         if (b == 0) return a;
-        else return gcdBasic2(b, a % b);
+        else return gcd2(b, a % b);
     }
 
     // Recursive method to return gcd of a and b
@@ -148,7 +148,7 @@ public class LCM {
         LCM(a, b) = (a x b) / GCD(a, b)
      */
     public static int lcm(int a, int b) {
-        return (a * b) / gcd(a, b);
+        return (a * b) / gcd1(a, b);
     }
 
 

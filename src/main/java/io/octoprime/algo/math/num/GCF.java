@@ -1,15 +1,16 @@
 package io.octoprime.algo.math.num;
 
+import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashSet;
+import java.util.List;
 import java.util.Scanner;
 
 public class GCF {
 
     private static boolean DEBUG = false;
 
-    public static HashSet<Integer> divisors(int n) {
-        HashSet<Integer> list = new HashSet<Integer>();
+    public static List<Integer> divisors(int n) {
+        List<Integer> list = new ArrayList<Integer>();
 
         for (int i = 1; i <= n; i++)
             if (n % i == 0)
@@ -23,7 +24,7 @@ public class GCF {
     public static int findmax(Integer[] list) {
         int max = Integer.MIN_VALUE;
         for (Integer e : list) {
-            if (max < e.intValue())
+            if (e.intValue() > max)
                 max = e.intValue();
             if (DEBUG) System.out.print(e.toString() + " ");
         }
@@ -34,7 +35,7 @@ public class GCF {
     public static int findmin(Integer[] list) {
         int min = Integer.MAX_VALUE;
         for (Integer e : list) {
-            if (min > e.intValue())
+            if (e.intValue() < min)
                 min = e.intValue();
             if (DEBUG) System.out.print(e.toString() + " ");
         }
@@ -53,8 +54,8 @@ public class GCF {
         int a = scanner.nextInt();
         int b = scanner.nextInt();
 
-        HashSet<Integer> alist = divisors(a);
-        HashSet<Integer> blist = divisors(b);
+        List<Integer> alist = divisors(a);
+        List<Integer> blist = divisors(b);
 
         System.out.println("\ndivisors for a " + Arrays.toString(alist.toArray(new Integer[alist.size()])));
         System.out.println("\ndivisors for b " + Arrays.toString(blist.toArray(new Integer[alist.size()])));

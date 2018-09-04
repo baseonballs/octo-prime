@@ -12,7 +12,7 @@ public class Fibinacci {
     public static int fibIter(int nth) {
         int f1 = 0, f2 = 1, sum = 0;
 
-        for (int i = 2; i < nth + 1; i++) {
+        for (int i = 2; i <= nth; i++) {
             sum = f1 + f2;
             f1 = f2;
             f2 = sum;

@@ -2,7 +2,7 @@ package io.octoprime.algo.math.prime;
 
 public class PrimeExponentization {
 
-    private static long PRIME = 1000000007;        // Or any prime
+    private static long PRIME = 1_000_000_007;        // Or any prime
 
     // Returns (x^n) % PRIME
     private long binary_exp(long x, long n) {

@@ -28,16 +28,21 @@ public class Power {
      * @param n
      * @return
      */
-    public static double pow(double x, int n) {
-        long N = n;
-        if (N < 0) {
-            x = 1 / x;
-            N = -N;
+    public static double pow(double base, int n) {
+
+        // normalize if n  < 0;
+        long exp = n;
+        if (exp < 0) {
+            base = 1 / base;
+            exp = -exp;
         }
-        double ans = 1;
-        for (long i = 0; i < N; i++)
-            ans = ans * x;
-        return ans;
+
+        double powers = 1;
+        for (long i = 0; i < exp; i++) {
+            powers *= base;
+        }
+
+        return powers;
     }
 
     /**
@@ -163,6 +168,6 @@ public class Power {
         System.out.println("Enter the exponent: ");
         int exponent = scanner.nextInt();
 
-        System.out.println(String.format("The power(%f,%d) is : %f", base, exponent, pow3(base, exponent)));
+        System.out.println(String.format("The power(%f,%d) is : %f", base, exponent, pow(base, exponent)));
     }
 }

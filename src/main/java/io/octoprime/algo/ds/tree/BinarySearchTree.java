@@ -19,6 +19,7 @@ public class BinarySearchTree {
     static boolean TEST_ISVALID = false;
     static boolean TEST_SEARCH = false;
     static boolean TEST_SERDESER = true;
+    static boolean TEST_BALANCED = true;
 
     private TreeNode _root;
 
@@ -245,6 +246,57 @@ public class BinarySearchTree {
 
     }
 
+    /**
+     * return -1 if tree is not balanced.
+     *
+     * @param root
+     * @return
+     */
+    public int isBalanced(TreeNode root) {
+        if (root == null) return 0;
+
+        int l = isBalanced(root.left);
+        int r = isBalanced(root.right);
+
+        if ((l == -1) || (r == 1)) return -1;
+
+        if (Math.abs(l - r) <= 1)
+            return Math.max(l, r) + 1;
+        else return -1;
+    }
+
+    public TreeNode lca(TreeNode root, TreeNode
+            A, TreeNode B) {
+
+        if ((root == null) || (root == A || root == B)) {
+            return root;
+        }
+        TreeNode left = lca(root.left, A, B);
+        TreeNode right = lca(root.right, A, B);
+
+        if (left != null && right != null) {
+            return root;
+        }
+
+        return left == null ? right : left;
+    }
+
+
+    /**
+     * @param root: a TreeNode, the root of the binary tree
+     * @return: nothing
+     */
+    public void invertBinaryTree(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+        TreeNode tmp = root.left;
+        root.left = root.right;
+        root.right = tmp;
+        invertBinaryTree(root.left);
+        invertBinaryTree(root.right);
+    }
+
     void inOrderPrint() {
         inorderPrint(_root);
     }
@@ -368,6 +420,20 @@ public class BinarySearchTree {
         return true;
     }
 
+    /**
+     * @param a, b, the root of binary trees.
+     * @return true if they are identical, or false.
+     */
+    public boolean isIdentical(TreeNode a, TreeNode b) {
+        if (a == null && b == null) {
+            return true;
+        } else if (a == null || b == null) {
+            return false;
+        } else {
+            return a.key == b.key && isIdentical(a.left, b.left)
+                    && isIdentical(a.right, b.right);
+        }
+    }
 
     /**
      * This method will be invoked first, you should design your own algorithm
@@ -468,6 +534,12 @@ public class BinarySearchTree {
         if (TEST_ISVALID) {
             boolean isValid = tree.isValid();
             System.out.println(String.format("Tree is valid: %s", isValid ? "Yes" : "No"));
+        }
+
+        if (TEST_BALANCED) {
+            boolean isBalanced = tree.isBalanced(tree.getRoot()) == -1;
+            if (isBalanced) System.out.println("The tree is balanced.");
+            else System.out.println("The tree is not balanced.");
         }
 
         if (TEST_SEARCH) {

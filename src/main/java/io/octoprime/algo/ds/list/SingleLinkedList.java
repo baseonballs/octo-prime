@@ -33,12 +33,16 @@ public class SingleLinkedList {
 
     public void addAtTail(Object data) {
         Node temp = head;
-        while (temp.next != null) {
-            temp = temp.next;
-        }
 
-        temp.next = new Node(data);
-        size++;
+        if (head == null) {
+            addAtHead(data);
+        } else {
+            while (temp.next != null) {
+                temp = temp.next;
+            }
+            temp.next = new Node(data);
+            size++;
+        }
     }
 
     public void addAtIndex(int index, Object data) {

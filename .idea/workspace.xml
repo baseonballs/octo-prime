@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="20207ac3-3947-4bc5-9b89-0fca36d24dc5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/ZSandbox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/ZSandbox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/SingleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/SingleLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/tree/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/tree/BinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/pow/Power.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/pow/Power.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/ZSandbox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/ZSandbox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/tree/IdenticalBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/tree/IdenticalBST.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="target/" />
@@ -44,14 +40,14 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="2" />
-          <entry key="java" value="565" />
+          <entry key="java" value="568" />
           <entry key="xml" value="1" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="565" />
+          <entry key="JAVA" value="568" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="1" />
           <entry key="YAML" value="1" />
@@ -62,13 +58,13 @@
           <entry key="dummy" value="136" />
           <entry key="gitignore" value="27" />
           <entry key="java" value="58523" />
-          <entry key="txt" value="4414" />
+          <entry key="txt" value="4530" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="58523" />
-          <entry key="PLAIN_TEXT" value="4577" />
+          <entry key="PLAIN_TEXT" value="4693" />
         </counts>
       </usages-collector>
     </session>
@@ -79,60 +75,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/BalancedParens.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/LongestWordInDict.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/prime/PrimeFactors.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/prime/Sieve.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/prime/FermatPrimality.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-248">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/pow/Power.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/tree/LCA.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="485">
@@ -141,29 +83,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/tree/InvertedBinaryTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/tree/BinarySearchTree.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/tree/IdenticalBST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="282" lean-forward="true" selection-start-line="282" selection-end-line="282" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/prime/PrimeExponentization.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/prime/MyPrime.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1064">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -217,7 +150,6 @@
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/game/FizzBuzz.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/num/MissingNumber.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/CompareString.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/tree/IdenticalBST.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/num/AddDigits.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/num/AddBinaryNumbers.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/tree/ValidGraph.java" />
@@ -253,6 +185,7 @@
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/SingleLinkedList.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/pow/Power.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/tree/BinarySearchTree.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/tree/IdenticalBST.java" />
       </list>
     </option>
   </component>
@@ -441,7 +374,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536616194109" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536616808237" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/target" />
@@ -579,13 +512,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533756672601</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Fixed implementation bug with insertion; offset of 0.  start element needed to be set at 1 so that we can insert to the left of the partition.">
-      <created>1533879235146</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1533879235146</updated>
     </task>
     <task id="LOCAL-00010" summary="Added factorial class and also refactoring of basic math algorithms">
       <created>1533882107907</created>
@@ -923,7 +849,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536031610810</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Fixed some minor bugs with lca; returned null should have been return left or right depending on state of leaf.">
+      <created>1536616356633</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1536616356633</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -969,6 +902,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7157434" visible="true" weight="0.20682302" />
       <window_info id="Structure" order="1" sideWeight="0.28425655" side_tool="true" visible="true" weight="0.20682302" />
@@ -1044,7 +978,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Moved the BST implemenation to *.tree* package." />
     <MESSAGE value="added a missing file for the preorder implementation of bst." />
     <MESSAGE value="Added string enecoder for serializing duplicate characters found in a given string.  For example, 'aaabbfggd' should yield 'a3b2f1g2d1';" />
     <MESSAGE value="Migrated Queue implemention to array package since we are demonstrating use of Array as the implementation of a simple queue." />
@@ -1069,7 +1002,8 @@
     <MESSAGE value="Cleaned up tic-tac-toe game." />
     <MESSAGE value="Minor clean up algorithms." />
     <MESSAGE value="Delete old deprecated resources" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete old deprecated resources" />
+    <MESSAGE value="Fixed some minor bugs with lca; returned null should have been return left or right depending on state of leaf." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed some minor bugs with lca; returned null should have been return left or right depending on state of leaf." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1078,7 +1012,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/pow/Power.java</url>
-          <line>147</line>
+          <line>146</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
@@ -1098,20 +1032,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/tree/InvertedBinaryTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="29" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/game/TicTacToe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="100" column="36" selection-start-line="100" selection-start-column="36" selection-end-line="100" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/game/TowerOfHanoi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1437,7 +1357,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/pow/Power.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
-          <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+          <caret line="40" column="40" lean-forward="true" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/tree/BinarySearchTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="282" lean-forward="true" selection-start-line="282" selection-end-line="282" />
         </state>
       </provider>
     </entry>
@@ -1448,10 +1375,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/tree/BinarySearchTree.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/tree/InvertedBinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="282" lean-forward="true" selection-start-line="282" selection-end-line="282" />
+        <state relative-caret-position="527">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/tree/IdenticalBST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>

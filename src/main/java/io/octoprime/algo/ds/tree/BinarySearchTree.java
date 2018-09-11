@@ -258,7 +258,7 @@ public class BinarySearchTree {
         int l = isBalanced(root.left);
         int r = isBalanced(root.right);
 
-        if ((l == -1) || (r == 1)) return -1;
+        if ((l == -1) || (r == -1)) return -1;
 
         if (Math.abs(l - r) <= 1)
             return Math.max(l, r) + 1;
@@ -281,6 +281,21 @@ public class BinarySearchTree {
         return left == null ? right : left;
     }
 
+
+    /**
+     * @param a, b, the root of binary trees.
+     * @return true if they are identical, or false.
+     */
+    public boolean isIdentical(TreeNode a, TreeNode b) {
+        if (a == null && b == null) {
+            return true;
+        } else if (a == null || b == null) {
+            return false;
+        } else {
+            return a.key == b.key && isIdentical(a.left, b.left)
+                    && isIdentical(a.right, b.right);
+        }
+    }
 
     /**
      * @param root: a TreeNode, the root of the binary tree
@@ -420,20 +435,6 @@ public class BinarySearchTree {
         return true;
     }
 
-    /**
-     * @param a, b, the root of binary trees.
-     * @return true if they are identical, or false.
-     */
-    public boolean isIdentical(TreeNode a, TreeNode b) {
-        if (a == null && b == null) {
-            return true;
-        } else if (a == null || b == null) {
-            return false;
-        } else {
-            return a.key == b.key && isIdentical(a.left, b.left)
-                    && isIdentical(a.right, b.right);
-        }
-    }
 
     /**
      * This method will be invoked first, you should design your own algorithm

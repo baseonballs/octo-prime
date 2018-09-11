@@ -375,23 +375,25 @@ public class BinarySearchTree {
     /**
      * inorder-travasal uses a DFS which employs a stack.
      *
-     * @param root
-     * @return
+     * @param node
+     * @return List<Integer>
      */
-    public List<Integer> inorderTraversal(TreeNode root) {
+    public List<Integer> inorderTraversal(TreeNode node) {
         List<Integer> list = new ArrayList<>();
-        if (root == null) return list;
-        Stack<TreeNode> stack = new Stack<>();
-        while (root != null || !stack.empty()) {
-            while (root != null) {
-                stack.push(root);
-                root = root.left;
-            }
-            root = stack.pop();
-            list.add(root.key);
-            root = root.right;
+        if (node == null) return list;
 
+        Stack<TreeNode> stack = new Stack<>();
+        while (node != null || !stack.empty()) {
+
+            while (node != null) {
+                stack.push(node);
+                node = node.left;
+            }
+            node = stack.pop();
+            list.add(node.key);
+            node = node.right;
         }
+
         return list;
     }
 

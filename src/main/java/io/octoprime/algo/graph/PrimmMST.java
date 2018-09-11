@@ -40,7 +40,7 @@ public class PrimmMST {
      */
 
     public static int PrimsAlgorithm(Vertex[] graph, int source) {
-        // set the initial cost of the minimum spanning tree to 0
+        // put the initial cost of the minimum spanning tree to 0
         int cost = 0;
         // initialize an array that will keep track of which vertices have been visited
         boolean[] visited = new boolean[graph.length];

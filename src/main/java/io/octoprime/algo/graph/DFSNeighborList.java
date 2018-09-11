@@ -3,33 +3,25 @@ package io.octoprime.algo.graph;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
-
 public class DFSNeighborList {
-
     static class Node {
         int data;
         boolean visited;
         List<Node> neighbours;
-
         Node(int data) {
             this.data = data;
             this.neighbours = new ArrayList<>();
-
         }
-
         public void addneighbours(Node neighbourNode) {
             this.neighbours.add(neighbourNode);
         }
-
         public List<Node> getNeighbours() {
             return neighbours;
         }
-
         public void setNeighbours(List<Node> neighbours) {
             this.neighbours = neighbours;
         }
     }
-
     // Recursive DFS
     public void dfs(Node node) {
         System.out.print(node.data + " ");
@@ -42,7 +34,6 @@ public class DFSNeighborList {
             }
         }
     }
-
     // Iterative DFS using stack
     public void dfsUsingStack(Node node) {
         Stack<Node> stack = new Stack<Node>();

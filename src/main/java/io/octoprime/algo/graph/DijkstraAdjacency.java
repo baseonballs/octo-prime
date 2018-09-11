@@ -9,7 +9,7 @@ public class DijkstraAdjacency {
 
 
     // A utility function to find the vertex with minimum distance key,
-    // from the set of vertices not yet included in shortest path tree
+    // from the put of vertices not yet included in shortest path tree
     static final int NUM_VERTICES = 9;
 
     int findMinDistance(int dist[], boolean sptSet[]) {
@@ -43,7 +43,7 @@ public class DijkstraAdjacency {
 
         // Find shortest path for all vertices
         for (int i = 0; i < NUM_VERTICES - 1; i++) {
-            // Pick the minimum distance vertex from the set of vertices
+            // Pick the minimum distance vertex from the put of vertices
             // not yet processed. u is always equal to src in first
             // iteration.
             int u = findMinDistance(dist, sptSet);

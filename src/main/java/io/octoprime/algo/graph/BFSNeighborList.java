@@ -4,14 +4,10 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
-
-
 /**
  * ref: link: https://java2blog.com/breadth-first-search-in-java/
  */
 public class BFSNeighborList {
-
-
     private Queue<Node> queue;
     static ArrayList<Node> nodes = new ArrayList<>();
 
@@ -19,26 +15,21 @@ public class BFSNeighborList {
         int data;
         boolean visited;
         List<Node> neighbours;
-
         Node(int data) {
             this.data = data;
             this.neighbours = new ArrayList<>();
-
         }
 
         void addneighbours(Node neighbourNode) {
             this.neighbours.add(neighbourNode);
         }
-
         List<Node> getNeighbours() {
             return neighbours;
         }
-
         public void setNeighbours(List<Node> neighbours) {
             this.neighbours = neighbours;
         }
     }
-
     private BFSNeighborList() {
         queue = new LinkedList<>();
     }
@@ -57,7 +48,6 @@ public class BFSNeighborList {
                     n.visited = true;
                 }
             }
-
         }
     }
 

@@ -3,16 +3,16 @@ package io.octoprime.algo.ds.list;
 /**
  * Node object used by  singly linked list;
  */
-public class ListNode {
+public class Node {
 
-    int val;
-    ListNode next;
+    int value;
+    Node next;
 
     /**
      * @param value the ndoe's value
      */
-    public ListNode(int value) {
-        val = value;
+    public Node(int value) {
+        this.value = value;
         next = null;
     }
 }

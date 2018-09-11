@@ -27,7 +27,7 @@ public class BitTest {
      * If you look closely, you can see that this method always loop 32 times, which is size of int.
      * If you write similar method for long, it will loop 64 times, can you think what to optimize now?
      * You can optimize this loop. Instead of making loop proportional to size of bits, you can make it
-     * proportional to number of set bits.
+     * proportional to number of put bits.
      * *
      *
      * @param number
@@ -53,7 +53,7 @@ public class BitTest {
     }
 
     /**
-     * You can turn off a bit by anding with a binary number of all 1's, except for the bit to be set.
+     * You can turn off a bit by anding with a binary number of all 1's, except for the bit to be put.
      * <p>
      * 01010101 & ~(1<<2) == 01010101 & 11111011 == 01010001
      *

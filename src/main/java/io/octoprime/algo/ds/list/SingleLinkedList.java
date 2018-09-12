@@ -210,6 +210,23 @@ public class SingleLinkedList {
         return head;
     }
 
+    public Node deleteDuplicatesFromSortedList(Node head) {
+        if (head == null || head.next == null)
+            return head;
+
+        Node p = head;
+
+        while (p != null && p.next != null) {
+            if (p.value == p.next.value) {
+                p.next = p.next.next;
+            } else {
+                p = p.next;
+            }
+        }
+
+        return head;
+    }
+
     /*
     Given a singly linked list, group all odd nodes together followed by the even nodes. Please note here we are
     talking about the node number and not the value in the nodes.

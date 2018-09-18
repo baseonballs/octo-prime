@@ -1,4 +1,4 @@
-package io.octoprime.algo.sort;
+package io.octoprime.algo.ds.array;
 
 
 /**

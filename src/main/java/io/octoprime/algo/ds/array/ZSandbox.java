@@ -2,12 +2,15 @@ package io.octoprime.algo.ds.array;
 
 import io.octoprime.utils.UtilsArray;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class ZSandbox {
 
+    static class SortByPairs implements Comparator<int[]> {
+        public int compare(int[] a, int[] b) {
+            return (a[0] + a[1]) - (b[0] + b[1]);
+        }
+    }
     public static void sort(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
 
@@ -89,12 +92,14 @@ public class ZSandbox {
         int[] arr = new UtilsArray().randomArrayAsInt(10, 100);
 
 
-        if (false) {
+        if (true) {
             doubleArray();
 
             List<int[]> ll = findPairs(arrs1);
             System.out.print("size: " + ll.size());
             System.out.println(">>>>>>");
+
+            Collections.sort(ll, new SortByPairs());
 
             for (int[] e : ll) {
                 System.out.println(Arrays.toString(e));

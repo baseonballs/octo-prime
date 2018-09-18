@@ -5,43 +5,43 @@ import java.util.Arrays;
 
 public class SimplyArray {
 
-    static int sum(int A[], int n) {
+    static int sum(int arr[], int n) {
         if (n <= 0)
             return 0;
-        return (sum(A, n - 1) + A[n - 1]);
+        return (sum(arr, n - 1) + arr[n - 1]);
     }
 
     // Create an array with all unique elements
-    public static int[] removeDuplicates(int[] A) {
-        if (A.length < 2)
-            return A;
+    public static int[] removeDuplicates(int[] arr) {
+        if (arr.length < 2)
+            return arr;
 
         int j = 0;
         int i = 1;
 
-        while (i < A.length) {
-            if (A[i] == A[j]) {
+        while (i < arr.length) {
+            if (arr[i] == arr[j]) {
                 i++;
             } else {
                 j++;
-                A[j] = A[i];
+                arr[j] = arr[i];
                 i++;
             }
         }
 
-        int[] B = Arrays.copyOf(A, j + 1);
+        int[] B = Arrays.copyOf(arr, j + 1);
 
         return B;
     }
 
-    public static int countUnique(int[] A) {
+    public static int countUnique(int[] arr) {
         int count = 0;
-        for (int i = 0; i < A.length - 1; i++) {
-            if (A[i] == A[i + 1]) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            if (arr[i] == arr[i + 1]) {
                 count++;
             }
         }
-        return (A.length - count);
+        return (arr.length - count);
     }
 
     public static void main(String[] args) {
@@ -55,6 +55,4 @@ public class SimplyArray {
                 removeDuplicates(dups);
         System.out.println(dups.length);
     }
-
-
 }

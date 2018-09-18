@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 public class UtilsArray {
 
-    private Random _random = new Random();
+    private static Random _random = new Random();
 
     public static int[] makeIntArray(Stream s) {
         return s.filter(e -> e != null).mapToInt(e -> (int) e).toArray();
@@ -24,7 +24,7 @@ public class UtilsArray {
         return makeIntArray(arr.stream());
     }
 
-    public ArrayList<Integer> sequencedArrayCountingNumber(int n) {
+    public static ArrayList<Integer> sequencedArrayCountingNumber(int n) {
         ArrayList<Integer> arr = new ArrayList<Integer>(n);
 
         for (int i = 0; i < n; i++)
@@ -40,7 +40,7 @@ public class UtilsArray {
     }
 
 
-    public ArrayList<Integer> randomArray(int n, int range) {
+    public static ArrayList<Integer> randomArray(int n, int range) {
         ArrayList<Integer> arr = new ArrayList<Integer>(n);
 
         int j = n;
@@ -51,13 +51,13 @@ public class UtilsArray {
         return arr;
     }
 
-    public int[] randomArrayAsInt(int n, int range) {
+    public static int[] randomArrayAsInt(int n, int range) {
         ArrayList<Integer> arr = randomArray(n, range);
 
         return makeIntArray(arr.stream());
     }
 
-    public ArrayList<String> stringArray(int n, int size) {
+    public static ArrayList<String> stringArray(int n, int size) {
         ArrayList<String> arr = new ArrayList<String>(n);
 
         int j = n;
@@ -66,6 +66,7 @@ public class UtilsArray {
         }
         return arr;
     }
+
 
     public static void main(String[] args) {
         int[] arr = new int[]{1, 2, 3, 4};

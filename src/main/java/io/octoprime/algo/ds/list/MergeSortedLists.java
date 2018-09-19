@@ -1,6 +1,6 @@
 package io.octoprime.algo.ds.list;
 
-public class SortedList {
+public class MergeSortedLists {
 
     public Node mergeTwoSortedLists(Node alist, Node blist) {
         Node head = new Node(0);

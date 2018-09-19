@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20207ac3-3947-4bc5-9b89-0fca36d24dc5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/IntersectionOfList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/IsIdenticalLists.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/MergeSortDoublyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/ReverseKGroups.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/ReverseList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/SortedLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/UtilsList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/tree/CountPairs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/PalidromeLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/PalidromeLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/SingleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/SingleLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/SortedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/MergeSortedLists.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="target/" />
@@ -30,24 +41,24 @@
           <entry key="project.open.time.14" value="7" />
           <entry key="project.open.time.15" value="5" />
           <entry key="project.open.time.16" value="2" />
-          <entry key="project.open.time.17" value="2" />
+          <entry key="project.open.time.17" value="3" />
           <entry key="project.open.time.18" value="2" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="31" />
+          <entry key="project.opened" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="2" />
-          <entry key="java" value="808" />
+          <entry key="java" value="827" />
           <entry key="xml" value="1" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="808" />
+          <entry key="JAVA" value="827" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="1" />
           <entry key="YAML" value="1" />
@@ -55,16 +66,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="163" />
+          <entry key="dummy" value="169" />
           <entry key="gitignore" value="27" />
-          <entry key="java" value="64676" />
-          <entry key="txt" value="5066" />
+          <entry key="java" value="64977" />
+          <entry key="txt" value="5104" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="64676" />
-          <entry key="PLAIN_TEXT" value="5256" />
+          <entry key="JAVA" value="64977" />
+          <entry key="PLAIN_TEXT" value="5300" />
         </counts>
       </usages-collector>
     </session>
@@ -73,73 +84,84 @@
     <favorites_list name="octo-prime" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/BinarySearchArray.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/tree/CountPairs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+            <state relative-caret-position="187">
+              <caret line="23" column="50" lean-forward="true" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/KSmallestPairsInSingleArray.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/UtilsList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/KSmallestPairsInTwoArray.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
-              <folding>
-                <element signature="e#2081#2082#0" expanded="true" />
-                <element signature="e#2153#2154#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/MergeTwoSortedArrays.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/SortedLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1717">
+              <caret line="101" lean-forward="true" selection-start-line="1" selection-end-line="101" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/MergeKSortedArray.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/IntersectionOfList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-308">
-              <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+            <state relative-caret-position="627">
+              <caret line="54" lean-forward="true" selection-start-line="1" selection-end-line="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/utils/UtilsArray.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/IsIdenticalLists.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="53" column="40" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="40" />
+            <state relative-caret-position="627">
+              <caret line="73" lean-forward="true" selection-start-line="1" selection-end-line="73" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/IsSortedArray.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/MergeSortDoublyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="627">
+              <caret line="108" lean-forward="true" selection-start-line="1" selection-end-line="108" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/ReverseKGroups.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="627">
+              <caret line="144" lean-forward="true" selection-start-line="1" selection-end-line="144" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/ReverseList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/DListNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -178,16 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/ReverseSinglyLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/tree/LCA.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/ListNode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/tree/ZSandbox.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/game/TicTacToe.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/num/Fibinacci.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/num/ZSandbox.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/num/GCF.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/num/LCM.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/prime/PrimeExponentization.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/prime/PrimeFactors.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/ZSandbox.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/pow/Power.java" />
@@ -202,12 +214,9 @@
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/cache/LRUCache.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/Node.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/IntersectionOf2Lists.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/PalidromeLinkedList.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/ReverseLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/SingleLinkedList.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/ZSandbox.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/utils/UtilsArray.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/SimplyArray.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/KSmallestSum.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/MedianOfTwoSortedArrays.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/MediamOfTwoSortedArrays2.java" />
@@ -229,6 +238,19 @@
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/MergeTwoSortedArrays.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/KSortedArray.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/MergeKSortedArray.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/SimplyArray.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/SimpleArray.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/MergeSortedLists.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/SortedLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/ReverseList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/ReverseKGroups.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/IntersectionOfList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/UtilsList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/SingleLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/PalidromeLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/IsIdenticalLists.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/tree/CountPairs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/MergeSortDoublyLinkedList.java" />
       </list>
     </option>
   </component>
@@ -319,9 +341,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -383,28 +402,6 @@
               <item name="octoprime" type="462c0819:PsiDirectoryNode" />
               <item name="algo" type="462c0819:PsiDirectoryNode" />
               <item name="ds" type="462c0819:PsiDirectoryNode" />
-              <item name="array" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="octo-prime" type="b2602c69:ProjectViewProjectNode" />
-              <item name="octo-prime" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="octoprime" type="462c0819:PsiDirectoryNode" />
-              <item name="algo" type="462c0819:PsiDirectoryNode" />
-              <item name="ds" type="462c0819:PsiDirectoryNode" />
-              <item name="cache" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="octo-prime" type="b2602c69:ProjectViewProjectNode" />
-              <item name="octo-prime" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="octoprime" type="462c0819:PsiDirectoryNode" />
-              <item name="algo" type="462c0819:PsiDirectoryNode" />
-              <item name="ds" type="462c0819:PsiDirectoryNode" />
               <item name="list" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -416,7 +413,7 @@
               <item name="octoprime" type="462c0819:PsiDirectoryNode" />
               <item name="algo" type="462c0819:PsiDirectoryNode" />
               <item name="ds" type="462c0819:PsiDirectoryNode" />
-              <item name="queue" type="462c0819:PsiDirectoryNode" />
+              <item name="tree" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="octo-prime" type="b2602c69:ProjectViewProjectNode" />
@@ -491,6 +488,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -499,7 +498,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537387416681" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537393607619" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/target" />
@@ -541,20 +540,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MergeTwoSortedArrays">
-    <configuration name="IsSortedArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.octoprime.algo.ds.array.IsSortedArray" />
-      <module name="algo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.octoprime.algo.ds.array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.SortedLinkedList">
     <configuration name="KSmallestPairsInSingleArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.octoprime.algo.ds.array.KSmallestPairsInSingleArray" />
       <module name="algo" />
@@ -581,19 +567,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaximumSubArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.octoprime.algo.ds.array.MaximumSubArray" />
-      <module name="algo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.octoprime.algo.ds.array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MergeTwoSortedArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.octoprime.algo.ds.array.MergeTwoSortedArrays" />
       <module name="algo" />
@@ -607,20 +580,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReverseKGroups" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.octoprime.algo.ds.list.ReverseKGroups" />
+      <module name="algo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.octoprime.algo.ds.list.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortedLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.octoprime.algo.ds.list.SortedLinkedList" />
+      <module name="algo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.octoprime.algo.ds.list.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.KSmallestPairsInSingleArray" />
-      <item itemvalue="Application.MaximumSubArray" />
-      <item itemvalue="Application.IsSortedArray" />
       <item itemvalue="Application.KSmallestPairsInTwoArray" />
       <item itemvalue="Application.MergeTwoSortedArrays" />
+      <item itemvalue="Application.SortedLinkedList" />
+      <item itemvalue="Application.ReverseKGroups" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SortedLinkedList" />
+        <item itemvalue="Application.ReverseKGroups" />
         <item itemvalue="Application.MergeTwoSortedArrays" />
         <item itemvalue="Application.KSmallestPairsInTwoArray" />
         <item itemvalue="Application.KSmallestPairsInSingleArray" />
-        <item itemvalue="Application.MaximumSubArray" />
-        <item itemvalue="Application.IsSortedArray" />
       </list>
     </recent_temporary>
   </component>
@@ -638,13 +637,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533756672601</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Implemented new and improvied version of quicksort &amp; mergsort using the low &amp; high index strategy.  This is conceptually clear and is reflected by most algorithm implementation.">
-      <created>1534024755714</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1534024755714</updated>
     </task>
     <task id="LOCAL-00018" summary="Javadoc'ed the quick &amp; merge sort.">
       <created>1534025149676</created>
@@ -982,7 +974,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537386082609</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Simple Refactoring of Misnamed class.">
+      <created>1537388148820</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1537388148820</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1028,9 +1027,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.62147504" visible="true" weight="0.2595949" />
-      <window_info id="Structure" order="1" sideWeight="0.37852496" side_tool="true" visible="true" weight="0.2595949" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.62059236" visible="true" weight="0.26226014" />
+      <window_info id="Structure" order="1" sideWeight="0.3794076" side_tool="true" visible="true" weight="0.26226014" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -1038,8 +1038,8 @@
       <window_info id="Favorites" order="6" sideWeight="0.24731183" side_tool="true" weight="0.2978227" />
       <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.28688523" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.3445287" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49848714" weight="0.23101953" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3438178" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49848714" visible="true" weight="0.23101953" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.2624729" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -1103,7 +1103,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="New text search implemenation based on naive, rabin-karp, knuthmorrisprate, and boyer-moore methods." />
     <MESSAGE value="Imroved the search of min values in an array." />
     <MESSAGE value="fixed some bit manipulation routines.  Added examples of calculating the hammer weight of the decimal number." />
     <MESSAGE value="Cleanup of binary conversion." />
@@ -1128,7 +1127,8 @@
     <MESSAGE value="Aadded new implementation of k sorted arrays." />
     <MESSAGE value="Minor clean up of median of data stream" />
     <MESSAGE value="Reorganized the merged sorted arrays." />
-    <option name="LAST_COMMIT_MESSAGE" value="Reorganized the merged sorted arrays." />
+    <MESSAGE value="Simple Refactoring of Misnamed class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Simple Refactoring of Misnamed class." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1157,90 +1157,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/sort/SelectionSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="54" lean-forward="true" selection-start-line="1" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/search/SimpleTextSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="59" lean-forward="true" selection-start-line="1" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/search/TextSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/search/RabinKarpTextSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="75" lean-forward="true" selection-start-line="1" selection-end-line="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/search/KnuthMorrisPrattTextSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="82" lean-forward="true" selection-start-line="1" selection-end-line="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/search/BoyerMooreHorspoolTextSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="73" lean-forward="true" selection-start-line="1" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/search/AbstractTextSearchUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/pattern/StringMathExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/pattern/StringMatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/pattern/RegexTestPatternMatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/pattern/PatternMatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/prime/Sieve.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="66" lean-forward="true" selection-start-line="1" selection-end-line="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/prime/PrimeFactors.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="627">
@@ -1434,9 +1350,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1447,13 +1360,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/SimplyArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/MaximumSubArray.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1461,71 +1367,151 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/KthPositionInMergedArrays.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/BinarySearchArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        <state relative-caret-position="289">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/KSmallestPairsInSingleArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="527">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/KSmallestPairsInTwoArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
+        <state relative-caret-position="1037">
           <caret line="63" selection-start-line="63" selection-end-line="63" />
-          <folding>
-            <element signature="e#2081#2082#0" expanded="true" />
-            <element signature="e#2153#2154#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/utils/UtilsArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="53" column="40" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/IsSortedArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/KthPositionInMergedArrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#862#863#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/MergeKSortedArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-308">
+        <state relative-caret-position="204">
           <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/utils/UtilsArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="53" column="40" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/MergeTwoSortedArrays.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+        <state relative-caret-position="323">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/IsSortedArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/SimpleArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/SingleLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1154">
+          <caret line="160" column="28" lean-forward="true" selection-start-line="160" selection-start-column="28" selection-end-line="160" selection-end-column="28" />
+          <folding>
+            <element signature="e#5004#5005#0" expanded="true" />
+            <element signature="e#5036#5037#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/MergeSortedLists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/PalidromeLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="67" column="4" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/DListNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/tree/CountPairs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="23" column="50" lean-forward="true" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/UtilsList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/IntersectionOfList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="54" lean-forward="true" selection-start-line="1" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/IsIdenticalLists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="73" lean-forward="true" selection-start-line="1" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/MergeSortDoublyLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="108" lean-forward="true" selection-start-line="1" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/ReverseKGroups.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="144" lean-forward="true" selection-start-line="1" selection-end-line="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/ReverseList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/SortedLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1717">
+          <caret line="101" lean-forward="true" selection-start-line="1" selection-end-line="101" />
         </state>
       </provider>
     </entry>

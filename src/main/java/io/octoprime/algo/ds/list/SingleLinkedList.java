@@ -1,6 +1,6 @@
 package io.octoprime.algo.ds.list;
 
-import java.util.Stack;
+import static io.octoprime.algo.ds.list.UtilsList.printList;
 
 public class SingleLinkedList {
 
@@ -75,14 +75,7 @@ public class SingleLinkedList {
         return temp;
     }
 
-    public static void printList() {
-        Node temp = head;
-        while (temp != null) {
-            System.out.print(temp.value + ", ");
-            temp = temp.next;
-        }
-        System.out.println();
-    }
+
 
     public static int getSize() {
         return size;
@@ -108,107 +101,6 @@ public class SingleLinkedList {
         return false;
     }
 
-    public Node reverse(Node head) {
-        if (head == null || head.next == null) return head;
-
-        Node prev = reverse(head.next);
-
-        head.next.next = head;
-        head.next = null;
-
-        return prev;
-    }
-
-    public Node reversei(Node head) {
-
-        Node prev = null;
-        Node curr = head;
-        while (curr != null) {
-            Node temp = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = temp;
-        }
-        return head = prev;
-    }
-
-    public static Node reverseKGroup(Node head, int k) {
-        Stack<Integer> stack = new Stack<Integer>();
-        Node index = head;
-
-        while (index != null) {
-            Node curr = index;
-
-            while (stack.size() < k && curr != null) {
-                stack.push(curr.value);
-                curr = curr.next;
-            }
-
-            if (stack.size() == k) {
-
-                while (index != null && stack.size() > 0) {
-                    index.value = stack.pop();
-                    index = index.next;
-                }
-
-            } else {
-                index = null;
-            }
-        }
-
-        return head;
-    }
-
-
-    public Node reverseBetween(Node head, int m, int n) {
-        if (m == n) return head;
-
-        Node prev = null;//track (m-1)th node
-        Node first = new Node(0);//first's next points to mth
-        Node second = new Node(0);//second's next points to (n+1)th
-
-        int i = 0;
-        Node p = head;
-        while (p != null) {
-            i++;
-            if (i == m - 1) {
-                prev = p;
-            }
-
-            if (i == m) {
-                first.next = p;
-            }
-
-            if (i == n) {
-                second.next = p.next;
-                p.next = null;
-            }
-
-            p = p.next;
-        }
-        if (first.next == null)
-            return head;
-
-        // reverse list [m, n]
-        Node p1 = first.next;
-        Node p2 = p1.next;
-        p1.next = second.next;
-
-        while (p1 != null && p2 != null) {
-            Node t = p2.next;
-            p2.next = p1;
-            p1 = p2;
-            p2 = t;
-        }
-
-        //connect to previous part
-        if (prev != null)
-            prev.next = p1;
-        else
-            return p1;
-
-        return head;
-    }
 
     public Node deleteDuplicatesFromSortedList(Node head) {
         if (head == null || head.next == null)
@@ -258,73 +150,6 @@ public class SingleLinkedList {
         return result;
     }
 
-
-    public Node findIntersection(Node headA, Node headB) {
-        int len1 = 0;
-        int len2 = 0;
-        Node p1 = headA, p2 = headB;
-        if (p1 == null || p2 == null)
-            return null;
-
-        while (p1 != null) {
-            len1++;
-            p1 = p1.next;
-        }
-        while (p2 != null) {
-            len2++;
-            p2 = p2.next;
-        }
-
-        int diff = 0;
-        p1 = headA;
-        p2 = headB;
-
-        if (len1 > len2) {
-            diff = len1 - len2;
-            int i = 0;
-            while (i < diff) {
-                p1 = p1.next;
-                i++;
-            }
-        } else {
-            diff = len2 - len1;
-            int i = 0;
-            while (i < diff) {
-                p2 = p2.next;
-                i++;
-            }
-        }
-
-        while (p1 != null && p2 != null) {
-            if (p1.value == p2.value) {
-                return p1;
-            } else {
-
-            }
-            p1 = p1.next;
-            p2 = p2.next;
-        }
-
-        return null;
-    }
-
-
-    public static void testReversealKGroup() {
-        SingleLinkedList ll = new SingleLinkedList(10);
-
-        ll.addAtHead(3);
-        ll.addAtTail(12);
-        ll.addAtHead(2);
-        ll.addAtTail(6);
-        ll.addAtTail(9);
-
-        printList();
-
-        reverseKGroup(ll.getHead(), 3);
-
-        printList();
-    }
-
     public static void testLinkedList() {
         System.out.println("/=/=/=/= TESTING /=/=/=/=");
         SingleLinkedList ll = new SingleLinkedList(10);
@@ -336,12 +161,10 @@ public class SingleLinkedList {
         ll.addAtIndex(4, 9);
         ll.addAtIndex(4, 9);
         ll.deleteAtIndex(4);
-        printList();
+        printList(ll.getHead());
     }
 
     public static void main(String[] args) {
-
-        if (false) testLinkedList();
-        testReversealKGroup();
+        testLinkedList();
     }
 }

@@ -64,7 +64,8 @@ public class PalidromeLinkedList {
     }
 
     /*
-    We can use a fast and slow pointer to get the center of the list, then reverse the second list and compare two sublists. The time is O(n) and space is O(1).
+    We can use a fast and slow pointer to get the center of the list, then reverse the second list
+    and compare two sublists. The time is O(n) and space is O(1).
      */
     public boolean isPalindrome2(Node head) {
 

@@ -35,19 +35,26 @@ public class KSmallestPairsInSingleArray {
         return l;
     }
 
+    public static void printPairs(List<int[]> list) {
+
+        System.out.println(">>>> ");
+        int i = 0;
+        for (int[] e : list) {
+            System.out.print(Arrays.toString(e) + (i == list.size() - 1 ? "" : ", "));
+            i++;
+        }
+        System.out.println();
+
+    }
+
     public static void main(String[] args) {
 
         int[] a = new int[]{5, 4, 3, 2, 1};
 
         System.out.println("a array: " + Arrays.toString(a));
 
-        List<int[]> list = findSmallestPairs(a, 3);
+        List<int[]> list = findSmallestPairs(a, 2);
 
-        System.out.println(">>>> ");
-        for (int[] e : list) {
-            System.out.print(Arrays.toString(e) + ", ");
-        }
-        System.out.println();
-
+        printPairs(list);
     }
 }

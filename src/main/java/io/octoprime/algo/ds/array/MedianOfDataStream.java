@@ -15,7 +15,7 @@ public class MedianOfDataStream {
         }
 
         // Adds a number into the data structure.
-        public void addNum(int num) {
+        public void add(int num) {
             maxHeap.offer(num);
             minHeap.offer(maxHeap.poll());
 

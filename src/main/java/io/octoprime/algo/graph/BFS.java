@@ -5,44 +5,44 @@ import java.util.LinkedList;
 
 public class BFS {
 
-    private int V;   // No. of vertices
-    private LinkedList<Integer> adj[]; //Adjacency Lists
+    private int vertices;   // No. of vertices
+    private LinkedList<Integer> adjacencies[]; //Adjacency Lists
 
     // Constructor
     BFS(int v) {
-        V = v;
-        adj = new LinkedList[v];
+        vertices = v;
+        adjacencies = new LinkedList[v];
         for (int i = 0; i < v; ++i)
-            adj[i] = new LinkedList();
+            adjacencies[i] = new LinkedList();
     }
 
     // Function to add an edge into the graph
     void addEdge(int v, int w) {
-        adj[v].add(w);
+        adjacencies[v].add(w);
     }
 
     // prints BFS traversal from a given source s
-    void BFS(int s) {
+    void traverse(int source) {
         // Mark all the vertices as not visited(By default
         // put as false)
-        boolean visited[] = new boolean[V];
+        boolean visited[] = new boolean[vertices];
 
         // Create a queue for BFS
         LinkedList<Integer> queue = new LinkedList<Integer>();
 
         // Mark the current node as visited and enqueue it
-        visited[s] = true;
-        queue.add(s);
+        visited[source] = true;
+        queue.add(source);
 
         while (queue.size() != 0) {
             // Dequeue a vertex from queue and serialzie it
-            s = queue.poll();
-            System.out.print(s + " ");
+            source = queue.poll();
+            System.out.print(source + " ");
 
             // Get all adjacent vertices of the dequeued vertex s
             // If a adjacent has not been visited, then mark it
             // visited and enqueue it
-            Iterator<Integer> i = adj[s].listIterator();
+            Iterator<Integer> i = adjacencies[source].listIterator();
             while (i.hasNext()) {
                 int n = i.next();
                 if (!visited[n]) {
@@ -67,7 +67,7 @@ public class BFS {
         System.out.println("Following is Breadth First Traversal " +
                 "(starting from vertex 2)");
 
-        g.BFS(2);
+        g.traverse(2);
     }
 
 }

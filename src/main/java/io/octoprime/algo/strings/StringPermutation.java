@@ -8,7 +8,7 @@ public class StringPermutation {
      * Determine if a and b are permutation of each other;
      */
 
-    public boolean stringPermutation(String A, String B) {
+    public boolean isPermutation(String A, String B) {
         char[] a = A.toCharArray();
         char[] b = B.toCharArray();
         Arrays.sort(a);

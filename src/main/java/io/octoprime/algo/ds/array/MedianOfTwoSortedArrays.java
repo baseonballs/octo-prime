@@ -4,34 +4,34 @@ import java.util.Arrays;
 
 public class MedianOfTwoSortedArrays {
 
-    private double findMedianSortedArray(int[] arr1, int[] arr2) {
+    private double findMedianSortedArray(int[] a, int[] b) {
 
-        if (arr1.length > arr2.length) {
-            return findMedianSortedArray(arr2, arr1);
+        if (a.length > b.length) {
+            return findMedianSortedArray(b, a);
         }
 
-        int m = arr1.length;
-        int n = arr2.length;
+        int m = a.length;
+        int n = b.length;
 
         int low = 0;
         int high = m;
 
         while (low <= high) {
-            int partition1 = (low + high) / 2;
-            int partition2 = (m + n + 1) / 2 - partition1;
+            int pivot1 = (low + high) / 2;
+            int pivot2 = (m + n + 1) / 2 - pivot1;
 
-            int maxL1 = partition1 == 0 ? Integer.MIN_VALUE : arr1[partition1 - 1];
-            int minR1 = partition1 == m ? Integer.MAX_VALUE : arr1[partition1];
+            int maxL1 = pivot1 == 0 ? Integer.MIN_VALUE : a[pivot1 - 1];
+            int minR1 = pivot1 == m ? Integer.MAX_VALUE : a[pivot1];
 
-            int maxL2 = partition2 == 0 ? Integer.MIN_VALUE : arr2[partition2 - 1];
-            int minR2 = partition2 == 0 ? Integer.MAX_VALUE : arr2[partition2];
+            int maxL2 = pivot2 == 0 ? Integer.MIN_VALUE : b[pivot2 - 1];
+            int minR2 = pivot2 == 0 ? Integer.MAX_VALUE : b[pivot2];
 
             if (maxL1 <= minR2 && maxL2 <= minR1) {
                 if (((m + n) % 2) == 0) {
                     return ((double) Math.max(maxL2, maxL1) + Math.min(minR1, minR2)) / 2;
                 } else return (double) Math.max(maxL1, maxL2);
-            } else if (maxL1 > minR2) high = partition1 - 1;
-            else low = partition1 + 1;
+            } else if (maxL1 > minR2) high = pivot1 - 1;
+            else low = pivot1 + 1;
 
         }
 

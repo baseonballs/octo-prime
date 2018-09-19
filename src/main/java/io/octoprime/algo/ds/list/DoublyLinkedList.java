@@ -142,14 +142,14 @@ public class DoublyLinkedList<E> {
 
     public static void main(String a[]) {
 
-        DoublyLinkedList<Integer> dll = new DoublyLinkedList<Integer>();
-        dll.addFirst(10);
-        dll.addFirst(34);
-        dll.addLast(56);
-        dll.addLast(364);
-        dll.iterateForward();
-        dll.removeFirst();
-        dll.removeLast();
-        dll.iterateBackward();
+        DoublyLinkedList<Integer> list = new DoublyLinkedList<Integer>();
+        list.addFirst(10);
+        list.addFirst(34);
+        list.addLast(56);
+        list.addLast(364);
+        list.iterateForward();
+        list.removeFirst();
+        list.removeLast();
+        list.iterateBackward();
     }
 }

@@ -1,4 +1,4 @@
-package io.octoprime.algo.graph;
+package io.octoprime.algo.ds.tree;
 
 import java.util.HashMap;
 

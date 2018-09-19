@@ -3,7 +3,7 @@ package io.octoprime.algo.ds.array;
 
 import java.util.Arrays;
 
-public class SimplyArray {
+public class SimpleArray {
 
     static int sum(int arr[], int n) {
         if (n <= 0)

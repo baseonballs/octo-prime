@@ -42,19 +42,19 @@ public class KSmallestPairsInTwoArray {
         int[] index = new int[a.length];
 
         while (k > 0) {
-            int minSum = Integer.MAX_VALUE;
-            int minIndex = 0;
+            int sum = Integer.MAX_VALUE;
+            int j = 0;
             for (int i = 0; i < a.length; i++) {
-                if (index[i] < b.length && a[i] + b[index[i]] < minSum) {
-                    minSum = a[i] + b[index[i]];
-                    minIndex = i;
+                if (index[i] < b.length && a[i] + b[index[i]] < sum) {
+                    sum = a[i] + b[index[i]];
+                    j = i;
                 }
             }
 
-            int[] arr = {a[minIndex], b[index[minIndex]]};
+            int[] arr = {a[j], b[index[j]]};
             list.add(arr);
 
-            index[minIndex]++;
+            index[j]++;
 
             k--;
         }
@@ -63,7 +63,7 @@ public class KSmallestPairsInTwoArray {
     }
 
 
-    public static List<int[]> naiveFindKSmallestPairs(int[] a, int[] b, int k) {
+    public static List<int[]> naiveFindKSmallestPairsUnsortedArrays(int[] a, int[] b, int k) {
         List<int[]> list = new ArrayList<>();
 
         for (int i = 0; i < a.length; i++) {
@@ -110,19 +110,20 @@ public class KSmallestPairsInTwoArray {
         int[] A = {1, 7, 11};
         int[] B = {2, 4, 6};
 
-        int[] a = randomArrayAsInt(10, 100);
-        int[] b = randomArrayAsInt(5, 100);
+        int[] a = randomArrayAsInt(5, 20);
+        int[] b = randomArrayAsInt(8, 20);
         int[] c = new int[]{5, 4, 3, 2, 1};
 
         System.out.println("a array: " + Arrays.toString(a));
-        System.out.println("b array: " + Arrays.toString(a));
+        System.out.println("b array: " + Arrays.toString(b));
         System.out.println("c array: " + Arrays.toString(c));
         System.out.println("A array: " + Arrays.toString(A));
         System.out.println("B array: " + Arrays.toString(B));
 
-        List<int[]> col = findKSmallestPairs(a, b, 10);
+        List<int[]> col = findKSmallestPairs(a, b, 2);
+        printPairs(col);
 
-        List<int[]> naiveList = naiveFindKSmallestPairs(A, B, 3);
+        List<int[]> naiveList = naiveFindKSmallestPairsUnsortedArrays(a, b, 2);
         printPairs(naiveList);
     }
 }

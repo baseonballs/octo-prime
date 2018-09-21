@@ -1,8 +1,8 @@
 package io.octoprime.algo.ds.list;
 
-public class ReverseList {
+public class ReverseList extends UtilsList {
 
-    public Node reverse(Node head) {
+    public static Node reverse(Node head) {
         if (head == null || head.next == null) return head;
 
         Node prev = reverse(head.next);
@@ -13,7 +13,7 @@ public class ReverseList {
         return prev;
     }
 
-    public Node reversei(Node head) {
+    public static Node reversei(Node head) {
 
         Node prev = null;
         Node curr = head;
@@ -27,7 +27,7 @@ public class ReverseList {
     }
 
 
-    public Node reverseBetween(Node head, int m, int n) {
+    public static Node reverseBetween(Node head, int m, int n) {
         if (m == n) return head;
 
         Node prev = null;//track (m-1)th node
@@ -77,7 +77,31 @@ public class ReverseList {
         return head;
     }
 
+
+    public static void testReversealKGroup() {
+        SingleLinkedList ll = new SingleLinkedList();
+
+        /* Constructed Linked List is 1->2->3->4->5->6->
+           7->8->8->9->null */
+
+        ll.push(9);
+        ll.push(8);
+        ll.push(7);
+        ll.push(6);
+        ll.push(5);
+        ll.push(4);
+        ll.push(3);
+        ll.push(2);
+        ll.push(1);
+
+        printList(ll.getHead(), "Before list");
+        ll.setHead(reverse(ll.getHead()));
+        printList(ll.getHead(), "After list");
+    }
+
     public static void main(String[] args) {
+
+        testReversealKGroup();
     }
 
 }

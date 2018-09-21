@@ -27,6 +27,15 @@ public class ReverseList extends UtilsList {
     }
 
 
+    /**
+     * Strategy:
+     * find index referenced by m and n;
+     *
+     * @param head
+     * @param m
+     * @param n
+     * @return
+     */
     public static Node reverseb(Node head, int m, int n) {
         if (m == n) return head;
 
@@ -35,23 +44,23 @@ public class ReverseList extends UtilsList {
         Node second = new Node(0);//second's next points to (n+1)th
 
         int i = 0;
-        Node p = head;
-        while (p != null) {
+        Node temp = head;
+        while (temp != null) {
             i++;
             if (i == m - 1) {
-                prev = p;
+                prev = temp;
             }
 
             if (i == m) {
-                first.next = p;
+                first.next = temp;
             }
 
             if (i == n) {
-                second.next = p.next;
-                p.next = null;
+                second.next = temp.next;
+                temp.next = null;
             }
 
-            p = p.next;
+            temp = temp.next;
         }
         if (first.next == null)
             return head;

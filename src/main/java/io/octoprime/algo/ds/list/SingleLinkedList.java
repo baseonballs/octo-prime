@@ -23,7 +23,7 @@ public class SingleLinkedList {
     }
 
     /**
-     * Appends the specified element to the end of the list; Essentially the facade tot he addBack method.
+     * Appends the specified value to the end of the list; Essentially the facade tot he addBack method.
      *
      * @param value
      */
@@ -32,7 +32,7 @@ public class SingleLinkedList {
     }
 
     /**
-     * add the element to the front of the list. Essentially the facade tot he addFront method.
+     * add the value to the front of the list. Essentially the facade tot he addFront method.
      *
      * @param value
      */

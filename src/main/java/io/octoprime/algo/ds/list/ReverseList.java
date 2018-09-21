@@ -2,10 +2,10 @@ package io.octoprime.algo.ds.list;
 
 public class ReverseList extends UtilsList {
 
-    public static Node reverse(Node head) {
+    public static Node reverser(Node head) {
         if (head == null || head.next == null) return head;
 
-        Node prev = reverse(head.next);
+        Node prev = reverser(head.next);
 
         head.next.next = head;
         head.next = null;
@@ -27,7 +27,7 @@ public class ReverseList extends UtilsList {
     }
 
 
-    public static Node reverseBetween(Node head, int m, int n) {
+    public static Node reverseb(Node head, int m, int n) {
         if (m == n) return head;
 
         Node prev = null;//track (m-1)th node
@@ -81,8 +81,7 @@ public class ReverseList extends UtilsList {
     public static void testReverseaRecursion() {
         SingleLinkedList ll = new SingleLinkedList();
 
-        /* Constructed Linked List is 1->2->3->4->5->6->
-           7->8->8->9->null */
+        /* Constructed Linked List is 1->2->3->4->5->6->7->8->9->null */
 
         ll.push(9);
         ll.push(8);
@@ -99,7 +98,7 @@ public class ReverseList extends UtilsList {
         System.out.println("--------------------------------------");
 
         printList(ll.getHead(), "Before list");
-        ll.setHead(reverse(ll.getHead()));
+        ll.setHead(reverser(ll.getHead()));
         printList(ll.getHead(), "After list");
         System.out.println();
 
@@ -108,8 +107,8 @@ public class ReverseList extends UtilsList {
     public static void testReverseaIteration() {
         SingleLinkedList ll = new SingleLinkedList();
 
-        /* Constructed Linked List is 1->2->3->4->5->6->
-           7->8->8->9->null */
+        /* Constructed Linked List is 1->2->3->4->5->6->7->8->9->null */
+
 
         ll.push(9);
         ll.push(8);
@@ -131,11 +130,35 @@ public class ReverseList extends UtilsList {
     }
 
 
+    public static void testReverseaBetween() {
+        SingleLinkedList ll = new SingleLinkedList();
+
+        /* Constructed Linked List is 1->2->3->4->5->6->7->8->9->null */
+
+        ll.push(9);
+        ll.push(8);
+        ll.push(7);
+        ll.push(6);
+        ll.push(5);
+        ll.push(4);
+        ll.push(3);
+        ll.push(2);
+        ll.push(1);
+
+        System.out.println("--------------------------------------");
+        System.out.println(">>>>>>  Reverse Using Between  <<<<<<<");
+        System.out.println("--------------------------------------");
+        printList(ll.getHead(), "Before list");
+        ll.setHead(reverseb(ll.getHead(), 4, 6));
+        printList(ll.getHead(), "After list");
+        System.out.println();
+    }
+
     public static void main(String[] args) {
 
         testReverseaRecursion();
         testReverseaIteration();
-
+        testReverseaBetween();
     }
 
 }

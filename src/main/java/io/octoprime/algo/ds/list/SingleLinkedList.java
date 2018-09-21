@@ -4,40 +4,59 @@ import static io.octoprime.algo.ds.list.UtilsList.printList;
 
 public class SingleLinkedList {
 
-    private static Node head;
-    private static int size;
-
-    public SingleLinkedList(int value) {
-        head = new Node(value);
-    }
+    private static Node _head;
+    private static int _size;
 
     public Node getHead() {
-        return head;
+        return _head;
     }
 
-    public void addAtHead(int value) {
-        Node temp = head;
-        head = new Node(value);
-        head.next = temp;
-        size++;
+    public void setHead(Node h) {
+        _head = h;
     }
 
-    public void addAtTail(int value) {
-        Node temp = head;
+    public void addFront(int value) {
+        Node temp = _head;
+        _head = new Node(value);
+        _head.next = temp;
+        _size++;
+    }
 
-        if (head == null) {
-            addAtHead(value);
+    /**
+     * Appends the specified element to the end of the list; Essentially the facade tot he addBack method.
+     *
+     * @param value
+     */
+    public void add(int value) {
+        addBack(value);
+    }
+
+    /**
+     * add the element to the front of the list. Essentially the facade tot he addFront method.
+     *
+     * @param value
+     */
+    public void push(int value) {
+        addFront(value);
+    }
+
+
+    public void addBack(int value) {
+        Node temp = _head;
+
+        if (_head == null) {
+            addFront(value);
         } else {
             while (temp.next != null) {
                 temp = temp.next;
             }
             temp.next = new Node(value);
-            size++;
+            _size++;
         }
     }
 
     public void addAtIndex(int index, int value) {
-        Node temp = head;
+        Node temp = _head;
         Node holder;
         for (int i = 0; i < index - 1 && temp.next != null; i++) {
             temp = temp.next;
@@ -45,20 +64,20 @@ public class SingleLinkedList {
         holder = temp.next;
         temp.next = new Node(value);
         temp.next.next = holder;
-        size++;
+        _size++;
     }
 
     public void deleteAtIndex(int index) {
-        Node temp = head;
+        Node temp = _head;
         for (int i = 0; i < index - 1 && temp.next != null; i++) {
             temp = temp.next;
         }
         temp.next = temp.next.next;
-        size--;
+        _size--;
     }
 
     public static int find(Node n) {
-        Node t = head;
+        Node t = _head;
         int index = 0;
         while (t != n) {
             index++;
@@ -68,7 +87,7 @@ public class SingleLinkedList {
     }
 
     public static Node find(int index) {
-        Node temp = head;
+        Node temp = _head;
         for (int i = 0; i < index; i++) {
             temp = temp.next;
         }
@@ -76,9 +95,8 @@ public class SingleLinkedList {
     }
 
 
-
-    public static int getSize() {
-        return size;
+    public int getSize() {
+        return _size;
     }
 
     /**
@@ -152,12 +170,12 @@ public class SingleLinkedList {
 
     public static void testLinkedList() {
         System.out.println("/=/=/=/= TESTING /=/=/=/=");
-        SingleLinkedList ll = new SingleLinkedList(10);
-        ll.addAtHead(11);
-        ll.addAtHead(12);
-        ll.addAtHead(13);
-        ll.addAtTail(8);
-        ll.addAtTail(7);
+        SingleLinkedList ll = new SingleLinkedList();
+        ll.addFront(11);
+        ll.addFront(12);
+        ll.addFront(13);
+        ll.addBack(8);
+        ll.addBack(7);
         ll.addAtIndex(4, 9);
         ll.addAtIndex(4, 9);
         ll.deleteAtIndex(4);

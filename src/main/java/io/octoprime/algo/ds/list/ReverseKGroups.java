@@ -2,6 +2,7 @@ package io.octoprime.algo.ds.list;
 
 import java.util.Stack;
 
+
 /**
  * Given a linked list, write a function to reverse every k nodes (where k is an input to the function).
  * Example:
@@ -11,11 +12,11 @@ import java.util.Stack;
  * Inputs:   1->2->3->4->5->6->7->8->NULL and k = 5
  * Output:  5->4->3->2->1->8->7->6->NULL.
  */
-public class ReverseKGroups {
+public class ReverseKGroups extends UtilsList {
 
-    Node head;  // head of list
+    static Node head;  // head of list
 
-    Node reverse(Node head, int k) {
+    public static Node reverse(Node head, int k) {
         Node current = head;
         Node next = null;
         Node prev = null;
@@ -69,70 +70,30 @@ public class ReverseKGroups {
         return head;
     }
 
-
-    /* Utility functions */
-
-    /* Inserts a new Node at front of the list. */
-    public void push(int new_data) {
-        /* 1 & 2: Allocate the Node &
-                  Put in the data*/
-        Node new_node = new Node(new_data);
-
-        /* 3. Make next of new Node as head */
-        new_node.next = head;
-
-        /* 4. Move the head to point to new Node */
-        head = new_node;
-    }
-
-    /* Function to print linked list */
-    void printList() {
-        Node temp = head;
-        while (temp != null) {
-            System.out.print(temp.value + " ");
-            temp = temp.next;
-        }
-        System.out.println();
-    }
-
-
     public static void testReversealKGroup() {
-        SingleLinkedList ll = new SingleLinkedList(10);
+        SingleLinkedList ll = new SingleLinkedList();
 
-        ll.addAtHead(3);
-        ll.addAtTail(12);
-        ll.addAtHead(2);
-        ll.addAtTail(6);
-        ll.addAtTail(9);
+        /* Constructed Linked List is 1->2->3->4->5->6->
+           7->8->8->9->null */
 
-        //   printList();
-        //   reverse(ll.getHead(), 3);
-        //  printList();
+        ll.push(9);
+        ll.push(8);
+        ll.push(7);
+        ll.push(6);
+        ll.push(5);
+        ll.push(4);
+        ll.push(3);
+        ll.push(2);
+        ll.push(1);
+
+        printList(ll.getHead());
+        ll.setHead(reverse(ll.getHead(), 3));
+        printList(ll.getHead());
     }
 
 
     /* Drier program to test above functions */
     public static void main(String args[]) {
-        ReverseKGroups llist = new ReverseKGroups();
-
-        /* Constructed Linked List is 1->2->3->4->5->6->
-           7->8->8->9->null */
-        llist.push(9);
-        llist.push(8);
-        llist.push(7);
-        llist.push(6);
-        llist.push(5);
-        llist.push(4);
-        llist.push(3);
-        llist.push(2);
-        llist.push(1);
-
-        System.out.println("Given Linked List");
-        llist.printList();
-
-        llist.head = llist.reverse(llist.head, 2);
-
-        System.out.println("Reversed list");
-        llist.printList();
+        testReversealKGroup();
     }
 }

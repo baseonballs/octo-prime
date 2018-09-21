@@ -74,7 +74,7 @@ public class KSmallestPairsInTwoArray {
         }
 
         /**
-         * sort the list
+         * sort the lists
          */
         Collections.sort(list, new Comparator<int[]>() {
 
@@ -95,6 +95,12 @@ public class KSmallestPairsInTwoArray {
         return list;
     }
 
+    public static List<int[]> naiveFindKSmallestPairsSortedArrays(int[] a, int[] b, int k) {
+        List<int[]> list = new ArrayList<>();
+
+        return list;
+    }
+
     public static void printPairs(List<int[]> list) {
         System.out.println(">>>> ");
         int i = 0;
@@ -110,20 +116,22 @@ public class KSmallestPairsInTwoArray {
         int[] A = {1, 7, 11};
         int[] B = {2, 4, 6};
 
-        int[] a = randomArrayAsInt(5, 20);
-        int[] b = randomArrayAsInt(8, 20);
+        int[] unsortedA = randomArrayAsInt(5, 20);
+        int[] unsortedB = randomArrayAsInt(8, 20);
         int[] c = new int[]{5, 4, 3, 2, 1};
 
-        System.out.println("a array: " + Arrays.toString(a));
-        System.out.println("b array: " + Arrays.toString(b));
-        System.out.println("c array: " + Arrays.toString(c));
-        System.out.println("A array: " + Arrays.toString(A));
-        System.out.println("B array: " + Arrays.toString(B));
+        System.out.println("unsortedA array: " + Arrays.toString(unsortedA));
+        System.out.println("unsortedB array: " + Arrays.toString(unsortedB));
+        System.out.println("sorted c array: " + Arrays.toString(c));
+        System.out.println("sorted A array: " + Arrays.toString(A));
+        System.out.println("sorted B array: " + Arrays.toString(B));
 
-        List<int[]> col = findKSmallestPairs(a, b, 2);
+        List<int[]> col = findKSmallestPairs(A, B, 3);
+        System.out.println("[Sorted Array]");
         printPairs(col);
 
-        List<int[]> naiveList = naiveFindKSmallestPairsUnsortedArrays(a, b, 2);
+        List<int[]> naiveList = naiveFindKSmallestPairsUnsortedArrays(unsortedA, unsortedB, 2);
+        System.out.println("[Unsorted Array]");
         printPairs(naiveList);
     }
 }

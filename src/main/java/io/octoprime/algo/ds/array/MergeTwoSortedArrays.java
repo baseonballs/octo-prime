@@ -7,16 +7,16 @@ import static io.octoprime.utils.UtilsArray.randomArrayAsInt;
 public class MergeTwoSortedArrays {
 
     public static void naiveMergeSortedArray(int a[], int b[]) {
-        int[] res = new int[a.length + b.length];
+        int[] merged = new int[a.length + b.length];
 
         int i = 0, j = 0, k = 0;
         while (i < a.length)
-            res[k++] = a[i++];
+            merged[k++] = a[i++];
 
         while (j < b.length)
-            res[k++] = b[j++];
+            merged[k++] = b[j++];
 
-        Arrays.sort(res);
+        Arrays.sort(merged);
     }
 
     /**
@@ -27,29 +27,29 @@ public class MergeTwoSortedArrays {
      * @return
      */
     public static int[] mergeSortedArrays(int a[], int b[]) {
-        int[] res = new int[a.length + b.length];
+        int[] merged = new int[a.length + b.length];
 
         int i = 0, j = 0, k = 0;
         while (i < a.length && j < b.length) {
             if (a[i] <= b[j])
-                res[k++] = a[i++];
+                merged[k++] = a[i++];
             else
-                res[k++] = b[j++];
+                merged[k++] = b[j++];
         }
 
         /*
         // Merging remaining  elements of a[] (if any)
          */
         while (i < a.length)
-            res[k++] = a[i++];
+            merged[k++] = a[i++];
 
         /*
         // Merging remaining elements of b[] (if any)
          */
         while (j < b.length)
-            res[k++] = b[j++];
+            merged[k++] = b[j++];
 
-        return res;
+        return merged;
     }
 
 

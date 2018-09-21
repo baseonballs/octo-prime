@@ -33,43 +33,43 @@ public class MaximumSubArray {
     /* Kadane algorithm
      * It won't work when all elements of arr are negative
      */
-    public int kandaneForMaxSubArray(int[] arr) {
-        int maxEndHere = 0;
-        int maxSoFar = 0;
+    public static int maximumSubArrayNoAllNeg(int[] arr) {
+
+        int maxcur = 0;
+        int maxseq = 0;
+
         for (int i = 0; i < arr.length; i++) {
-            maxEndHere += arr[i];
-            if (maxEndHere < 0) {
-                maxEndHere = 0;
-            }
-            if (maxSoFar < maxEndHere) {
-                maxSoFar = maxEndHere;
-            }
+
+            maxcur = Math.max(maxcur + arr[i], 0);
+            maxseq = Math.max(maxseq, maxcur);
         }
-        return maxSoFar;
+
+        return maxseq;
     }
 
     /* Modified Kadane's algorithm
      * If you make small modification to above algorithm
      * It will work for negative numbers too
      */
-    public int kandaneForMaxSubArrayForNegative(int[] arr) {
+    public static int maximumSubArray(int[] arr) {
 
-        int maxEndHere = arr[0];
-        int maxSoFar = arr[0];
+        int maxcur = arr[0];
+        int maxseq = arr[0];
+
         for (int i = 1; i < arr.length; i++) {
 
             /**
              * max sum should be more than the current element.
              */
-            maxEndHere = Math.max(arr[i], maxEndHere + arr[i]);
+            maxcur = Math.max(arr[i], maxcur + arr[i]);
 
             /**
              * update the result if current sub-array sum is found to be greater.
              */
-            maxSoFar = Math.max(maxSoFar, maxEndHere);
+            maxseq = Math.max(maxseq, maxcur);
         }
 
-        return maxSoFar;
+        return maxseq;
     }
 
     public static int kadaneNaive(int[] A) {
@@ -85,10 +85,9 @@ public class MaximumSubArray {
         int start = 0, end = 0, beg = 0;
 
         int j = 0;
-        for (int i : A) {
-            maxEndingHere = maxEndingHere + i;
+        for (int elem : A) {
 
-            maxEndingHere = Math.max(maxEndingHere, 0);
+            maxEndingHere = Math.max(maxEndingHere + elem, 0);
             if (maxEndingHere == 0) beg = j + 1;
 
             if (maxSoFar < maxEndingHere) {
@@ -96,6 +95,7 @@ public class MaximumSubArray {
                 end = j;
             }
             maxSoFar = Math.max(maxSoFar, maxEndingHere);
+
             j++;
         }
 
@@ -112,13 +112,13 @@ public class MaximumSubArray {
     }
 
     public static void main(String args[]) {
-        int arr[] = {1, 8, -3, -7, 2, 7, -1, 9};
+        int arr[] = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
         MaximumSubArray maxSum = new MaximumSubArray();
 
-        System.out.println("Maximum subarray is  " + kadaneNaive(arr));
+        System.out.println("Maximum subarray is  " + maximumSubArray(arr));
         int arrNeg[] = {-10, -8, -3, -7, -2, -7, -3, -9};
         System.out.println("Maximum Subarray when all elements are negative : " +
-                maxSum.kandaneForMaxSubArrayForNegative(arrNeg));
+                maximumSubArray(arrNeg));
     }
 
 }

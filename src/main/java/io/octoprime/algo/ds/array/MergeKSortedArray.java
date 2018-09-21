@@ -18,26 +18,26 @@ public class MergeKSortedArray {
         PriorityQueue<ArrayContainer> queue = new PriorityQueue<ArrayContainer>();
         int total = 0;
 
-        //add arrays to heap
+        // add arrays to heap
         for (int i = 0; i < arr.length; i++) {
             queue.add(new ArrayContainer(arr[i], 0));
             total = total + arr[i].length;
         }
 
-        int m = 0;
-        int result[] = new int[total];
+        int k = 0;
+        int merged[] = new int[total];
 
-        //while heap is not empty
+        // while heap is not empty
         while (!queue.isEmpty()) {
             ArrayContainer ac = queue.poll();
-            result[m++] = ac.arr[ac.index];
+            merged[k++] = ac.arr[ac.index];
 
             if (ac.index < ac.arr.length - 1) {
                 queue.add(new ArrayContainer(ac.arr, ac.index + 1));
             }
         }
 
-        return result;
+        return merged;
     }
 
     public static void main(String[] args) {

@@ -15,30 +15,30 @@ package io.octoprime.algo.ds.array;
 public class PartitionArrayByOddEven {
 
     /**
-     * @param nums: an array of integers
+     * @param arr: an array of integers
      * @return: nothing
      */
-    public void partitionArray(int[] nums) {
-        if (nums == null) return;
-        int left = 0, right = nums.length - 1;
+    public void partitionArray(int[] arr) {
+        if (arr == null) return;
+        int i = 0, j = arr.length - 1;
 
-        while (left < right) {
+        while (i < j) {
 
             // odd number
-            while (left < right && nums[left] % 2 != 0) {
-                left++;
+            while (i < j && arr[i] % 2 != 0) {
+                i++;
             }
 
             // even number
-            while (left < right && nums[right] % 2 == 0) {
-                right--;
+            while (i < j && arr[j] % 2 == 0) {
+                j--;
             }
 
             // swap
-            if (left < right) {
-                int temp = nums[left];
-                nums[left] = nums[right];
-                nums[right] = temp;
+            if (i < j) {
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
             }
         }
     }

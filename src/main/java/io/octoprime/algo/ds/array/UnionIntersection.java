@@ -1,7 +1,8 @@
 package io.octoprime.algo.ds.array;
 
+import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Utility class for generation union and intersection of two arrays.
@@ -18,7 +19,7 @@ public class UnionIntersection {
      */
     int[] union(int arr1[], int arr2[]) {
 
-        LinkedList<Integer> list = new LinkedList<>();
+        List<Integer> list = new ArrayList<>();
 
         int m = arr1.length;
         int n = arr2.length;
@@ -62,12 +63,13 @@ public class UnionIntersection {
      * @param arr2 second arr
      */
     int[] intersection(int arr1[], int arr2[]) {
-        LinkedList<Integer> list = new LinkedList();
+        List<Integer> list = new ArrayList<>();
 
         // Before finding intersection, make sure arr1[0..m-1] is smaller
         int m = arr1.length;
         int n = arr2.length;
 
+        // find smallest of two array
         if (m > n) {
             int tempp[] = arr1;
             arr1 = arr2;
@@ -78,13 +80,9 @@ public class UnionIntersection {
             n = temp;
         }
 
-        // Now arr1[] is smaller
-        // Sort smaller arr arr1[0..m-1]
         Arrays.sort(arr1);
 
-        // Search every element of bigger arr in smaller arr
-        // and print the element if found
-
+        // Search every element of bigger array in smaller array
         for (int i = 0; i < n; i++) {
             if (_bs.bsearch(arr1, 0, m - 1, arr2[i]) != -1)
                 list.add(arr2[i]);
@@ -118,7 +116,7 @@ public class UnionIntersection {
         /*
          * intersection of two arrays.
          */
-        list = ui.intersection(arr1, arr2);
+        list = ui.intersection(arr2, arr1);
         System.out.print("Intersection of two arrays is: ");
         System.out.println(Arrays.toString(list));
     }

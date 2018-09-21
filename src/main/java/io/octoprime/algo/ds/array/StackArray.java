@@ -7,7 +7,7 @@ public class StackArray {
 
     private static int STACK_EMPTY = -1;
 
-    private int _size;
+    private int _capacity;
     private int[] _arr;
     private int _top;
 
@@ -17,8 +17,8 @@ public class StackArray {
      * @param size size of arr
      */
     public StackArray(int size) {
-        this._size = size;
-        this._arr = new int[_size];
+        this._capacity = size;
+        this._arr = new int[_capacity];
         this._top = STACK_EMPTY;
     }
 
@@ -50,6 +50,7 @@ public class StackArray {
         }
         int entry = this._arr[_top--];
         System.out.println("Removed entry: " + entry);
+
         return entry;
     }
 
@@ -79,7 +80,7 @@ public class StackArray {
      * @return boolean
      */
     public boolean isFull() {
-        return (_top == _size - 1);
+        return (_top == _capacity - 1);
     }
 
     /**
@@ -89,6 +90,7 @@ public class StackArray {
         StackArray stack = new StackArray(5);
         try {
             stack.push(4);
+
             stack.push(8);
             stack.push(3);
             stack.push(89);

@@ -3,7 +3,7 @@ package io.octoprime.algo.ds.array;
 
 import java.util.Arrays;
 
-public class IsSortedArray {
+public class KIsSortedArray {
 
 
     // Method to check whether the given array is

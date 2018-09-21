@@ -6,9 +6,10 @@ public class UtilsList {
 
         Node temp = head;
 
-        if (s[0] != null)
-            System.out.print(s[0] + " : [");
+        if ((s.length > 0) && (s[0] != null))
+            System.out.print(s[0] + " : ");
 
+        System.out.print("[");
         while (temp != null) {
             System.out.print(temp.value + (temp.next == null ? "" : ", "));
             temp = temp.next;

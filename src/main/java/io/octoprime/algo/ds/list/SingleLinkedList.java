@@ -4,8 +4,8 @@ import static io.octoprime.algo.ds.list.UtilsList.printList;
 
 public class SingleLinkedList {
 
-    private static Node _head;
-    private static int _size;
+    private Node _head;
+    private int _size;
 
     public Node getHead() {
         return _head;
@@ -76,7 +76,7 @@ public class SingleLinkedList {
         _size--;
     }
 
-    public static int find(Node n) {
+    public int find(Node n) {
         Node t = _head;
         int index = 0;
         while (t != n) {
@@ -86,7 +86,7 @@ public class SingleLinkedList {
         return index;
     }
 
-    public static Node find(int index) {
+    public Node find(int index) {
         Node temp = _head;
         for (int i = 0; i < index; i++) {
             temp = temp.next;

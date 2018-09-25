@@ -53,6 +53,9 @@ public class PalindromicString {
     }
 
 
+    // 131
+    // 121
+
     public static void main(String[] args) {
 
 

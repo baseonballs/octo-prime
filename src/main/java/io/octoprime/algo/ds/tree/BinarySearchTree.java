@@ -447,28 +447,28 @@ public class BinarySearchTree {
         if (root == null) return "";
 
         Queue<TreeNode> queue = new LinkedList<>();
-        List<String> elems = new ArrayList<>();
+        List<String> list = new ArrayList<>();
 
         queue.offer(root);
 
         while (!queue.isEmpty()) {
             TreeNode node = queue.poll();
             if (node == null) {
-                elems.add("#");
+                list.add("#");
             } else {
-                elems.add(node.key + "");
+                list.add(node.key + "");
                 queue.offer(node.left);
                 queue.offer(node.right);
             }
         }
 
-        int size = elems.size();
+        int size = list.size();
         String result = "";
         for (int i = 0; i < size; i++) {
             if (i == 0) {
-                result += elems.get(i);
+                result += list.get(i);
             } else {
-                result += "," + elems.get(i);
+                result += "," + list.get(i);
             }
         }
         return result;

@@ -61,7 +61,7 @@ public class MaximumSubArray {
             /**
              * max sum should be more than the current element.
              */
-            maxcur = Math.max(arr[i], maxcur + arr[i]);
+            maxcur = Math.max(maxcur + arr[i], arr[i]);
 
             /**
              * update the result if current sub-array sum is found to be greater.

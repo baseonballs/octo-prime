@@ -26,7 +26,6 @@ public class ReverseList extends UtilsList {
         return head = prev;
     }
 
-
     /**
      * Strategy:
      * find index referenced by m and n;
@@ -40,35 +39,37 @@ public class ReverseList extends UtilsList {
         if (m == n) return head;
 
         Node prev = null;//track (m-1)th node
-        Node first = new Node(0);//first's next points to mth
-        Node second = new Node(0);//second's next points to (n+1)th
+        Node listA = new Node(0);//first's next points to mth
+        Node listB = new Node(0);//second's next points to (n+1)th
 
         int i = 0;
-        Node temp = head;
-        while (temp != null) {
+        Node curr = head;
+        while (curr != null) {
             i++;
             if (i == m - 1) {
-                prev = temp;
+                prev = curr;
             }
 
             if (i == m) {
-                first.next = temp;
+                listA.next = curr;
             }
 
             if (i == n) {
-                second.next = temp.next;
-                temp.next = null;
+                listB.next = curr.next;
+                curr.next = null;
             }
 
-            temp = temp.next;
+            curr = curr.next;
         }
-        if (first.next == null)
+        if (listA.next == null)
             return head;
 
-        // reverse list [m, n]
-        Node p1 = first.next;
+        /**
+         * Reverse the actual between lists [ m, n ]
+         */
+        Node p1 = listA.next;
         Node p2 = p1.next;
-        p1.next = second.next;
+        p1.next = listB.next;
 
         while (p1 != null && p2 != null) {
             Node t = p2.next;
@@ -77,7 +78,9 @@ public class ReverseList extends UtilsList {
             p2 = t;
         }
 
-        //connect to previous part
+        /**
+         * Rewire to previous part
+         */
         if (prev != null)
             prev.next = p1;
         else

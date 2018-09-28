@@ -11,7 +11,7 @@ import java.util.PriorityQueue;
  * Given m arrays, the minimum elements of all arrays can form a heap. It takes O(log(m)) to insert an element
  * to the heap and it takes O(1) to delete the minimum element.
  */
-public class MergeKSortedArray {
+public class KMergeSortedArray {
 
     public static int[] mergeKSortedArray(int[][] arr) {
         //PriorityQueue is heap in Java

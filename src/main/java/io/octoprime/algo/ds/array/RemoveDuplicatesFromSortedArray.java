@@ -1,7 +1,9 @@
 package io.octoprime.algo.ds.array;
 
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 
 /**
  * Given a sorted array, remove the duplicates in place such that each element appear only once and return
@@ -77,6 +79,21 @@ public class RemoveDuplicatesFromSortedArray {
             }
         }
         return (A.length - count);
+    }
+
+    void removeElementsUsingIterators() {
+        Integer[] arr = {1, 2, 3, 4, 5, 6};
+        ArrayList<Integer> list = new ArrayList<Integer>(Arrays.asList(arr));
+        System.out.println(list);
+
+        Iterator<Integer> iter = list.iterator();
+        while (iter.hasNext()) {
+            int i = iter.next();
+            if (i == 5)
+                iter.remove();
+        }
+
+        System.out.println(list);
     }
 
 

@@ -1,6 +1,6 @@
 package io.octoprime.algo.ds.array;
 
-public class MediamOfTwoSortedArrays2 {
+public class MedianOfTwoSortedArrays2 {
 
     class Solution1 {
         public double findMedianSortedArrays(int[] nums1, int[] nums2) {
@@ -85,5 +85,4 @@ public class MediamOfTwoSortedArrays2 {
             return findKth(A, B, k, aStart, aEnd, bStart, bEnd);
         }
     }
-
 }

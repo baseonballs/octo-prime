@@ -75,6 +75,4 @@ public class KManipulativePermutations {
                 occurrences.put(entry.getKey(), 0);
         }
     }
-
-
 }

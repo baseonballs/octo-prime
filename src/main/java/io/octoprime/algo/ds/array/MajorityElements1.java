@@ -8,7 +8,7 @@ import java.util.Arrays;
  * <p>
  * We can sort the array first, which takes time of nlog(n). Then scan once to find the longest consecutive substrings.
  */
-public class MajorityElement1 {
+public class MajorityElements1 {
 
     public int majorityElement(int[] num) {
         if (num.length == 1) {

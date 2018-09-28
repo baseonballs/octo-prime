@@ -113,14 +113,12 @@ public class ReverseList extends UtilsList {
         ll.setHead(reverser(ll.getHead()));
         printList(ll.getHead(), "After list");
         System.out.println();
-
     }
 
     public static void testReverseaIteration() {
         SingleLinkedList ll = new SingleLinkedList();
 
         /* Constructed Linked List is 1->2->3->4->5->6->7->8->9->null */
-
 
         ll.push(9);
         ll.push(8);
@@ -146,7 +144,6 @@ public class ReverseList extends UtilsList {
         SingleLinkedList ll = new SingleLinkedList();
 
         /* Constructed Linked List is 1->2->3->4->5->6->7->8->9->null */
-
         ll.push(9);
         ll.push(8);
         ll.push(7);
@@ -167,10 +164,8 @@ public class ReverseList extends UtilsList {
     }
 
     public static void main(String[] args) {
-
         testReverseaRecursion();
         testReverseaIteration();
         testReverseaBetween();
     }
-
 }

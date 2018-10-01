@@ -12,7 +12,7 @@ public class HammerDistance {
         int result = 0;
         while (n != 0) {
             result += (n & 1);
-            n = n >>> 1;
+            n >>>= 1;
         }
         return result;
     }
@@ -38,11 +38,11 @@ public class HammerDistance {
      * @return
      */
     private static int hammerDistance(int a, int b) {
-        int z = a ^ b;
+        int n = a ^ b;
         int count = 0;
 
-        while (z > 0) {
-            z &= z - 1;
+        while (n > 0) {
+            n &= n - 1;
             count++;
         }
         return count;
@@ -53,8 +53,7 @@ public class HammerDistance {
      * write a function that takes an integer and retursn the number of '1' bits it has; also known as the
      * hammer weight;
      *
-     * @param a
-     * @param b
+     * @param n
      * @return
      */
     private static int hammerWeight(int n) {

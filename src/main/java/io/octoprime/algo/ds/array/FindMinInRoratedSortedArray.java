@@ -78,9 +78,16 @@ public class FindMinInRoratedSortedArray {
 
 
     /*
-To understand the boundaries, use the following 3 examples:
-[2,1], [2,3,1], [3,1,2]
-*/
+
+     */
+
+    /**
+     * To understand the boundaries, use the following 3 examples:
+     * [2,1], [2,3,1], [3,1,2]
+     *
+     * @param nums
+     * @return
+     */
     public int findMininumInRotatedSortedArray(int[] nums) {
         if (nums == null || nums.length == 0)
             return -1;

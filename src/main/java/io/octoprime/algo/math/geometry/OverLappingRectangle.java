@@ -6,9 +6,9 @@ public class OverLappingRectangle {
         int x;
         int y;
 
-        Point(int a, int b) {
-            x = a;
-            y = b;
+        Point(int x, int y) {
+            this.x = x;
+            this.y = y;
         }
     }
 

@@ -6,18 +6,18 @@ public class Add2NumWithOutAddOrSub {
 
 
     /**
-     * @param x
-     * @param y
+     * @param a
+     * @param b
      * @return
      */
-    public static int sum(int x, int y) {
-        while (y != 0) {
-            int carry = x & y;
-            x = x ^ y;
-            y = carry << 1;
+    public static int sum(int a, int b) {
+        while (b != 0) {
+            int carry = a & b;
+            a = a ^ b;
+            b = carry << 1;
         }
 
-        return x;
+        return a;
     }
 
     public static void main(String[] arg) {

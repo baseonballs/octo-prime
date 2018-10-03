@@ -400,22 +400,22 @@ public class BinarySearchTree {
     /**
      * find the kth smallest element in BST.
      *
-     * @param root
+     * @param node
      * @param k
      * @return
      */
-    public int kthSmallest(TreeNode root, int k) {
+    public int kthSmallest(TreeNode node, int k) {
         Stack<TreeNode> stack = new Stack<>();
-        while (root != null || !stack.isEmpty()) {
-            while (root != null) {
-                stack.push(root);
-                root = root.left;
+        while (node != null || !stack.isEmpty()) {
+            while (node != null) {
+                stack.push(node);
+                node = node.left;
             }
-            root = stack.pop();
+            node = stack.pop();
             if (--k == 0) break;
-            root = root.right;
+            node = node.right;
         }
-        return root.key;
+        return node.key;
     }
 
     public boolean isValidBST(TreeNode node) {

@@ -8,12 +8,14 @@ package io.octoprime.algo.strings;
 public class PermuteString {
 
 
-    public static void permutation(String perm, String word) {
-        if (word.isEmpty()) {
-            System.out.println(perm + word);
+    public static void permutation(String pre, String phrase) {
+        if (phrase.isEmpty()) {
+            System.out.println(pre + phrase);
         } else {
-            for (int i = 0; i < word.length(); i++) {
-                permutation(perm + word.charAt(i), word.substring(0, i) + word.substring(i + 1, word.length()));
+            for (int i = 0; i < phrase.length(); i++) {
+                permutation(pre + phrase.charAt(i),
+                        phrase.substring(0, i) +
+                                phrase.substring(i + 1));
             }
         }
     }

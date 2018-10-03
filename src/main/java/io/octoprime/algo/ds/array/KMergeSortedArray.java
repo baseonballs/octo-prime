@@ -30,10 +30,10 @@ public class KMergeSortedArray {
         // while heap is not empty
         while (!queue.isEmpty()) {
             ArrayContainer ac = queue.poll();
-            merged[k++] = ac.arr[ac.index];
+            merged[k++] = ac.arr[ac.currIndex];
 
-            if (ac.index < ac.arr.length - 1) {
-                queue.add(new ArrayContainer(ac.arr, ac.index + 1));
+            if (ac.currIndex < ac.arr.length - 1) {
+                queue.add(new ArrayContainer(ac.arr, ac.currIndex + 1));
             }
         }
 
@@ -52,15 +52,15 @@ public class KMergeSortedArray {
 
 class ArrayContainer implements Comparable<ArrayContainer> {
     int[] arr;
-    int index;
+    int currIndex;
 
     public ArrayContainer(int[] arr, int index) {
         this.arr = arr;
-        this.index = index;
+        this.currIndex = index;
     }
 
     @Override
     public int compareTo(ArrayContainer o) {
-        return this.arr[this.index] - o.arr[o.index];
+        return this.arr[this.currIndex] - o.arr[o.currIndex];
     }
 }

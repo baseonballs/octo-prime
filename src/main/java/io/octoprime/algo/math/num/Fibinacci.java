@@ -21,7 +21,6 @@ public class Fibinacci {
         return sum;
     }
 
-
     public static int fibDP(int n) {
         int[] f = new int[n + 2];
 

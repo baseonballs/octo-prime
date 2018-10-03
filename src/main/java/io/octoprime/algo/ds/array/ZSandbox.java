@@ -118,7 +118,7 @@ public class ZSandbox {
 
             int bIndex = new ZSandbox().bsearch(arrs, 0, arrs.length - 1, 2);
 
-            System.out.println("index : " + bIndex);
+            System.out.println("currIndex : " + bIndex);
             if (bIndex == -1)
                 System.out.println("not found.");
             else

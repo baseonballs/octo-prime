@@ -19,10 +19,10 @@ public class KIsSortedArray {
         // sort 'aux'
         Arrays.sort(aux);
 
-        // for every element of 'arr' at index 'i',
-        // find its index 'j' in 'aux'
+        // for every element of 'arr' at currIndex 'i',
+        // find its currIndex 'j' in 'aux'
         for (int i = 0; i < n; i++) {
-            // index of arr[i] in sorted array 'aux'
+            // currIndex of arr[i] in sorted array 'aux'
             int j = Arrays.binarySearch(aux, arr[i]);
 
             // if abs(i-j) > k, then that element is

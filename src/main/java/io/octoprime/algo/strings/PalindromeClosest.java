@@ -24,8 +24,8 @@ public class PalindromeClosest {
         String part1 = value.substring(0, ((value.length() + 1) / 2));
         int numPalindrome1 = Integer.parseInt(reverse(part1, value.length() / 2));
 
-        //if the "lower" palindrome is found, increase by 1 or if the "higher" palindrome is found, decrease by 1
         /**
+         * if the "lower" palindrome is found, increase by 1 or if the "higher" palindrome is found, decrease by 1
          * Deal with second partition; upper half.
          */
         int distance = numPalindrome1 <= num ? 1 : -1;

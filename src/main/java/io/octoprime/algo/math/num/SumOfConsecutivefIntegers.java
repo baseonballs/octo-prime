@@ -1,30 +1,31 @@
 package io.octoprime.algo.math.num;
 
-// sum of consecutive integer is ( n * (n+1) ) / 2
-
+/**
+ * sum of consecutive integer is ( n * (n+1) ) / 2
+ */
 public class SumOfConsecutivefIntegers {
 
-    static int sumRecur(int first, int last) {
-        if (first == last)
-            return last;
+    static int sumr(int a, int n) {
+        if (a == n)
+            return n;
         else
-            return first + sumRecur(first + 1, last);
+            return a + sumr(a + 1, n);
     }
 
-    static int sumIter(int first, int last) {
-        int n = 0;
+    static int sumi(int a, int n) {
+        int sum = 0;
 
-        for (int i = first; i <= last; i++)
-            n += i;
+        for (int i = a; i <= n; i++)
+            sum += i;
 
-        return n;
+        return sum;
     }
 
     public static void main(String[] args) {
-        int start = 1;
-        int end = 10;
-        System.out.println("Sum from " + start + " to " + end + " is: " +
-                sumIter(start, end));
+        int a = 1;
+        int n = 10;
+        System.out.println("Sum from " + a + " to " + n + " is: " +
+                sumi(a, n));
     }
 
 }

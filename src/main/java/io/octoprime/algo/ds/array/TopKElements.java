@@ -5,7 +5,7 @@ import java.util.*;
 public class TopKElements {
 
     /**
-     * Use an array to save numbers into different bucket whose index is the frequency
+     * Use an array to save numbers into different bucket whose currIndex is the frequency
      *
      * @param nums
      * @param k
@@ -17,7 +17,7 @@ public class TopKElements {
             map.put(n, map.getOrDefault(n, 0) + 1);
         }
 
-        // corner case: if there is only one number in nums, we need the bucket has index 1.
+        // corner case: if there is only one number in nums, we need the bucket has currIndex 1.
         List<Integer>[] bucket = new List[nums.length + 1];
         for (int n : map.keySet()) {
             int freq = map.get(n);

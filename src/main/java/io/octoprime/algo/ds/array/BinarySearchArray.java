@@ -6,7 +6,7 @@ package io.octoprime.algo.ds.array;
 public class BinarySearchArray {
 
     /**
-     * Returns index of value if it is present in arr[start..end], else return -1
+     * Returns currIndex of value if it is present in arr[start..end], else return -1
      *
      * @param arr
      * @param start
@@ -41,6 +41,6 @@ public class BinarySearchArray {
         if (result == -1)
             System.out.println("Element not present");
         else
-            System.out.println("Element found at index " + result);
+            System.out.println("Element found at currIndex " + result);
     }
 }

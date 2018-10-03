@@ -17,15 +17,15 @@ public class BalancedParens {
 
         Stack<Character> stack = new Stack<Character>();
         for (int i = 0; i < expr.length(); i++) {
-            char current = expr.charAt(i);
-            if (current == '{' || current == '(' || current == '[') {
-                stack.push(current);
+            char ch = expr.charAt(i);
+            if (ch == '{' || ch == '(' || ch == '[') {
+                stack.push(ch);
             }
-            if (current == '}' || current == ')' || current == ']') {
+            if (ch == '}' || ch == ')' || ch == ']') {
                 if (stack.isEmpty())
                     return "Not Balanced";
                 char last = stack.peek();
-                if (current == '}' && last == '{' || current == ')' && last == '(' || current == ']' && last == '[')
+                if ((ch == '}' && last == '{') || (ch == ')' && last == '(') || (ch == ']' && last == '['))
                     stack.pop();
                 else
                     return "Not Balanced";

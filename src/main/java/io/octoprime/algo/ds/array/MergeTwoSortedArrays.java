@@ -39,13 +39,13 @@ public class MergeTwoSortedArrays {
 
         /*
         // Merging remaining  elements of a[] (if any)
-         */
+        */
         while (i < a.length)
             merged[k++] = a[i++];
 
         /*
         // Merging remaining elements of b[] (if any)
-         */
+        */
         while (j < b.length)
             merged[k++] = b[j++];
 

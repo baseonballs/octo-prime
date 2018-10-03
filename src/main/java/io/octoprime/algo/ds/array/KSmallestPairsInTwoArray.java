@@ -28,9 +28,9 @@ public class KSmallestPairsInTwoArray {
      * Efficient Method:
      * Goal, find k smallest sum pairs, traversing the first array;
      * 1. keep track of all elements of second array which has already been considered for every element of first;
-     * so that in an iteration we only consider the next element. The index[] is used to track the indexes of next
+     * so that in an iteration we only consider the next element. The currIndex[] is used to track the indexes of next
      * elements in the other array. It simply means that which element of second array to be added with the element
-     * first array in each pass of the iteration. We increment value in the index array for the element that forms
+     * first array in each pass of the iteration. We increment value in the currIndex array for the element that forms
      * next minimum value pairs.
      */
     public static List<int[]> findKSmallestPairs(int[] a, int[] b, int k) {

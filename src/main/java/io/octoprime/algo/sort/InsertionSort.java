@@ -5,7 +5,7 @@ import java.util.Arrays;
 import static io.octoprime.utils.DataStructure.getRandomArray;
 
 /**
- * The insertion sort algorithm is based on the idea of cards in the hand.  Start with i+1, and scan toe the left of the
+ * The insertion sort algorithm is based on the idea of cards in the hand.  Start with i+1, and scan to the left of the
  * hand and find a slot that can be inserted into the rightful place.
  * <p>
  * worse: 0(n^2)
@@ -16,8 +16,8 @@ public class InsertionSort implements Sort {
     private static int DEFAULT_SIZE = 10;
     private static int DEFAULT_RANGE = 100;
 
-    @Override
-    public void sort(int[] arr) {
+    //  @Override
+    public void sorti(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             int temp = arr[i];
             int j = i;
@@ -38,7 +38,8 @@ public class InsertionSort implements Sort {
      * @param arr
      * @return
      */
-    public static void isort(int[] arr) {
+    @Override
+    public void sort(int[] arr) {
 
         for (int i = 1; i < arr.length; i++) {
             for (int j = i; j > 0; j--) {

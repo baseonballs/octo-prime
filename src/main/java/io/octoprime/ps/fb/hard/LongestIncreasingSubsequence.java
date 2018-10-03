@@ -1,4 +1,4 @@
-package io.octoprime.algo.math.num;
+package io.octoprime.ps.fb.hard;
 
 public class LongestIncreasingSubsequence {
 

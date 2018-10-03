@@ -5,9 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20207ac3-3947-4bc5-9b89-0fca36d24dc5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/IntegersToWords.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/WindowSubString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/easy/BestTimeToBuySelllStocks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/easy/RomanToInteger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/FlattenNestedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/GroupAnagrams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/KthLargestElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/MaxRectStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/MaximumRectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/RemoveInvalidParenthesis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/num/LongestIncreasingSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/LongestIncreasingSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/num/SumOfTwoNumbersTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/SumOfTwoNumbersTarget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/num/ThreeSumClosest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/ThreeSumClosest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="target/" />
@@ -45,7 +54,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="2" />
-          <entry key="java" value="1070" />
+          <entry key="java" value="1086" />
           <entry key="md" value="1" />
           <entry key="xml" value="1" />
           <entry key="yml" value="1" />
@@ -53,7 +62,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="1070" />
+          <entry key="JAVA" value="1086" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="XML" value="1" />
           <entry key="YAML" value="1" />
@@ -63,14 +72,14 @@
         <counts>
           <entry key="dummy" value="243" />
           <entry key="gitignore" value="27" />
-          <entry key="java" value="72877" />
-          <entry key="txt" value="6213" />
+          <entry key="java" value="73264" />
+          <entry key="txt" value="6299" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="72877" />
-          <entry key="PLAIN_TEXT" value="6483" />
+          <entry key="JAVA" value="73264" />
+          <entry key="PLAIN_TEXT" value="6569" />
         </counts>
       </usages-collector>
     </session>
@@ -81,46 +90,100 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/easy/HammerDistance.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/RemoveInvalidParenthesis.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="340">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/easy/MoveZeros.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/GroupAnagrams.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/TopKElements.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/IntegersToWords.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/MaximumSumOfSubArrayCloseToK.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+            <state relative-caret-position="128">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/search/TextSearch.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/KthLargestElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            <state relative-caret-position="394">
+              <caret line="55" column="13" lean-forward="true" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#405#406#0" expanded="true" />
+                <element signature="e#451#452#0" expanded="true" />
+                <element signature="e#1102#1111#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/strings/search/SimpleTextSearch.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/FlattenNestedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="391">
+              <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#870#871#0" expanded="true" />
+                <element signature="e#909#910#0" expanded="true" />
+                <element signature="e#952#953#0" expanded="true" />
+                <element signature="e#987#988#0" expanded="true" />
+                <element signature="e#1033#1034#0" expanded="true" />
+                <element signature="e#1072#1073#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/easy/RomanToInteger.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#182#202#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/easy/BestTimeToBuySelllStocks.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/easy/SumToBinaryStrings.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -128,8 +191,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/WindowSubString.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            <state relative-caret-position="221">
+              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -169,18 +232,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/MajorityElement1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/MajorityElements2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/LongestIncreasingSubsequence.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/RemoveDuplicatesFromSortedList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/MajorityElements1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/ReverseList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/KManipulativePermutations.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/n.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/MediamOfTwoSortedArrays2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/MedianOfTwoSortedArrays2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/RemoveDuplicatesFromSortedArray.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/RemoveElementFromArrayList.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/RemoveElements.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/MergeKSortedArray.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/game/TicTacToe.java" />
@@ -220,6 +271,18 @@
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/list/singly/PostFixExpression.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/IntegersToWords.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/WindowSubString.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/LongestIncreasingSubsequence.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/SumOfTwoNumbersTarget.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/MaxRectStack.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/MaximumRectangle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/RemoveInvalidParenthesis.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/GroupAnagrams.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/KthLargestElement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/FlattenNestedList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/easy/RomanToInteger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/easy/BestTimeToBuySelllStocks.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/easy/AddBinaryStrings.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/easy/SumToBinaryStrings.java" />
       </list>
     </option>
   </component>
@@ -362,7 +425,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="octoprime" type="462c0819:PsiDirectoryNode" />
               <item name="algo" type="462c0819:PsiDirectoryNode" />
-              <item name="strings" type="462c0819:PsiDirectoryNode" />
+              <item name="ds" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="octo-prime" type="b2602c69:ProjectViewProjectNode" />
@@ -372,8 +435,19 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="octoprime" type="462c0819:PsiDirectoryNode" />
               <item name="algo" type="462c0819:PsiDirectoryNode" />
-              <item name="strings" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
+              <item name="ds" type="462c0819:PsiDirectoryNode" />
+              <item name="array" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="octo-prime" type="b2602c69:ProjectViewProjectNode" />
+              <item name="octo-prime" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="octoprime" type="462c0819:PsiDirectoryNode" />
+              <item name="algo" type="462c0819:PsiDirectoryNode" />
+              <item name="ds" type="462c0819:PsiDirectoryNode" />
+              <item name="list" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="octo-prime" type="b2602c69:ProjectViewProjectNode" />
@@ -383,6 +457,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="octoprime" type="462c0819:PsiDirectoryNode" />
               <item name="fb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="octo-prime" type="b2602c69:ProjectViewProjectNode" />
+              <item name="octo-prime" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="octoprime" type="462c0819:PsiDirectoryNode" />
+              <item name="fb" type="462c0819:PsiDirectoryNode" />
+              <item name="easy" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="octo-prime" type="b2602c69:ProjectViewProjectNode" />
@@ -406,7 +490,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538589499905" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538594062140" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/target" />
@@ -545,13 +629,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533756672601</updated>
-    </task>
-    <task id="LOCAL-00035" summary="added a missing file for the preorder implementation of bst.">
-      <created>1534721325263</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1534721325263</updated>
     </task>
     <task id="LOCAL-00036" summary="Added string enecoder for serializing duplicate characters found in a given string.  For example, 'aaabbfggd' should yield 'a3b2f1g2d1';">
       <created>1534723851923</created>
@@ -889,7 +966,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538586272542</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="Added min window of sub string based on string search techniques">
+      <created>1538589539936</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1538589539936</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -937,8 +1021,8 @@
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7494577" visible="true" weight="0.22014925" />
-      <window_info id="Structure" order="1" sideWeight="0.2505423" side_tool="true" visible="true" weight="0.22014925" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.74922603" visible="true" weight="0.22014925" />
+      <window_info id="Structure" order="1" sideWeight="0.250774" side_tool="true" visible="true" weight="0.22014925" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -955,7 +1039,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5015129" side_tool="true" weight="0.28032786" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.4992224" weight="0.21583514" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.29934925" />
+      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.29934925" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1011,7 +1095,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Fixed bug with bst implementation." />
     <MESSAGE value="Reworked the single linked list implementations." />
     <MESSAGE value="Cleaned up single linked list; removed superfluous implementatino of reverse ( several implementation ); here we just choose the most elegant and readable code." />
     <MESSAGE value="Implemented k sorted arrays and merge sorted arrays." />
@@ -1036,7 +1119,8 @@
     <MESSAGE value="Added new implementation of queues, stacks, and bags using linked list." />
     <MESSAGE value="Added basic stats (mean+std deviation) using bag." />
     <MESSAGE value="Added Postfix evaluator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Postfix evaluator" />
+    <MESSAGE value="Added min window of sub string based on string search techniques" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added min window of sub string based on string search techniques" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1071,86 +1155,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/MergeTwoSortedArrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="31" column="32" lean-forward="true" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/BinarySearchArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/Stats.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="159" column="32" lean-forward="true" selection-start-line="159" selection-start-column="32" selection-end-line="159" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/MaximumSubArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-41">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/KSmallestPairsInSingleArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/KSmallestPairsInTwoArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="113" column="25" selection-start-line="113" selection-start-column="25" selection-end-line="113" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/StackArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/graph/DijkstraShortestPath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1207">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/graph/Knapsack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1050">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/digits/NumDigits.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/geometry/OverLappingRectangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/num/AddBinaryNumbers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1172,24 +1176,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/num/SumOfConsecutivefIntegers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/num/Sqrt.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
           <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/num/LongestIncreasingSubsequence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1232,13 +1222,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-150">
           <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/TopKElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1288,13 +1271,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/MaximumSumOfSubArrayCloseToK.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1444,7 +1420,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/IntegersToWords.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1462,10 +1438,136 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/WindowSubString.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/math/num/SumOfConsecutivefIntegers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/ThreeSumClosest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/LongestIncreasingSubsequence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/SumOfTwoNumbersTarget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/MaxRectStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+          <folding>
+            <element signature="e#774#783#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/MaximumRectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/RemoveInvalidParenthesis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/GroupAnagrams.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/TopKElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/algo/ds/array/MaximumSumOfSubArrayCloseToK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/KthLargestElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="55" column="13" lean-forward="true" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#1102#1111#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/FlattenNestedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#870#871#0" expanded="true" />
+            <element signature="e#909#910#0" expanded="true" />
+            <element signature="e#952#953#0" expanded="true" />
+            <element signature="e#987#988#0" expanded="true" />
+            <element signature="e#1033#1034#0" expanded="true" />
+            <element signature="e#1072#1073#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/easy/RomanToInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#182#202#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/easy/BestTimeToBuySelllStocks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/easy/SumToBinaryStrings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/octoprime/ps/fb/hard/WindowSubString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
         </state>
       </provider>
     </entry>

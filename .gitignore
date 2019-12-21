@@ -1,6 +1,9 @@
 # ignore resources
 target/
 .idea/
+.settings
+.project
+.classpath
 
 # ... but the following
 !/.profile

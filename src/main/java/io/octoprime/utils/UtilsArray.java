@@ -12,7 +12,7 @@ public class UtilsArray {
     private static Random _random = new Random();
 
     public static int[] makeIntArray(Stream s) {
-        return s.filter(e -> e != null).mapToInt(e -> (int) e).toArray();
+        return (s.filter(e -> e != null).mapToInt(e -> (int) e).toArray());
     }
 
     public int[] sequencedArrayWholeNumber(int n) {
@@ -48,6 +48,32 @@ public class UtilsArray {
         while (j-- > 0)
             arr.add(_random.nextInt(range));
 
+        return arr;
+    }
+
+    private static int getRandomNumberInRange(int min, int max) {
+
+		if (min >= max) {
+			throw new IllegalArgumentException("max must be greater than min");
+		}
+
+		Random r = new Random();
+		return r.nextInt((max - min) + 1) + min;
+    }
+    
+    public static int randomBetween(int min, int max)
+    {
+        return _random.nextInt((max - min) + 1) + min;
+    }
+    
+    public static ArrayList<Integer> randomArrayRange(int n, int min, int max)
+    {
+        ArrayList<Integer> arr = new ArrayList<Integer>(n);
+
+        while (n-- > 0)
+        {
+            arr.add(getRandomNumberInRange(min, max));
+        }
         return arr;
     }
 

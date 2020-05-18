@@ -9,3 +9,6 @@ target/
 !/.profile
 !/.bash_rc
 !/.bash_profile
+
+.DS_Store
+.vscode/
